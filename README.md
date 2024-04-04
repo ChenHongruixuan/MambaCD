@@ -8,7 +8,7 @@
 </div>
 
 ##  Updates
-* **` April. 04th, 2024`**: This repository is being updated! The code and weights for the trained models will be released soon.! 
+* **` April. 04th, 2024`**: This repository is being updated! The code and weights for the trained models will be released soon! We'd appreciate it if you could give this repo a ⭐️ and stay tuned!
 
 
 ## Overview 
@@ -81,15 +81,148 @@
 
 
 
-## Getting Started
+## Let's Get Started!
+### A. Installation
+The repo is based on the [VMama repo](https://github.com/MzeroMiko/VMamba), thus you need to install it first. The following installation sequence is taken from the VMamba repo. Also, note that the code in this repo runs under Linux system. We have not tested whether it works under other OS.
 
-Will be available soon!
+**Step 1: Clone the VMamba repository:**
 
-### Installation
+Clone the VMamba repository and navigate to the project directory:
+```bash
+git clone https://github.com/MzeroMiko/VMamba.git
+cd VMamba
+```
 
 
-### Data preparation
+**Step 2: Environment Setup:**
 
+It is recommended to set up a conda environment and installing dependencies via pip. Use the following commands to set up your environment:
+
+***Create and activate a new conda environment***
+
+```bash
+conda create -n changemamba
+conda activate changemamba
+```
+
+***Install dependencies***
+
+```bash
+pip install -r requirements.txt
+cd kernels/selective_scan && pip install .
+```
+
+
+***Dependencies for `Detection` and `Segmentation` (optional in VMamba)***
+
+```bash
+pip install mmengine==0.10.1 mmcv==2.1.0 opencv-python-headless ftfy regex
+pip install mmdet==3.3.0 mmsegmentation==1.2.2 mmpretrain==1.2.0
+```
+### B. Download Pretrained Weight
+Also, please download the pretrained weights of [VMamba-Tiny](https://github.com/MzeroMiko/VMamba/releases/download/%2320240316/vssm_tiny_0230_ckpt_epoch_262.pth), [VMamba-Small](https://github.com/MzeroMiko/VMamba/releases/download/%2320240316/vssm_small_0229_ckpt_epoch_222.pth), and [VMamba-Base](https://github.com/MzeroMiko/VMamba/releases/download/%2320240316/vssm_base_0229_ckpt_epoch_237.pth) and put them under 
+```bash
+project_path/VMamba/pretrained_weight/
+```
+
+### C. Data Preparation
+***Binary change detection***
+
+The three datasets [SYSU](https://github.com/liumency/SYSU-CD), [LEVIR-CD+](https://chenhao.in/LEVIR/) and [WHU-CD](https://study.rsgis.whu.edu.cn/pages/download/building_dataset.html) are used for binary change detection experiments. Please download them and make them have the following folder/file structure:
+```
+${DATASET_ROOT}   # Dataset root directory, for example: /home/username/data/SYSU
+├── train
+│   ├── T1
+│   │   ├──00001.png
+│   │   ├──00002.png
+│   │   ├──00003.png
+│   │   ...
+│   │
+│   ├── T2
+│   │   ├──00001.png
+│   │   ... 
+│   │
+│   └── GT
+│       ├──00001.png 
+│       ...   
+│   
+├── test
+│   ├── ...
+│   ...
+│  
+├── train.txt   # Data name list, recording all the names of training data
+└── test.txt    # Data name list, recording all the names of testing data
+```
+
+***Semantic change detection***
+
+The [SECOND dataset](https://captain-whu.github.io/SCD/) is used for semantic change detection experiments. Please download it and make it have the following folder/file structure:
+
+```
+${DATASET_ROOT}   # Dataset root directory, for example: /home/username/data/SECOND
+├── train
+│   ├── T1
+│   │   ├──00001.png
+│   │   ├──00002.png
+│   │   ├──00003.png
+│   │   ...
+│   │
+│   ├── T2
+│   │   ├──00001.png
+│   │   ... 
+│   │
+│   ├── GT_CD   # Binary change map
+│   │   ├──00001.png 
+│   │   ... 
+│   │
+│   ├── GT_T1   # Land-cover map of T1
+│   │   ├──00001.png 
+│   │   ...  
+│   │
+│   └── GT_T2   # Land-cover map of T2
+│       ├──00001.png 
+│       ...  
+│   
+├── test
+│   ├── ...
+│   ...
+│ 
+├── train.txt
+└── test.txt
+```
+
+***Building damage assessment***
+
+The xBD dataset can be downloaded from [xView 2 Challenge website](https://xview2.org/dataset). After downloading it, please organize it into the following structure: 
+```
+${DATASET_ROOT}   # Dataset root directory, for example: /home/username/data/xBD
+├── train
+│   ├── images
+│   │   ├──guatemala-volcano_00000000_pre_disaster.png
+│   │   ├──guatemala-volcano_00000000_post_disaster.png
+│   │   ...
+│   │
+│   └── masks
+│       ├──guatemala-volcano_00000000_pre_disaster.png
+│       ├──guatemala-volcano_00000000_post_disaster.png
+│       ... 
+│   
+├── test
+│   ├── ...
+│   ...
+│
+├── holdout
+│   ├── ...
+│   ...
+│
+├── train.txt # Data name list, recording all the names of training data
+├── test.txt  # Data name list, recording all the names of testing data
+└── holdout.txt  # Data name list, recording all the names of holdout data
+```
+
+
+### D. Model Training and Inference
+The code is being organised and collated and will be released soon!
 
 ## Acknowledgment
 This project is based on VMamba ([paper](https://arxiv.org/abs/2401.10166), [code](https://github.com/MzeroMiko/VMamba)), ScanNet ([paper](https://arxiv.org/abs/2212.05245), [code](https://github.com/ggsDing/SCanNet)), thanks for their excellent works.
