@@ -1,6 +1,6 @@
 <div align="center">
-<h1>MambaCD </h1>
-<h3>MambaCD: Remote Sensing Change Detection with Spatio-Temporal State Space Model</h3>
+<h1>ChangeMamba </h1>
+<h3>ChangeMamba: Remote Sensing Change Detection with Spatio-Temporal State Space Model</h3>
 
 [Hongruixuan Chen](https://scholar.google.ch/citations?user=XOk4Cf0AAAAJ&hl=zh-CN&oi=ao)<sup>1</sup>,[Jian Song](https://scholar.google.ch/citations?user=CgcMFJsAAAAJ&hl=zh-CN)<sup>1,2</sup>,[Chengxi Han](https://scholar.google.com/citations?user=8ZED-EwAAAAJ&hl=en)<sup>3</sup>, [Junshi Xia](https://scholar.google.com/citations?user=n1aKdTkAAAAJ&hl=en)<sup>2</sup>, [Naoto Yokoya](https://scholar.google.co.jp/citations?user=DJ2KOn8AAAAJ&hl=en)<sup>1,2</sup>
 
@@ -13,13 +13,13 @@
 
 ## Overview 
 
-* [**MambaCD**](https://chrx97.com/Files/MambaCD.pdf) serves as a strong benchmark for change detection tasks, including binary change detection (MambaBCD), semantic change detection (MambaSCD), and building damage assessment (MambaBDA). 
+* [**ChangeMamba**](https://chrx97.com/Files/MambaCD.pdf) serves as a strong benchmark for change detection tasks, including binary change detection (MambaBCD), semantic change detection (MambaSCD), and building damage assessment (MambaBDA). 
 
 <p align="center">
   <img src="figures/network_architecture.jpg" alt="accuracy" width="90%">
 </p>
 
-* **Spatio-temporal relationship learning methods of MambaCD**
+* **Spatio-temporal relationship learning methods of ChangeMamba**
 
 <p align="center">
   <img src="figures/STLM.jpg" alt="arch" width="55%">
@@ -27,7 +27,7 @@
 
 ## Main Results
 
-* *The encoders for all the above MambaCD models are the the VMamba architecture initialized with ImageNet pre-trained weight.*
+* *The encoders for all the above ChangeMamba models are the the VMamba architecture initialized with ImageNet pre-trained weight.*
 ### **Binary Change Detection on WHU-CD**
 | Method |  Overall Accuracy | F1 Score | IoU | Kappa Coefficient | Param | GFLOPs | ckpts
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
