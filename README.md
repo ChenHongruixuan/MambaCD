@@ -15,7 +15,7 @@
 
 ## Overview 
 
-* [**ChangeMamba**](https://chrx97.com/Files/MambaCD.pdf) serves as a strong benchmark for change detection tasks, including binary change detection (MambaBCD), semantic change detection (MambaSCD), and building damage assessment (MambaBDA). 
+* [**ChangeMamba**](https://chrx97.com/Files/MambaCD.pdf) serves as a strong benchmark for change detection tasks, including binary change detection (**MambaBCD**), semantic change detection (**MambaSCD**), and building damage assessment (**MambaBDA**). 
 
 <p align="center">
   <img src="figures/network_architecture.jpg" alt="accuracy" width="90%">
@@ -205,8 +205,8 @@ ${DATASET_ROOT}   # Dataset root directory, for example: /home/username/data/xBD
 │   │   ...
 │   │
 │   └── masks
-│       ├──guatemala-volcano_00000000_pre_disaster.png
-│       ├──guatemala-volcano_00000000_post_disaster.png
+│       ├──guatemala-volcano_00000003_pre_disaster.png
+│       ├──guatemala-volcano_00000003_post_disaster.png
 │       ... 
 │   
 ├── test
