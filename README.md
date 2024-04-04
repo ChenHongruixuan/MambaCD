@@ -7,6 +7,10 @@
 <sup>1</sup> The University of Tokyo, <sup>2</sup> RIKEN AIP,  <sup>3</sup> Wuhan University.
 </div>
 
+##  Updates
+* **` April. 04th, 2024`**: This repository is being updated! The code and weights for the trained models will be released soon.! 
+
+
 ## Overview 
 
 * [**MambaCD**](https://chrx97.com/Files/MambaCD.pdf) serves as a strong benchmark for change detection tasks, including binary change detection (MambaBCD), semantic change detection (MambaSCD), and building damage assessment (MambaBDA). 
