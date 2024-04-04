@@ -85,7 +85,7 @@
 ### A. Installation
 The repo is based on the [VMama repo](https://github.com/MzeroMiko/VMamba), thus you need to install it first. The following installation sequence is taken from the VMamba repo. Also, note that the code in this repo runs under Linux system. We have not tested whether it works under other OS.
 
-**Step 1: Clone the VMamba repository:**
+**Step 1: Clone the repository:**
 
 Clone this repository and navigate to the project directory:
 ```bash
