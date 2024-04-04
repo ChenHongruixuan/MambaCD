@@ -2,20 +2,18 @@
 <h1>ChangeMamba </h1>
 <h3>ChangeMamba: Remote Sensing Change Detection with Spatio-Temporal State Space Model</h3>
 
-[Hongruixuan Chen](https://scholar.google.ch/citations?user=XOk4Cf0AAAAJ&hl=zh-CN&oi=ao)<sup>1</sup>, [Jian Song](https://scholar.google.ch/citations?user=CgcMFJsAAAAJ&hl=zh-CN)<sup>1,2</sup>, [Chengxi Han](https://scholar.google.com/citations?user=8ZED-EwAAAAJ&hl=en)<sup>3</sup>, [Junshi Xia](https://scholar.google.com/citations?user=n1aKdTkAAAAJ&hl=en)<sup>2</sup>, [Naoto Yokoya](https://scholar.google.co.jp/citations?user=DJ2KOn8AAAAJ&hl=en)<sup>1,2</sup>
+[Hongruixuan Chen](https://scholar.google.ch/citations?user=XOk4Cf0AAAAJ&hl=zh-CN&oi=ao)<sup>1</sup>,[Jian Song](https://scholar.google.ch/citations?user=CgcMFJsAAAAJ&hl=zh-CN)<sup>1,2</sup>,[Chengxi Han](https://scholar.google.com/citations?user=8ZED-EwAAAAJ&hl=en)<sup>3</sup>, [Junshi Xia](https://scholar.google.com/citations?user=n1aKdTkAAAAJ&hl=en)<sup>2</sup>, [Naoto Yokoya](https://scholar.google.co.jp/citations?user=DJ2KOn8AAAAJ&hl=en)<sup>1,2</sup>
 
 <sup>1</sup> The University of Tokyo, <sup>2</sup> RIKEN AIP,  <sup>3</sup> Wuhan University.
-
-[**Paper of ChangeMamba**](https://chrx97.com/Files/MambaCD.pdf)
 </div>
 
 ##  Updates
-* **` April. 04th, 2024`**: This repository is being updated! The code and weights for the trained models will be released soon! We'd appreciate it if you could give this repo ⭐️ and stay tuned!
-
+* **` Notice`**: This repository is being updated! The code and weights for the trained models will be released soon! We'd appreciate it if you could give this repo a ⭐️ and stay tuned!
+* **` April. 04th, 2024`**: The models and training code for MambaBCD have been organized and uploaded. Feel free to use it!
 
 ## Overview 
 
-* [**ChangeMamba**](https://chrx97.com/Files/MambaCD.pdf) serves as a strong benchmark for change detection tasks, including binary change detection (**MambaBCD**), semantic change detection (**MambaSCD**), and building damage assessment (**MambaBDA**). 
+* [**ChangeMamba**](https://chrx97.com/Files/MambaCD.pdf) serves as a strong benchmark for change detection tasks, including binary change detection (MambaBCD), semantic change detection (MambaSCD), and building damage assessment (MambaBDA). 
 
 <p align="center">
   <img src="figures/network_architecture.jpg" alt="accuracy" width="90%">
@@ -89,10 +87,10 @@ The repo is based on the [VMama repo](https://github.com/MzeroMiko/VMamba), thus
 
 **Step 1: Clone the VMamba repository:**
 
-Clone the VMamba repository and navigate to the project directory:
+Clone this repository and navigate to the project directory:
 ```bash
-git clone https://github.com/MzeroMiko/VMamba.git
-cd VMamba
+git clone https://github.com/ChenHongruixuan/MambaCD.git
+cd MambaCD
 ```
 
 
@@ -124,7 +122,7 @@ pip install mmdet==3.3.0 mmsegmentation==1.2.2 mmpretrain==1.2.0
 ### B. Download Pretrained Weight
 Also, please download the pretrained weights of [VMamba-Tiny](https://github.com/MzeroMiko/VMamba/releases/download/%2320240316/vssm_tiny_0230_ckpt_epoch_262.pth), [VMamba-Small](https://github.com/MzeroMiko/VMamba/releases/download/%2320240316/vssm_small_0229_ckpt_epoch_222.pth), and [VMamba-Base](https://github.com/MzeroMiko/VMamba/releases/download/%2320240316/vssm_base_0229_ckpt_epoch_237.pth) and put them under 
 ```bash
-project_path/VMamba/pretrained_weight/
+project_path/MambaCD/pretrained_weight/
 ```
 
 ### C. Data Preparation
@@ -224,7 +222,25 @@ ${DATASET_ROOT}   # Dataset root directory, for example: /home/username/data/xBD
 
 
 ### D. Model Training and Inference
-The code is being organised and collated and will be released soon!
+Before training and testing models, please enter into changedetection folder
+```bash
+cd <project_path>/MambaCD/changedetection
+```
 
+***Binary change detection***
+
+The following commands show how to train MambaBCD-Small on the SYSU dataset:
+```bash
+python script/train_MambaBCD.py  --dataset 'SYSU' \
+                                 --batch_size 12 \
+                                 --crop_size 256 \
+                                 --max_iters 240000 \
+                                 --train_dataset_path '<dataset_path>/SYSU/train' \
+                                 --train_data_list_path '<dataset_path>/SYSU/train_list.txt' \
+                                 --test_dataset_path '<dataset_path>/SYSU/test' \
+                                 --test_data_list_path '<dataset_path>/SYSU/test_list.txt'
+                                 --cfg '<project_path>/MambaCD/classification/configs/vssm1/vssm_small_224.yaml' \
+                                 --pretrained_weight_path '<project_path>/MambaCD/pretrained_weight/vssm_small_0229_ckpt_epoch_222.pth'
+```
 ## Acknowledgment
 This project is based on VMamba ([paper](https://arxiv.org/abs/2401.10166), [code](https://github.com/MzeroMiko/VMamba)), ScanNet ([paper](https://arxiv.org/abs/2212.05245), [code](https://github.com/ggsDing/SCanNet)), thanks for their excellent works.
