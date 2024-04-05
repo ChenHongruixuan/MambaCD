@@ -12,6 +12,7 @@ Paper: ([arXiv 2404.03425](https://arxiv.org/pdf/2404.03425.pdf))
 ##  Updates
 * **` Notice`**: This repository is being updated! The code and weights for the trained models will be released soon! We'd appreciate it if you could give this repo ⭐️ and stay tuned!
 * **` April. 05th, 2024`**: The [[arXiv](https://arxiv.org/pdf/2404.03425.pdf)] version is online!
+* **` April. 05th, 2024`**: The models and training code for MambaSCD have been organized and uploaded. Feel free to use it!
 * **` April. 04th, 2024`**: The models and training code for MambaBCD have been organized and uploaded. Feel free to use it!
 
 ## Overview 
@@ -232,12 +233,12 @@ cd <project_path>/MambaCD/changedetection
 
 ***Binary change detection***
 
-The following commands show how to train MambaBCD-Small on the SYSU dataset:
+The following commands show how to train and evaluate MambaBCD-Small on the SYSU dataset:
 ```bash
 python script/train_MambaBCD.py  --dataset 'SYSU' \
-                                 --batch_size 12 \
+                                 --batch_size 16 \
                                  --crop_size 256 \
-                                 --max_iters 240000 \
+                                 --max_iters 320000 \
                                  --train_dataset_path '<dataset_path>/SYSU/train' \
                                  --train_data_list_path '<dataset_path>/SYSU/train_list.txt' \
                                  --test_dataset_path '<dataset_path>/SYSU/test' \
@@ -245,6 +246,23 @@ python script/train_MambaBCD.py  --dataset 'SYSU' \
                                  --cfg '<project_path>/MambaCD/classification/configs/vssm1/vssm_small_224.yaml' \
                                  --pretrained_weight_path '<project_path>/MambaCD/pretrained_weight/vssm_small_0229_ckpt_epoch_222.pth'
 ```
+
+***Semantic change detection***
+
+The following commands show how to train and evaluate MambaSCD-Small on the SECOND dataset:
+```bash
+python script/train_MambaSCD.py  --dataset 'SECOND' \
+                                 --batch_size 16 \
+                                 --crop_size 256 \
+                                 --max_iters 800000 \
+                                 --train_dataset_path '<dataset_path>/SECOND/train' \
+                                 --train_data_list_path '<dataset_path>/SECOND/train_list.txt' \
+                                 --test_dataset_path '<dataset_path>/SECOND/test' \
+                                 --test_data_list_path '<dataset_path>/SECOND/test_list.txt'
+                                 --cfg '<project_path>/MambaCD/classification/configs/vssm1/vssm_small_224.yaml' \
+                                 --pretrained_weight_path '<project_path>/MambaCD/pretrained_weight/vssm_small_0229_ckpt_epoch_222.pth'
+```
+
 ## Reference
 If this code or dataset contributes to your research, please kindly consider citing our paper and give this repo ⭐️ :)
 

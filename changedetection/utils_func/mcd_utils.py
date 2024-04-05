@@ -3,7 +3,7 @@ import math
 import random
 import numpy as np
 from scipy import stats
-from VMamba.changedetection.utils_func import eval_segm as seg_acc
+from MambaCD.changedetection.utils_func import eval_segm as seg_acc
 
 def read_idtxt(path):
   id_list = []
