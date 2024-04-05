@@ -303,3 +303,4 @@ If this code or dataset contributes to your research, please kindly consider cit
 This project is based on VMamba ([paper](https://arxiv.org/abs/2401.10166), [code](https://github.com/MzeroMiko/VMamba)), ScanNet ([paper](https://arxiv.org/abs/2212.05245), [code](https://github.com/ggsDing/SCanNet)), thanks for their excellent works.
 
 ## Q & A
+***For any questions, please feel free to [contact us.](mailto:Qschrx@gmail.com)***
