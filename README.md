@@ -8,6 +8,7 @@
 </div>
 
 ##  Updates
+* **` April. 05th, 2024`**: The [[arXiv](https://arxiv.org/abs/2309.01907)] version is online!
 * **` Notice`**: This repository is being updated! The code and weights for the trained models will be released soon! We'd appreciate it if you could give this repo a ⭐️ and stay tuned!
 * **` April. 04th, 2024`**: The models and training code for MambaBCD have been organized and uploaded. Feel free to use it!
 
