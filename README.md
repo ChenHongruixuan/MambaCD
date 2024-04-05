@@ -13,7 +13,7 @@
 
 ## Overview 
 
-* [**ChangeMamba**](https://arxiv.org/abs/2404.03425) serves as a strong benchmark for change detection tasks, including binary change detection (MambaBCD), semantic change detection (MambaSCD), and building damage assessment (MambaBDA). 
+* [**ChangeMamba**](https://arxiv.org/pdf/2404.03425.pdf) serves as a strong benchmark for change detection tasks, including binary change detection (MambaBCD), semantic change detection (MambaSCD), and building damage assessment (MambaBDA). 
 
 <p align="center">
   <img src="figures/network_architecture.jpg" alt="accuracy" width="90%">
