@@ -243,5 +243,16 @@ python script/train_MambaBCD.py  --dataset 'SYSU' \
                                  --cfg '<project_path>/MambaCD/classification/configs/vssm1/vssm_small_224.yaml' \
                                  --pretrained_weight_path '<project_path>/MambaCD/pretrained_weight/vssm_small_0229_ckpt_epoch_222.pth'
 ```
+## Reference
+```
+@misc{chen2024changemamba,
+      title={ChangeMamba: Remote Sensing Change Detection with Spatio-Temporal State Space Model}, 
+      author={Hongruixuan Chen and Jian Song and Chengxi Han and Junshi Xia and Naoto Yokoya},
+      year={2024},
+      eprint={2404.03425},
+      archivePrefix={arXiv},
+      primaryClass={eess.IV}
+}
+```
 ## Acknowledgment
 This project is based on VMamba ([paper](https://arxiv.org/abs/2401.10166), [code](https://github.com/MzeroMiko/VMamba)), ScanNet ([paper](https://arxiv.org/abs/2212.05245), [code](https://github.com/ggsDing/SCanNet)), thanks for their excellent works.
