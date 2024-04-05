@@ -5,11 +5,13 @@
 [Hongruixuan Chen](https://scholar.google.ch/citations?user=XOk4Cf0AAAAJ&hl=zh-CN&oi=ao)<sup>1</sup>,[Jian Song](https://scholar.google.ch/citations?user=CgcMFJsAAAAJ&hl=zh-CN)<sup>1,2</sup>,[Chengxi Han](https://scholar.google.com/citations?user=8ZED-EwAAAAJ&hl=en)<sup>3</sup>, [Junshi Xia](https://scholar.google.com/citations?user=n1aKdTkAAAAJ&hl=en)<sup>2</sup>, [Naoto Yokoya](https://scholar.google.co.jp/citations?user=DJ2KOn8AAAAJ&hl=en)<sup>1,2</sup>
 
 <sup>1</sup> The University of Tokyo, <sup>2</sup> RIKEN AIP,  <sup>3</sup> Wuhan University.
+
+Paper: ([arXiv 2404.03425](https://arxiv.org/pdf/2404.03425.pdf))
 </div>
 
 ##  Updates
+* **` Notice`**: This repository is being updated! The code and weights for the trained models will be released soon! We'd appreciate it if you could give this repo ⭐️ and stay tuned!
 * **` April. 05th, 2024`**: The [[arXiv](https://arxiv.org/pdf/2404.03425.pdf)] version is online!
-* **` Notice`**: This repository is being updated! The code and weights for the trained models will be released soon! We'd appreciate it if you could give this repo a ⭐️ and stay tuned!
 * **` April. 04th, 2024`**: The models and training code for MambaBCD have been organized and uploaded. Feel free to use it!
 
 ## Overview 
@@ -244,8 +246,10 @@ python script/train_MambaBCD.py  --dataset 'SYSU' \
                                  --pretrained_weight_path '<project_path>/MambaCD/pretrained_weight/vssm_small_0229_ckpt_epoch_222.pth'
 ```
 ## Reference
+If this code or dataset contributes to your research, please kindly consider citing our paper and give this repo ⭐️ :)
+
 ```
-@misc{chen2024changemamba,
+@article{chen2024changemamba,
       title={ChangeMamba: Remote Sensing Change Detection with Spatio-Temporal State Space Model}, 
       author={Hongruixuan Chen and Jian Song and Chengxi Han and Junshi Xia and Naoto Yokoya},
       year={2024},
