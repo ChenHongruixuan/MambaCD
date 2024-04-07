@@ -170,7 +170,8 @@ ${DATASET_ROOT}   # Dataset root directory, for example: /home/username/data/xBD
 
 
 ### D. Model Training and Inference
-Before training and testing models, please enter into changedetection folder
+Before training and testing models, please enter into [**changedetection**] folder, which contains all the code for network definitions, training and testing. 
+
 ```bash
 cd <project_path>/MambaCD/changedetection
 ```
