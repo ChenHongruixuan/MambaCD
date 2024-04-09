@@ -1,10 +1,8 @@
 <div align="center">
 <h1 align="center">ChangeMamba</h1>
 
-<p align="center">
-  <img src="figures/change_mamba_icon_2.jpg" alt="Logo" width="100"/>
-</p>
 <h3>ChangeMamba: Remote Sensing Change Detection with Spatio-Temporal State Space Model</h3>
+
 
 [Hongruixuan Chen](https://scholar.google.ch/citations?user=XOk4Cf0AAAAJ&hl=zh-CN&oi=ao)<sup>1 #</sup>, [Jian Song](https://scholar.google.ch/citations?user=CgcMFJsAAAAJ&hl=zh-CN)<sup>1,2 #</sup>, [Chengxi Han](https://scholar.google.com/citations?user=8ZED-EwAAAAJ&hl=en)<sup>3</sup>, [Junshi Xia](https://scholar.google.com/citations?user=n1aKdTkAAAAJ&hl=en)<sup>2</sup>, [Naoto Yokoya](https://scholar.google.co.jp/citations?user=DJ2KOn8AAAAJ&hl=en)<sup>1,2 *</sup>
 
@@ -13,6 +11,7 @@
 <sup>#</sup> Equal contribution, <sup>*</sup> Corresponding author
 
 Paper: ([arXiv 2404.03425](https://arxiv.org/pdf/2404.03425.pdf)) 
+
 </div>
 
 ##  Updates
@@ -25,7 +24,7 @@ Paper: ([arXiv 2404.03425](https://arxiv.org/pdf/2404.03425.pdf))
 * [**ChangeMamba**](https://arxiv.org/pdf/2404.03425.pdf) serves as a strong benchmark for change detection tasks, including binary change detection (MambaBCD), semantic change detection (MambaSCD), and building damage assessment (MambaBDA). 
 
 <p align="center">
-  <img src="figures/network_architecture.jpg" alt="accuracy" width="90%">
+  <img src="figures/network_architecture.png" alt="accuracy" width="90%">
 </p>
 
 * **Spatio-temporal relationship learning methods of ChangeMamba**
