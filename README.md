@@ -1,9 +1,7 @@
 <div align="center">
-    <p align="center">
-  <img src="figures/change_mamba_icon_2.jpg" alt="Logo" width="100"/>
-</p>
-
-<h1 align="center">ChangeMamba</h1>
+    <div align="center">
+  <img src="figures/change_mamba_icon_2.jpg" alt="Logo" width="100" style="vertical-align:middle"> <span style="font-size:large; vertical-align:middle;">ChangeMamba</span>
+</div>
 <h3>ChangeMamba: Remote Sensing Change Detection with Spatio-Temporal State Space Model</h3>
 
 [Hongruixuan Chen](https://scholar.google.ch/citations?user=XOk4Cf0AAAAJ&hl=zh-CN&oi=ao)<sup>1 #</sup>, [Jian Song](https://scholar.google.ch/citations?user=CgcMFJsAAAAJ&hl=zh-CN)<sup>1,2 #</sup>, [Chengxi Han](https://scholar.google.com/citations?user=8ZED-EwAAAAJ&hl=en)<sup>3</sup>, [Junshi Xia](https://scholar.google.com/citations?user=n1aKdTkAAAAJ&hl=en)<sup>2</sup>, [Naoto Yokoya](https://scholar.google.co.jp/citations?user=DJ2KOn8AAAAJ&hl=en)<sup>1,2 *</sup>
