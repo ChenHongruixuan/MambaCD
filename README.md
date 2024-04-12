@@ -16,6 +16,7 @@ Paper: ([arXiv 2404.03425](https://arxiv.org/pdf/2404.03425.pdf))
 
 ##  Updates
 * **` Notice`**: This repository is being updated! The code and weights for the trained models will be released soon! We'd appreciate it if you could give this repo ⭐️ and stay tuned!
+* **` April. 12th, 2024`**: The new [[arXiv](https://arxiv.org/pdf/2404.03425.pdf)] version containing new accuracy and more experiments is now online! The weights for different models will be released soon!
 * **` April. 05th, 2024`**: The [[arXiv](https://arxiv.org/pdf/2404.03425.pdf)] version is online!
 * **` April. 05th, 2024`**: The models and training code for MambaBCD, MambaSCD, and MambaBDA have been organized and uploaded. You are welcome to use them!!
 
@@ -30,7 +31,7 @@ Paper: ([arXiv 2404.03425](https://arxiv.org/pdf/2404.03425.pdf))
 * **Spatio-temporal relationship learning methods of ChangeMamba**
 
 <p align="center">
-  <img src="figures/STLM.jpg" alt="arch" width="55%">
+  <img src="figures/STLM.png" alt="arch" width="60%">
 </p>
 
 
@@ -270,9 +271,9 @@ python script/train_MambaSCD.py  --dataset 'xBD' \
 | [TED](https://github.com/ggsDing/SCanNet) | 87.39  | 60.34   | 72.79  | 22.17 | 42.16 | 75.79  | -- |
 | [SMNet](https://www.mdpi.com/2072-4292/15/4/949) | 86.68 | 60.34   | 71.95 |  20.29 | 19.44  | 63.72 | -- |
 | [ScanNet](https://github.com/ggsDing/SCanNet) | 87.86  | 63.66 |  73.42  | 23.94 | 27.90 | 264.95  | -- |
-| MambaSCD-Tiny |  87.22  | 60.92  | 72.18  | 20.92 | 19.44  | 63.72 | -- |
-| MambaSCD-Small | 88.38  | 64.10  | 73.61  | 24.04 | 51.82  | 137.10 | -- |
-| MambaSCD-Base | 88.00 |  63.98  | 73.47  | 23.94 | 87.47 |  201.85| -- |
+| MambaSCD-Tiny |  88.07  |  63.44  |  73.33  | 23.34 | 21.51 | 73.42 | -- |
+| MambaSCD-Small | 88.38  | 64.10  | 73.61  | 24.04 | 54.28  |  146.70 | -- |
+| MambaSCD-Base | 88.12  |  64.03  |  73.68   | 24.11 | 89.99  | 211.55 | -- |
 
 
 
@@ -285,9 +286,9 @@ python script/train_MambaSCD.py  --dataset 'xBD' \
 | [ChangeOS-101](https://github.com/Z-Zheng/ChangeOS) |  85.69 | 71.14 | 75.50 | 89.11 | 53.11 | 72.44 | 80.79 | -- | -- | -- |
 | [ChangeOS-101-PPS](https://github.com/Z-Zheng/ChangeOS) |  85.69 | 75.44 | 78.52 | 92.81 | 59.38 | 74.65 | 83.29 | -- | -- | -- |
 | [DamFormer](https://arxiv.org/abs/2201.10953) |  86.86 |72.81 |77.02 |89.86 |56.78| 72.56 |80.51 | -- | -- | -- |
-| MambaBDA-Tiny |  84.76 | 77.50  | 79.68  | 95.33  | 60.15 | 75.94  | 88.27 | -- | -- | -- |
-| MambaBDA-Small | 86.61 | 78.80 | 81.14 | 95.99| 62.82| 76.26| 88.37 | -- | -- | -- |
-| MambaBDA-Base | 87.38 | 78.84| 81.41 |95.94 |62.74| 76.46 | 88.58 | -- | -- | -- |
+| MambaBDA-Tiny |  84.76 | 77.50  | 79.68  | 95.33  | 60.15 | 75.94  | 88.27 | 19.74 | 59.57 | -- |
+| MambaBDA-Small | 86.61 | 78.80 | 81.14 | 95.99| 62.82| 76.26| 88.37 | 52.11 |  130.80 | -- |
+| MambaBDA-Base | 87.38 | 78.84| 81.41 |95.94 |62.74| 76.46 | 88.58 | 87.76 | 195.43 | -- |
 
 
 
