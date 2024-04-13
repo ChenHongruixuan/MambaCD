@@ -15,10 +15,11 @@ Paper: ([arXiv 2404.03425](https://arxiv.org/pdf/2404.03425.pdf))
 </div>
 
 ##  Updates
-* **` Notice`**: This repository is being updated! The code and weights for the trained models will be released soon! We'd appreciate it if you could give this repo ⭐️ and stay tuned!
-* **` April. 12th, 2024`**: The new [[arXiv](https://arxiv.org/pdf/2404.03425.pdf)] version containing new accuracy and more experiments is now online! The weights for different models will be released soon!
-* **` April. 05th, 2024`**: The [[arXiv](https://arxiv.org/pdf/2404.03425.pdf)] version is online!
-* **` April. 05th, 2024`**: The models and training code for MambaBCD, MambaSCD, and MambaBDA have been organized and uploaded. You are welcome to use them!!
+* **` Notice🐍🐍`**: This repository is being updated! The code and weights for the trained models will be released soon! We'd appreciate it if you could give this repo ⭐️ and stay tuned!
+* **` April 13th, 2024`**: The retrained weights of [MambaBCD-Tiny](https://drive.google.com/file/d/1AtiXBBCoofi1e5g4STYUzBgJ1fYN4VhN/view?usp=drive_link) on the LEVIR-CD+ with F1 score of 88.03% are now avaiable. You are welcome to use it!!
+* **` April 12th, 2024`**: The new [[arXiv](https://arxiv.org/pdf/2404.03425.pdf)] version containing new accuracy and more experiments is now online! The weights for different models will be released soon!
+* **` April 05th, 2024`**: The [[arXiv](https://arxiv.org/pdf/2404.03425.pdf)] version is online!
+* **` April 05th, 2024`**: The models and training code for MambaBCD, MambaSCD, and MambaBDA have been organized and uploaded. You are welcome to use them!!
 
 ## Overview 
 
@@ -175,8 +176,8 @@ ${DATASET_ROOT}   # Dataset root directory, for example: /home/username/data/xBD
 ```
 
 
-### D. Model Training and Inference
-Before training and testing models, please enter into [**changedetection**] folder, which contains all the code for network definitions, training and testing. 
+### D. Model Training
+Before training models, please enter into [**changedetection**] folder, which contains all the code for network definitions, training and testing. 
 
 ```bash
 cd <project_path>/MambaCD/changedetection
@@ -235,11 +236,49 @@ python script/train_MambaSCD.py  --dataset 'xBD' \
                                  --cfg '<project_path>/MambaCD/classification/configs/vssm1/vssm_small_224.yaml' \
                                  --pretrained_weight_path '<project_path>/MambaCD/pretrained_weight/vssm_small_0229_ckpt_epoch_222.pth'
 ```
+### E. Inference Using Our Weights
+
+Before inference, please enter into [**changedetection**] folder. 
+```bash
+cd <project_path>/MambaCD/changedetection
+```
+
+***Binary change detection***
+
+The following commands show how to infer binary change maps using trained MambaBCD-Tiny on the LEVIR-CD+ dataset:
+```bash
+python script/infer_MambaBCD.py  --dataset 'LEVIR-CD+' \
+                                 --model_type 'MambaBCD_Tiny' \
+                                 --test_dataset_path '<dataset_path>/LEVIR-CD+/test' \
+                                 --test_data_list_path '<dataset_path>/LEVIR-CD+/test_list.txt' \
+                                 --cfg '<project_path>/MambaCD/changedetection/configs/vssm1/vssm_tiny_224_0229flex.yaml' \
+                                 --pretrained_weight_path '<project_path>/MambaCD/pretrained_weight/vssm_tiny_0230_ckpt_epoch_262.pth'
+                                 --resume '<saved_model_path>/MambaBCD_Tiny_LEVIRCD+_F1_0.8803.pth'
+```
+
 
 
 ## Main Results
 
+
 * *The encoders for all the above ChangeMamba models are the the VMamba architecture initialized with ImageNet pre-trained weight.*
+### **Binary Change Detection on LEVIR-CD+**
+| Method |  Overall Accuracy | F1 Score | IoU | Kappa Coefficient | Param | GFLOPs | ckpts
+| :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| [FC-EF](https://arxiv.org/abs/1810.08462) | 97.54   | 70.42 |  54.34  | 69.14  | 17.13 | 45.74 | -- |
+| [SNUNet](https://github.com/likyoo/Siam-NestedUNet) | 97.83 | 74.70  | 59.62  |  73.57  | 10.21  | 176.36 | -- |
+| [DSIFN](https://github.com/GeoZcx/A-deeply-supervised-image-fusion-network-for-change-detection-in-remote-sensing-images) | 98.70 | 84.07 | 72.52 | 83.39  |  35.73 | 329.03 | -- |
+| [SiamCRNN-101](https://github.com/ChenHongruixuan/SiamCRNN/tree/master/FCN_version) | 98.67 | 83.20 |  71.23  | 82.50 | 63.44 | 224.30  | -- |
+| [HANet](https://github.com/ChengxiHAN) |   98.22 | 77.56  |  63.34 |  76.63 | 2.61  | 70.68 | -- |
+| [CGNet](https://github.com/ChengxiHAN/CGNet-CD) |  98.63 |  83.68 |  71.94  |  82.97 | 33.68 | 329.58 | -- |
+| [TransUNetCD](https://ieeexplore.ieee.org/document/9761892) |  98.66 | 83.63 | 71.86 | 82.93 | 28.37 | 244.54 | -- |
+| [SwinSUNet](https://ieeexplore.ieee.org/document/9736956) |  98.92 | 85.60 | 74.82 | 84.98| 39.28 | 43.50 | -- |
+| [ChangeFormer V4](https://github.com/wgcban/ChangeFormer) |  98.01 | 75.87 | 61.12 | 74.83  | 33.61 | 852.53 | -- |
+| [BIT-101](https://github.com/justchenhao/BIT_CD) |  98.60 | 82.53 | 70.26 | 81.80 | 17.13 | 45.74 | -- |
+| MambaBCD-Tiny | 99.03 | 88.04 | 78.63 | 87.53 | 17.13 | 45.74 | [[GDrive](https://drive.google.com/file/d/1AtiXBBCoofi1e5g4STYUzBgJ1fYN4VhN/view?usp=drive_link)][[BaiduYun](https://pan.baidu.com/s/13dGC_J-wyIfoPwoPJ5Uc6Q?pwd=8ali)] |
+| MambaBCD-Small | 99.02 | 87.81 | 78.27 | 87.30 | 49.94 | 114.82 | -- |
+| MambaBCD-Base |  99.06 | 88.39 | 79.20 | 87.91 | 84.70 | 179.32 | -- |
+
 ### **Binary Change Detection on WHU-CD**
 | Method |  Overall Accuracy | F1 Score | IoU | Kappa Coefficient | Param | GFLOPs | ckpts
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
@@ -256,7 +295,6 @@ python script/train_MambaSCD.py  --dataset 'xBD' \
 | MambaBCD-Tiny |  99.52 | 93.33 | 87.49 | 93.08 | 17.13 | 45.74 | -- |
 | MambaBCD-Small |  99.57 | 94.06 | 88.79 | 93.84 | 49.94 | 114.82 | -- |
 | MambaBCD-Base |  99.58 | 94.19 | 89.02 | 93.98 | 84.70 | 179.32 | -- |
-
 
 ### **Semantic Change Detection on SECOND**
 | Method |  Overall Accuracy | F1 Score | IoU | SeK | Param | GFLOPs | ckpts
