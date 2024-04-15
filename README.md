@@ -197,7 +197,7 @@ python script/train_MambaBCD.py  --dataset 'SYSU' \
                                  --train_data_list_path '<dataset_path>/SYSU/train_list.txt' \
                                  --test_dataset_path '<dataset_path>/SYSU/test' \
                                  --test_data_list_path '<dataset_path>/SYSU/test_list.txt'
-                                 --cfg '<project_path>/MambaCD/classification/configs/vssm1/vssm_small_224.yaml' \
+                                 --cfg '<project_path>/MambaCD/changedetection/configs/vssm1/vssm_small_224.yaml' \
                                  --pretrained_weight_path '<project_path>/MambaCD/pretrained_weight/vssm_small_0229_ckpt_epoch_222.pth'
 ```
 
@@ -215,7 +215,7 @@ python script/train_MambaSCD.py  --dataset 'SECOND' \
                                  --train_data_list_path '<dataset_path>/SECOND/train_list.txt' \
                                  --test_dataset_path '<dataset_path>/SECOND/test' \
                                  --test_data_list_path '<dataset_path>/SECOND/test_list.txt'
-                                 --cfg '<project_path>/MambaCD/classification/configs/vssm1/vssm_small_224.yaml' \
+                                 --cfg '<project_path>/MambaCD/changedetection/configs/vssm1/vssm_small_224.yaml' \
                                  --pretrained_weight_path '<project_path>/MambaCD/pretrained_weight/vssm_small_0229_ckpt_epoch_222.pth'
 ```
 
@@ -233,7 +233,7 @@ python script/train_MambaSCD.py  --dataset 'xBD' \
                                  --train_data_list_path '<dataset_path>/xBD/train_list.txt' \
                                  --test_dataset_path '<dataset_path>/xBD/test' \
                                  --test_data_list_path '<dataset_path>/xBD/test_list.txt'
-                                 --cfg '<project_path>/MambaCD/classification/configs/vssm1/vssm_small_224.yaml' \
+                                 --cfg '<project_path>/MambaCD/changedetection/configs/vssm1/vssm_small_224.yaml' \
                                  --pretrained_weight_path '<project_path>/MambaCD/pretrained_weight/vssm_small_0229_ckpt_epoch_222.pth'
 ```
 ### E. Inference Using Our Weights
