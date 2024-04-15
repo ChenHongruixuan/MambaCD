@@ -16,7 +16,7 @@ Paper: ([arXiv 2404.03425](https://arxiv.org/pdf/2404.03425.pdf))
 
 ##  Updates
 * **` Notice🐍🐍`**: This repository is being updated! The code and weights for the trained models will be released soon! We'd appreciate it if you could give this repo ⭐️ and stay tuned!
-* **` April 13th, 2024`**: The retrained weights of [MambaBCD-Tiny](https://drive.google.com/file/d/1AtiXBBCoofi1e5g4STYUzBgJ1fYN4VhN/view?usp=drive_link) on the LEVIR-CD+ with F1 score of 88.03% are now avaiable. You are welcome to use it!!
+* **` April 15th, 2024`**: The retrained weights of MambaBCD-Small on the [SYSU](https://drive.google.com/file/d/1ZEPF6CvvFynL-yu_wpEYdpHMHl7tahpH/view?usp=drive_link) (F1 score ***83.36%***), Mamba-BCD-Tiny on the [LEVIR-CD+](https://drive.google.com/file/d/1AtiXBBCoofi1e5g4STYUzBgJ1fYN4VhN/view?usp=drive_link) (F1 score of ***88.03%***) and [WHU-CD](https://drive.google.com/file/d/1ZLKXhGKgnWoyS0X8g3HS45a3X1MP_QE6/view?usp=drive_link) with (F1 score ***94.09%***) are now avaiable. You are welcome to use them!!
 * **` April 12th, 2024`**: The new [[arXiv](https://arxiv.org/pdf/2404.03425.pdf)] version containing new accuracy and more experiments is now online! The weights for different models will be released soon!
 * **` April 05th, 2024`**: The [[arXiv](https://arxiv.org/pdf/2404.03425.pdf)] version is online!
 * **` April 05th, 2024`**: The models and training code for MambaBCD, MambaSCD, and MambaBDA have been organized and uploaded. You are welcome to use them!!
@@ -262,6 +262,24 @@ python script/infer_MambaBCD.py  --dataset 'LEVIR-CD+' \
 
 
 * *The encoders for all the above ChangeMamba models are the the VMamba architecture initialized with ImageNet pre-trained weight.*
+### **Binary Change Detection on SYSU**
+
+| Method |  Overall Accuracy | F1 Score | IoU | Kappa Coefficient | Param | GFLOPs | ckpts
+| :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| [FC-EF](https://arxiv.org/abs/1810.08462) | 87.49 | 73.14 | 57.66 | 64.99 | 17.13 | 45.74 | -- |
+| [SNUNet](https://github.com/likyoo/Siam-NestedUNet) | 97.83 | 74.70  | 59.62  |  73.57  | 10.21  | 176.36 | -- |
+| [DSIFN](https://github.com/GeoZcx/A-deeply-supervised-image-fusion-network-for-change-detection-in-remote-sensing-images) |  89.59 | 78.80 | 65.02 | 71.92  |  35.73 | 329.03 | -- |
+| [SiamCRNN-101](https://github.com/ChenHongruixuan/SiamCRNN/tree/master/FCN_version) | 90.77 | 80.44 | 67.28 | 74.40 | 63.44 | 224.30  | -- |
+| [HANet](https://github.com/ChengxiHAN) |    89.52 | 77.41 | 63.14 | 70.59 | 2.61  | 70.68 | -- |
+| [CGNet](https://github.com/ChengxiHAN/CGNet-CD) |  91.19 | 79.92 | 66.55 | 74.31 | 33.68 | 329.58 | -- |
+| [TransUNetCD](https://ieeexplore.ieee.org/document/9761892) |  90.88 | 80.09 | 66.79  | 74.18 | 66.79  | 74.18| -- |
+| [SwinSUNet](https://ieeexplore.ieee.org/document/9736956) |  91.51 | 81.58 | 68.89  | 76.06| 39.28 | 43.50 | -- |
+| [ChangeFormer V4](https://github.com/wgcban/ChangeFormer) | 90.12 | 78.81 | 65.03 | 72.37  | 33.61 | 852.53 | -- |
+| [BIT-101](https://github.com/justchenhao/BIT_CD) |  90.76 | 79.41 | 65.84 | 73.47 | 17.13 | 45.74 | -- |
+| MambaBCD-Tiny | 91.36 | 81.29 | 68.48	| 75.68 | 17.13 | 45.74 | -- |
+| MambaBCD-Small | 92.39  | 83.36 | 71.46 | 78.43 | 49.94 | 114.82 | [[GDrive](https://drive.google.com/file/d/1ZEPF6CvvFynL-yu_wpEYdpHMHl7tahpH/view?usp=drive_link)][[BaiduYun](https://pan.baidu.com/s/1f8iwuKCkElU9rc24_ZzXBw?pwd=46p5)] |
+| MambaBCD-Base |  92.30 | 83.11 | 71.10 | 78.13 | 84.70 | 179.32 | -- |
+
 ### **Binary Change Detection on LEVIR-CD+**
 | Method |  Overall Accuracy | F1 Score | IoU | Kappa Coefficient | Param | GFLOPs | ckpts
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
@@ -292,7 +310,7 @@ python script/infer_MambaBCD.py  --dataset 'LEVIR-CD+' \
 | [SwinSUNet](https://ieeexplore.ieee.org/document/9736956) |  99.50 | 93.04 | 87.00 | 92.78 | 39.28 | 43.50 | -- |
 | [ChangeFormer V4](https://github.com/wgcban/ChangeFormer) |  99.10 | 87.39 | 77.61 | 86.93 | 33.61 | 852.53 | -- |
 | [BIT-101](https://github.com/justchenhao/BIT_CD) |  99.27 | 90.04 | 81.88 | 89.66 | 17.13 | 45.74 | -- |
-| MambaBCD-Tiny |  99.52 | 93.33 | 87.49 | 93.08 | 17.13 | 45.74 | -- |
+| MambaBCD-Tiny |  99.57 | 94.09 | 88.84 | 93.87 | 17.13 | 45.74 | [[GDrive](https://drive.google.com/file/d/1ZLKXhGKgnWoyS0X8g3HS45a3X1MP_QE6/view?usp=drive_link)][[BaiduYun](https://pan.baidu.com/s/1DhTedGZdIC80y06tog1xbg?pwd=raf0)] |
 | MambaBCD-Small |  99.57 | 94.06 | 88.79 | 93.84 | 49.94 | 114.82 | -- |
 | MambaBCD-Base |  99.58 | 94.19 | 89.02 | 93.98 | 84.70 | 179.32 | -- |
 
@@ -343,6 +361,8 @@ If this code or dataset contributes to your research, please kindly consider cit
       primaryClass={eess.IV}
 }
 ```
+
+
 
 ## Acknowledgment
 This project is based on VMamba ([paper](https://arxiv.org/abs/2401.10166), [code](https://github.com/MzeroMiko/VMamba)), ScanNet ([paper](https://arxiv.org/abs/2212.05245), [code](https://github.com/ggsDing/SCanNet)), thanks for their excellent works.

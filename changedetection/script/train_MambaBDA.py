@@ -19,7 +19,6 @@ from MambaCD.changedetection.utils_func.metrics import Evaluator
 from MambaCD.changedetection.models.STMambaBDA import STMambaBDA
 
 import MambaCD.changedetection.utils_func.lovasz_loss as L
-from torch.optim.lr_scheduler import StepLR
 
 class Trainer(object):
     def __init__(self, args):
@@ -87,7 +86,6 @@ class Trainer(object):
         self.optim = optim.AdamW(self.deep_model.parameters(),
                                  lr=args.learning_rate,
                                  weight_decay=args.weight_decay)
-        self.scheduler = StepLR(self.optim, step_size=25000, gamma=0.5)
 
     def training(self):
         best_kc = 0.0
@@ -209,7 +207,7 @@ def main():
     parser.add_argument('--start_iter', type=int, default=0)
     parser.add_argument('--cuda', type=bool, default=True)
     parser.add_argument('--max_iters', type=int, default=240000)
-    parser.add_argument('--model_type', type=str, default='STMambaBCD_RNN')
+    parser.add_argument('--model_type', type=str, default='STMambaBCD')
     parser.add_argument('--model_param_path', type=str, default='../saved_models')
 
     parser.add_argument('--resume', type=str)

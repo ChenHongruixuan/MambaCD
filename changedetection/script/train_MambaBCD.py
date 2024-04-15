@@ -179,7 +179,7 @@ def main():
     parser.add_argument('--start_iter', type=int, default=0)
     parser.add_argument('--cuda', type=bool, default=True)
     parser.add_argument('--max_iters', type=int, default=240000)
-    parser.add_argument('--model_type', type=str, default='MambaBCD_FPN')
+    parser.add_argument('--model_type', type=str, default='MambaBCD')
     parser.add_argument('--model_param_path', type=str, default='../saved_models')
 
     parser.add_argument('--resume', type=str)
