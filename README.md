@@ -14,14 +14,14 @@ Paper: ([arXiv 2404.03425](https://arxiv.org/pdf/2404.03425.pdf))
 
 </div>
 
-##  Updates
+## 🛎️Updates
 * **` Notice🐍🐍`**: This repository is being updated! The code and weights for the trained models will be released soon! We'd appreciate it if you could give this repo ⭐️ and stay tuned!
 * **` April 15th, 2024`**: The retrained weights of MambaBCD-Small on the [SYSU](https://drive.google.com/file/d/1ZEPF6CvvFynL-yu_wpEYdpHMHl7tahpH/view?usp=drive_link) (F1 score ***83.36%***), Mamba-BCD-Tiny on the [LEVIR-CD+](https://drive.google.com/file/d/1AtiXBBCoofi1e5g4STYUzBgJ1fYN4VhN/view?usp=drive_link) (F1 score of ***88.03%***) and [WHU-CD](https://drive.google.com/file/d/1ZLKXhGKgnWoyS0X8g3HS45a3X1MP_QE6/view?usp=drive_link) with (F1 score ***94.09%***) are now avaiable. You are welcome to use them!!
 * **` April 12th, 2024`**: The new [[arXiv](https://arxiv.org/pdf/2404.03425.pdf)] version containing new accuracy and more experiments is now online! The weights for different models will be released soon!
 * **` April 05th, 2024`**: The [[arXiv](https://arxiv.org/pdf/2404.03425.pdf)] version is online!
 * **` April 05th, 2024`**: The models and training code for MambaBCD, MambaSCD, and MambaBDA have been organized and uploaded. You are welcome to use them!!
 
-## Overview 
+## 🔭Overview
 
 * [**ChangeMamba**](https://arxiv.org/pdf/2404.03425.pdf) serves as a strong benchmark for change detection tasks, including binary change detection (MambaBCD), semantic change detection (MambaSCD), and building damage assessment (MambaBDA). 
 
@@ -36,7 +36,7 @@ Paper: ([arXiv 2404.03425](https://arxiv.org/pdf/2404.03425.pdf))
 </p>
 
 
-## Let's Get Started!
+## 🗝️Let's Get Started!
 ### A. Installation
 The repo is based on the [VMama repo](https://github.com/MzeroMiko/VMamba), thus you need to install it first. The following installation sequence is taken from the VMamba repo. Also, note that the code in this repo runs under Linux system. We have not tested whether it works under other OS.
 
@@ -258,10 +258,14 @@ python script/infer_MambaBCD.py  --dataset 'LEVIR-CD+' \
 
 
 
-## Main Results
+## ⚗️Main Results
 
 
 * *The encoders for all the above ChangeMamba models are the the VMamba architecture initialized with ImageNet pre-trained weight.*
+
+* *Some of comparison methods are not open-sourced. Their accuracy and number of parameters are obtained based on our own implementation.*
+
+
 ### **Binary Change Detection on SYSU**
 
 | Method |  Overall Accuracy | F1 Score | IoU | Kappa Coefficient | Param | GFLOPs | ckpts
@@ -337,8 +341,8 @@ python script/infer_MambaBCD.py  --dataset 'LEVIR-CD+' \
 | Method |  F1_loc | F1_clf  | F1_oa | F1_no | F1_minor | F1_major | F1_des | Param | GFLOPs | ckpts
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |  :---: | :---: | :---: | 
 | [xView2 Baseline](https://github.com/DIUx-xView/xView2_baseline) | 80.47 | 3.42 | 26.54 | 66.31 | 14.35 | 0.94 | 46.57 | -- | -- | -- |
-| Siamese-UNet | 85.92  | 65.58  | 71.68  | 86.74 |  50.02  | 64.43 |  71.68 | -- | -- | -- |
-| [MaskRCNN](https://arxiv.org/abs/2004.05525) |  83.60 | 70.02 | 74.10 | 90.60 | 49.30 | 72.20 | 83.70 | -- | -- | -- |
+| [Siamese-UNet](https://github.com/vdurnov/xview2_1st_place_solution) | 85.92  | 65.58  | 71.68  | 86.74 |  50.02  | 64.43 |  71.68 | -- | -- | -- |
+| [MTF](https://github.com/ethanweber/xview2) |  83.60 | 70.02 | 74.10 | 90.60 | 49.30 | 72.20 | 83.70 | -- | -- | -- |
 | [ChangeOS-101](https://github.com/Z-Zheng/ChangeOS) |  85.69 | 71.14 | 75.50 | 89.11 | 53.11 | 72.44 | 80.79 | -- | -- | -- |
 | [ChangeOS-101-PPS](https://github.com/Z-Zheng/ChangeOS) |  85.69 | 75.44 | 78.52 | 92.81 | 59.38 | 74.65 | 83.29 | -- | -- | -- |
 | [DamFormer](https://arxiv.org/abs/2201.10953) |  86.86 |72.81 |77.02 |89.86 |56.78| 72.56 |80.51 | -- | -- | -- |
@@ -348,7 +352,7 @@ python script/infer_MambaBCD.py  --dataset 'LEVIR-CD+' \
 
 
 
-## Reference
+## 📜Reference
 
 If this code or dataset contributes to your research, please kindly consider citing our paper and give this repo ⭐️ :)
 ```
@@ -364,8 +368,8 @@ If this code or dataset contributes to your research, please kindly consider cit
 
 
 
-## Acknowledgment
-This project is based on VMamba ([paper](https://arxiv.org/abs/2401.10166), [code](https://github.com/MzeroMiko/VMamba)), ScanNet ([paper](https://arxiv.org/abs/2212.05245), [code](https://github.com/ggsDing/SCanNet)), thanks for their excellent works.
+## 🤝Acknowledgments
+This project is based on VMamba ([paper](https://arxiv.org/abs/2401.10166), [code](https://github.com/MzeroMiko/VMamba)), ScanNet ([paper](https://arxiv.org/abs/2212.05245), [code](https://github.com/ggsDing/SCanNet)). Thanks for their excellent works!!
 
-## Q & A
+## 🙋Q & A
 ***For any questions, please feel free to [contact us.](mailto:Qschrx@gmail.com)***
