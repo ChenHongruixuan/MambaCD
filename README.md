@@ -15,7 +15,8 @@ Paper: ([arXiv 2404.03425](https://arxiv.org/pdf/2404.03425.pdf))
 </div>
 
 ## 🛎️Updates
-* **` Notice🐍🐍`**: This repository is being updated! The code and weights for the trained models will be released soon! We'd appreciate it if you could give this repo ⭐️ and stay tuned!
+* **` Notice🐍🐍`**: The code of this repo has been updated! Some of the retrained model weights have been uploaded for usage! We'd appreciate it if you could give this repo ⭐️ and stay tuned!
+* **` April 17th, 2024`**: The retrained weight of MambaBDA-Tiny on the [xBD](https://drive.google.com/file/d/11UrVyntxPDFf1Qt0TlDORoh4eoM7WJsS/view?usp=drive_link) (ofF1 score ***81.11%***) is now avaiable. You are welcome to use it!!
 * **` April 15th, 2024`**: The retrained weights of MambaBCD-Small on the [SYSU](https://drive.google.com/file/d/1ZEPF6CvvFynL-yu_wpEYdpHMHl7tahpH/view?usp=drive_link) (F1 score ***83.36%***), Mamba-BCD-Tiny on the [LEVIR-CD+](https://drive.google.com/file/d/1AtiXBBCoofi1e5g4STYUzBgJ1fYN4VhN/view?usp=drive_link) (F1 score of ***88.03%***) and [WHU-CD](https://drive.google.com/file/d/1ZLKXhGKgnWoyS0X8g3HS45a3X1MP_QE6/view?usp=drive_link) with (F1 score ***94.09%***) are now avaiable. You are welcome to use them!!
 * **` April 12th, 2024`**: The new [[arXiv](https://arxiv.org/pdf/2404.03425.pdf)] version containing new accuracy and more experiments is now online! The weights for different models will be released soon!
 * **` April 05th, 2024`**: The [[arXiv](https://arxiv.org/pdf/2404.03425.pdf)] version is online!
@@ -346,10 +347,9 @@ python script/infer_MambaBCD.py  --dataset 'LEVIR-CD+' \
 | [ChangeOS-101](https://github.com/Z-Zheng/ChangeOS) |  85.69 | 71.14 | 75.50 | 89.11 | 53.11 | 72.44 | 80.79 | -- | -- | -- |
 | [ChangeOS-101-PPS](https://github.com/Z-Zheng/ChangeOS) |  85.69 | 75.44 | 78.52 | 92.81 | 59.38 | 74.65 | 83.29 | -- | -- | -- |
 | [DamFormer](https://arxiv.org/abs/2201.10953) |  86.86 |72.81 |77.02 |89.86 |56.78| 72.56 |80.51 | -- | -- | -- |
-| MambaBDA-Tiny |  84.76 | 77.50  | 79.68  | 95.33  | 60.15 | 75.94  | 88.27 | 19.74 | 59.57 | -- |
+| MambaBDA-Tiny |  87.53 | 78.35  | 81.11  | 96.18  | 61.71 | 76.49  | 87.89 | 19.74 | 59.57 | [[GDrive]](https://drive.google.com/file/d/11UrVyntxPDFf1Qt0TlDORoh4eoM7WJsS/view?usp=drive_link)[[BaiduYun]](https://pan.baidu.com/s/19r9lXXuwkeepfPTpj77IFg?pwd=u5a9) |
 | MambaBDA-Small | 86.61 | 78.80 | 81.14 | 95.99| 62.82| 76.26| 88.37 | 52.11 |  130.80 | -- |
 | MambaBDA-Base | 87.38 | 78.84| 81.41 |95.94 |62.74| 76.46 | 88.58 | 87.76 | 195.43 | -- |
-
 
 
 ## 📜Reference
@@ -369,7 +369,7 @@ If this code or dataset contributes to your research, please kindly consider cit
 
 
 ## 🤝Acknowledgments
-This project is based on VMamba ([paper](https://arxiv.org/abs/2401.10166), [code](https://github.com/MzeroMiko/VMamba)), ScanNet ([paper](https://arxiv.org/abs/2212.05245), [code](https://github.com/ggsDing/SCanNet)). Thanks for their excellent works!!
+This project is based on VMamba ([paper](https://arxiv.org/abs/2401.10166), [code](https://github.com/MzeroMiko/VMamba)), ScanNet ([paper](https://arxiv.org/abs/2212.05245), [code](https://github.com/ggsDing/SCanNet)), xView2 Challenge ([paper](https://openaccess.thecvf.com/content_CVPRW_2019/papers/cv4gc/Gupta_Creating_xBD_A_Dataset_for_Assessing_Building_Damage_from_Satellite_CVPRW_2019_paper.pdf), [code](https://github.com/DIUx-xView/xView2_baseline)). Thanks for their excellent works!!
 
 ## 🙋Q & A
 ***For any questions, please feel free to [contact us.](mailto:Qschrx@gmail.com)***
