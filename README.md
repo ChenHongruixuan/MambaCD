@@ -10,7 +10,9 @@
 
 <sup>#</sup> Equal contribution, <sup>*</sup> Corresponding author
 
-Paper: ([arXiv 2404.03425](https://arxiv.org/pdf/2404.03425.pdf)) 
+**Paper: ([arXiv 2404.03425](https://arxiv.org/pdf/2404.03425.pdf))** 
+
+[**Overview**](#overview) | [**Get Started**](#lets-get-started) | [**Main Results**](#main-results) | [**Reference**](#reference) | [**Q & A**](#q--a)
 
 </div>
 
