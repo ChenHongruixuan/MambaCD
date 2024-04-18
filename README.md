@@ -41,7 +41,7 @@
 
 
 ## 🗝️Let's Get Started!
-### A. Installation
+### `A. Installation`
 The repo is based on the [VMama repo](https://github.com/MzeroMiko/VMamba), thus you need to install it first. The following installation sequence is taken from the VMamba repo. Also, note that the code in this repo runs under Linux system. We have not tested whether it works under other OS.
 
 **Step 1: Clone the repository:**
@@ -72,19 +72,19 @@ cd kernels/selective_scan && pip install .
 ```
 
 
-***Dependencies for `Detection` and `Segmentation` (optional in VMamba)***
+***Dependencies for "Detection" and "Segmentation" (optional in VMamba)***
 
 ```bash
 pip install mmengine==0.10.1 mmcv==2.1.0 opencv-python-headless ftfy regex
 pip install mmdet==3.3.0 mmsegmentation==1.2.2 mmpretrain==1.2.0
 ```
-### B. Download Pretrained Weight
+### `B. Download Pretrained Weight`
 Also, please download the pretrained weights of [VMamba-Tiny](https://github.com/MzeroMiko/VMamba/releases/download/%2320240316/vssm_tiny_0230_ckpt_epoch_262.pth), [VMamba-Small](https://github.com/MzeroMiko/VMamba/releases/download/%2320240316/vssm_small_0229_ckpt_epoch_222.pth), and [VMamba-Base](https://github.com/MzeroMiko/VMamba/releases/download/%2320240316/vssm_base_0229_ckpt_epoch_237.pth) and put them under 
 ```bash
 project_path/MambaCD/pretrained_weight/
 ```
 
-### C. Data Preparation
+### `C. Data Preparation`
 ***Binary change detection***
 
 The three datasets [SYSU](https://github.com/liumency/SYSU-CD), [LEVIR-CD+](https://chenhao.in/LEVIR/) and [WHU-CD](https://study.rsgis.whu.edu.cn/pages/download/building_dataset.html) are used for binary change detection experiments. Please download them and make them have the following folder/file structure:
@@ -180,7 +180,7 @@ ${DATASET_ROOT}   # Dataset root directory, for example: /home/username/data/xBD
 ```
 
 
-### D. Model Training
+### `D. Model Training`
 Before training models, please enter into [**changedetection**] folder, which contains all the code for network definitions, training and testing. 
 
 ```bash
@@ -240,9 +240,9 @@ python script/train_MambaSCD.py  --dataset 'xBD' \
                                  --cfg '<project_path>/MambaCD/changedetection/configs/vssm1/vssm_small_224.yaml' \
                                  --pretrained_weight_path '<project_path>/MambaCD/pretrained_weight/vssm_small_0229_ckpt_epoch_222.pth'
 ```
-### E. Inference Using Our Weights
+### `E. Inference Using Our Weights`
 
-Before inference, please enter into [**changedetection**] folder. 
+Before inference, please enter into [`changedetection`] folder. 
 ```bash
 cd <project_path>/MambaCD/changedetection
 ```
@@ -270,7 +270,7 @@ python script/infer_MambaBCD.py  --dataset 'LEVIR-CD+' \
 * *Some of comparison methods are not open-sourced. Their accuracy and number of parameters are obtained based on our own implementation.*
 
 
-### **Binary Change Detection on SYSU**
+### `A. Binary Change Detection on SYSU`
 
 | Method |  Overall Accuracy | F1 Score | IoU | Kappa Coefficient | Param | GFLOPs | ckpts
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
@@ -288,7 +288,7 @@ python script/infer_MambaBCD.py  --dataset 'LEVIR-CD+' \
 | MambaBCD-Small | 92.39  | 83.36 | 71.46 | 78.43 | 49.94 | 114.82 | [[GDrive](https://drive.google.com/file/d/1ZEPF6CvvFynL-yu_wpEYdpHMHl7tahpH/view?usp=drive_link)][[BaiduYun](https://pan.baidu.com/s/1f8iwuKCkElU9rc24_ZzXBw?pwd=46p5)] |
 | MambaBCD-Base |  92.30 | 83.11 | 71.10 | 78.13 | 84.70 | 179.32 | -- |
 
-### **Binary Change Detection on LEVIR-CD+**
+### `B. Binary Change Detection on LEVIR-CD+`
 | Method |  Overall Accuracy | F1 Score | IoU | Kappa Coefficient | Param | GFLOPs | ckpts
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
 | [FC-EF](https://arxiv.org/abs/1810.08462) | 97.54   | 70.42 |  54.34  | 69.14  | 17.13 | 45.74 | -- |
@@ -305,7 +305,7 @@ python script/infer_MambaBCD.py  --dataset 'LEVIR-CD+' \
 | MambaBCD-Small | 99.02 | 87.81 | 78.27 | 87.30 | 49.94 | 114.82 | -- |
 | MambaBCD-Base |  99.06 | 88.39 | 79.20 | 87.91 | 84.70 | 179.32 | -- |
 
-### **Binary Change Detection on WHU-CD**
+### `C. Binary Change Detection on WHU-CD`
 | Method |  Overall Accuracy | F1 Score | IoU | Kappa Coefficient | Param | GFLOPs | ckpts
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
 | [FC-EF](https://arxiv.org/abs/1810.08462) | 98.87  | 84.89  | 73.74  | 84.30 | 17.13 | 45.74 | -- |
@@ -323,7 +323,7 @@ python script/infer_MambaBCD.py  --dataset 'LEVIR-CD+' \
 | MambaBCD-Base |  99.58 | 94.19 | 89.02 | 93.98 | 84.70 | 179.32 | [[GDrive]](https://drive.google.com/file/d/1K7aSuT3os7LR9rUvoyVNP-x0hWKZocrn/view?usp=drive_link)][[BaiduYun](https://pan.baidu.com/s/1o6Z6ecIJ59K9eB2KqNMD9w?pwd=4mqd)] |
 
 
-### **Semantic Change Detection on SECOND**
+### `D. Semantic Change Detection on SECOND`
 | Method |  Overall Accuracy | F1 Score | IoU | SeK | Param | GFLOPs | ckpts
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
 | [HRSCD-S1](https://www.sciencedirect.com/science/article/abs/pii/S1077314219300992) | 45.77 | 38.44 | 62.72   | 5.90   | 3.36   | 8.02 | -- |
@@ -342,7 +342,7 @@ python script/infer_MambaBCD.py  --dataset 'LEVIR-CD+' \
 
 
 
-### **Building Damage Assessment on xBD**
+### `E. Building Damage Assessment on xBD`
 | Method |  F1_loc | F1_clf  | F1_oa |  Param | GFLOPs | ckpts
 | :---: | :---: | :---: |  :---: |  :---: | :---: | :---: | 
 | [xView2 Baseline](https://github.com/DIUx-xView/xView2_baseline) | 80.47 | 3.42 | 26.54 | -- | -- | -- |
