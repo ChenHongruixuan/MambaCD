@@ -18,6 +18,7 @@
 
 ## 🛎️Updates
 * **` Notice🐍🐍`**: The code of this repo has been updated! Some of the retrained model weights have been uploaded for usage! We'd appreciate it if you could give this repo ⭐️ and stay tuned!
+* **` April 18th, 2024`**: The retrained weight of MambaBCD-Base on the [WHU-CD](https://drive.google.com/file/d/1K7aSuT3os7LR9rUvoyVNP-x0hWKZocrn/view?usp=drive_link) (F1 score ***94.19%***) is now avaiable. You are welcome to use it!!
 * **` April 17th, 2024`**: The retrained weight of MambaBDA-Tiny on the [xBD](https://drive.google.com/file/d/11UrVyntxPDFf1Qt0TlDORoh4eoM7WJsS/view?usp=drive_link) (oaF1 score ***81.11%***) is now avaiable. You are welcome to use it!!
 * **` April 15th, 2024`**: The retrained weights of MambaBCD-Small on the [SYSU](https://drive.google.com/file/d/1ZEPF6CvvFynL-yu_wpEYdpHMHl7tahpH/view?usp=drive_link) (F1 score ***83.36%***), Mamba-BCD-Tiny on the [LEVIR-CD+](https://drive.google.com/file/d/1AtiXBBCoofi1e5g4STYUzBgJ1fYN4VhN/view?usp=drive_link) (F1 score of ***88.03%***) and [WHU-CD](https://drive.google.com/file/d/1ZLKXhGKgnWoyS0X8g3HS45a3X1MP_QE6/view?usp=drive_link) with (F1 score ***94.09%***) are now avaiable. You are welcome to use them!!
 * **` April 12th, 2024`**: The new [[arXiv](https://arxiv.org/pdf/2404.03425.pdf)] version containing new accuracy and more experiments is now online! The weights for different models will be released soon!
@@ -319,7 +320,8 @@ python script/infer_MambaBCD.py  --dataset 'LEVIR-CD+' \
 | [BIT-101](https://github.com/justchenhao/BIT_CD) |  99.27 | 90.04 | 81.88 | 89.66 | 17.13 | 45.74 | -- |
 | MambaBCD-Tiny |  99.57 | 94.09 | 88.84 | 93.87 | 17.13 | 45.74 | [[GDrive](https://drive.google.com/file/d/1ZLKXhGKgnWoyS0X8g3HS45a3X1MP_QE6/view?usp=drive_link)][[BaiduYun](https://pan.baidu.com/s/1DhTedGZdIC80y06tog1xbg?pwd=raf0)] |
 | MambaBCD-Small |  99.57 | 94.06 | 88.79 | 93.84 | 49.94 | 114.82 | -- |
-| MambaBCD-Base |  99.58 | 94.19 | 89.02 | 93.98 | 84.70 | 179.32 | -- |
+| MambaBCD-Base |  99.58 | 94.19 | 89.02 | 93.98 | 84.70 | 179.32 | [[GDrive]](https://drive.google.com/file/d/1K7aSuT3os7LR9rUvoyVNP-x0hWKZocrn/view?usp=drive_link)][[BaiduYun](https://pan.baidu.com/s/1o6Z6ecIJ59K9eB2KqNMD9w?pwd=4mqd)] |
+
 
 ### **Semantic Change Detection on SECOND**
 | Method |  Overall Accuracy | F1 Score | IoU | SeK | Param | GFLOPs | ckpts
@@ -341,17 +343,17 @@ python script/infer_MambaBCD.py  --dataset 'LEVIR-CD+' \
 
 
 ### **Building Damage Assessment on xBD**
-| Method |  F1_loc | F1_clf  | F1_oa | F1_no | F1_minor | F1_major | F1_des | Param | GFLOPs | ckpts
-| :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |  :---: | :---: | :---: | 
-| [xView2 Baseline](https://github.com/DIUx-xView/xView2_baseline) | 80.47 | 3.42 | 26.54 | 66.31 | 14.35 | 0.94 | 46.57 | -- | -- | -- |
-| [Siamese-UNet](https://github.com/vdurnov/xview2_1st_place_solution) | 85.92  | 65.58  | 71.68  | 86.74 |  50.02  | 64.43 |  71.68 | -- | -- | -- |
-| [MTF](https://github.com/ethanweber/xview2) |  83.60 | 70.02 | 74.10 | 90.60 | 49.30 | 72.20 | 83.70 | -- | -- | -- |
-| [ChangeOS-101](https://github.com/Z-Zheng/ChangeOS) |  85.69 | 71.14 | 75.50 | 89.11 | 53.11 | 72.44 | 80.79 | -- | -- | -- |
-| [ChangeOS-101-PPS](https://github.com/Z-Zheng/ChangeOS) |  85.69 | 75.44 | 78.52 | 92.81 | 59.38 | 74.65 | 83.29 | -- | -- | -- |
-| [DamFormer](https://arxiv.org/abs/2201.10953) |  86.86 |72.81 |77.02 |89.86 |56.78| 72.56 |80.51 | -- | -- | -- |
-| MambaBDA-Tiny |  87.53 | 78.35  | 81.11  | 96.18  | 61.71 | 76.49  | 87.89 | 19.74 | 59.57 | [[GDrive](https://drive.google.com/file/d/11UrVyntxPDFf1Qt0TlDORoh4eoM7WJsS/view?usp=drive_link)][[BaiduYun](https://pan.baidu.com/s/19r9lXXuwkeepfPTpj77IFg?pwd=u5a9)] |
-| MambaBDA-Small | 86.61 | 78.80 | 81.14 | 95.99| 62.82| 76.26| 88.37 | 52.11 |  130.80 | -- |
-| MambaBDA-Base | 87.38 | 78.84| 81.41 |95.94 |62.74| 76.46 | 88.58 | 87.76 | 195.43 | -- |
+| Method |  F1_loc | F1_clf  | F1_oa |  Param | GFLOPs | ckpts
+| :---: | :---: | :---: |  :---: |  :---: | :---: | :---: | 
+| [xView2 Baseline](https://github.com/DIUx-xView/xView2_baseline) | 80.47 | 3.42 | 26.54 | -- | -- | -- |
+| [Siamese-UNet](https://github.com/vdurnov/xview2_1st_place_solution) | 85.92  | 65.58  | 71.68  |  -- | -- | -- |
+| [MTF](https://github.com/ethanweber/xview2) |  83.60 | 70.02 | 74.10 | -- | -- | -- |
+| [ChangeOS-101](https://github.com/Z-Zheng/ChangeOS) |  85.69 | 71.14 | 75.50 | -- | -- | -- |
+| [ChangeOS-101-PPS](https://github.com/Z-Zheng/ChangeOS) |  85.69 | 75.44 | 78.52  | -- | -- | -- |
+| [DamFormer](https://arxiv.org/abs/2201.10953) |  86.86 |72.81 |77.02| -- | -- | -- |
+| MambaBDA-Tiny |  87.53 | 78.35  | 81.11  | 19.74 | 59.57 | [[GDrive](https://drive.google.com/file/d/11UrVyntxPDFf1Qt0TlDORoh4eoM7WJsS/view?usp=drive_link)][[BaiduYun](https://pan.baidu.com/s/19r9lXXuwkeepfPTpj77IFg?pwd=u5a9)] |
+| MambaBDA-Small | 86.61 | 78.80 | 81.14 | 52.11 |  130.80 | -- |
+| MambaBDA-Base | 87.38 | 78.84| 81.41 | 87.76 | 195.43 | -- |
 
 
 ## 📜Reference
