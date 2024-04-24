@@ -19,7 +19,6 @@
 ## 🛎️Updates
 * **` Notice🐍🐍`**: The code of this repo has been updated! Some of the retrained model weights have been uploaded for usage! We'd appreciate it if you could give this repo ⭐️ and stay tuned!
 * **` April 18th, 2024`**: The retrained weight of MambaBCD-Base on the [WHU-CD](https://drive.google.com/file/d/1K7aSuT3os7LR9rUvoyVNP-x0hWKZocrn/view?usp=drive_link) (F1 score ***94.19%***) is now avaiable. You are welcome to use it!!
-* **` April 17th, 2024`**: The retrained weight of MambaBDA-Tiny on the [xBD](https://drive.google.com/file/d/11UrVyntxPDFf1Qt0TlDORoh4eoM7WJsS/view?usp=drive_link) (oaF1 score ***81.11%***) is now avaiable. You are welcome to use it!!
 * **` April 15th, 2024`**: The retrained weights of MambaBCD-Small on the [SYSU](https://drive.google.com/file/d/1ZEPF6CvvFynL-yu_wpEYdpHMHl7tahpH/view?usp=drive_link) (F1 score ***83.36%***), Mamba-BCD-Tiny on the [LEVIR-CD+](https://drive.google.com/file/d/1AtiXBBCoofi1e5g4STYUzBgJ1fYN4VhN/view?usp=drive_link) (F1 score of ***88.03%***) and [WHU-CD](https://drive.google.com/file/d/1ZLKXhGKgnWoyS0X8g3HS45a3X1MP_QE6/view?usp=drive_link) with (F1 score ***94.09%***) are now avaiable. You are welcome to use them!!
 * **` April 12th, 2024`**: The new [[arXiv](https://arxiv.org/pdf/2404.03425.pdf)] version containing new accuracy and more experiments is now online! The weights for different models will be released soon!
 * **` April 05th, 2024`**: The [[arXiv](https://arxiv.org/pdf/2404.03425.pdf)] version is online!
@@ -161,9 +160,9 @@ ${DATASET_ROOT}   # Dataset root directory, for example: /home/username/data/xBD
 │   │   ├──guatemala-volcano_00000000_post_disaster.png
 │   │   ...
 │   │
-│   └── masks
-│       ├──guatemala-volcano_00000003_pre_disaster.png
-│       ├──guatemala-volcano_00000003_post_disaster.png
+│   └── targets
+│       ├──guatemala-volcano_00000003_pre_disaster_target.png
+│       ├──guatemala-volcano_00000003_post_disaster_target.png
 │       ... 
 │   
 ├── test
@@ -351,7 +350,7 @@ python script/infer_MambaBCD.py  --dataset 'LEVIR-CD+' \
 | [ChangeOS-101](https://github.com/Z-Zheng/ChangeOS) |  85.69 | 71.14 | 75.50 | -- | -- | -- |
 | [ChangeOS-101-PPS](https://github.com/Z-Zheng/ChangeOS) |  85.69 | 75.44 | 78.52  | -- | -- | -- |
 | [DamFormer](https://arxiv.org/abs/2201.10953) |  86.86 |72.81 |77.02| -- | -- | -- |
-| MambaBDA-Tiny |  87.53 | 78.35  | 81.11  | 19.74 | 59.57 | [[GDrive](https://drive.google.com/file/d/11UrVyntxPDFf1Qt0TlDORoh4eoM7WJsS/view?usp=drive_link)][[BaiduYun](https://pan.baidu.com/s/19r9lXXuwkeepfPTpj77IFg?pwd=u5a9)] |
+| MambaBDA-Tiny |  87.53 | 78.35  | 81.11  | 19.74 | 59.57 | -- |
 | MambaBDA-Small | 86.61 | 78.80 | 81.14 | 52.11 |  130.80 | -- |
 | MambaBDA-Base | 87.38 | 78.84| 81.41 | 87.76 | 195.43 | -- |
 
