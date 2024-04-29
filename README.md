@@ -259,6 +259,17 @@ python script/infer_MambaBCD.py  --dataset 'LEVIR-CD+' \
                                  --resume '<saved_model_path>/MambaBCD_Tiny_LEVIRCD+_F1_0.8803.pth'
 ```
 
+***Semantic change detection***
+The following commands show how to infer semantic change maps using trained MambaSCD-Tiny on the SECOND dataset:
+```bash
+python script/infer_MambaBCD.py  --dataset 'SECOND'  \
+                                 --model_type 'MambaSCD_Tiny' \
+                                 --test_dataset_path '<dataset_path>/SECOND/test' \
+                                 --test_data_list_path '<dataset_path>/SECOND/test_list.txt' \
+                                 --cfg '<project_path>/MambaCD/changedetection/configs/vssm1/vssm_tiny_224_0229flex.yaml' \
+                                 --pretrained_weight_path '<project_path>/MambaCD/pretrained_weight/vssm_tiny_0230_ckpt_epoch_262.pth'
+                                 --resume '<saved_model_path>/[your_trained_model].pth'
+```
 
 
 ## ⚗️Main Results

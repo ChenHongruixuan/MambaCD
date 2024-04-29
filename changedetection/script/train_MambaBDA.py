@@ -122,7 +122,6 @@ class Trainer(object):
             final_loss.backward()
 
             self.optim.step()
-            self.scheduler.step()
 
             if (itera + 1) % 10 == 0:
                 print(f'iter is {itera + 1}, localization loss is {ce_loss_loc + lovasz_loss_loc}, classification loss is {ce_loss_clf + lovasz_loss_clf}')
