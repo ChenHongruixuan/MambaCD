@@ -246,9 +246,13 @@ Before inference, please enter into [`changedetection`] folder.
 cd <project_path>/MambaCD/changedetection
 ```
 
+
 ***Binary change detection***
 
 The following commands show how to infer binary change maps using trained MambaBCD-Tiny on the LEVIR-CD+ dataset:
+
+* **` Kind reminder`**: Please use [--resume] to load our trained model, instead of using [--pretrained_weight_path]. 
+
 ```bash
 python script/infer_MambaBCD.py  --dataset 'LEVIR-CD+' \
                                  --model_type 'MambaBCD_Tiny' \
