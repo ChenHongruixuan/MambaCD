@@ -12,7 +12,7 @@
 
 **Paper: ([arXiv 2404.03425](https://arxiv.org/pdf/2404.03425.pdf))** 
 
-[**Overview**](#overview) | [**Get Started**](#%EF%B8%8Flets-get-started) | [**Main Results**](#%EF%B8%8Fmain-results) | [**Reference**](#reference) | [**Q & A**](#q--a) | [**简体中文版**](./README_zh-CN.md)
+[**Overview**](#overview) | [**Get Started**](#%EF%B8%8Flets-get-started) | [**Main Results**](#%EF%B8%8Fresults-taken-away) | [**Reference**](#reference) | [**Q & A**](#q--a) | [**简体中文版**](./README_zh-CN.md)
 
 </div>
 
