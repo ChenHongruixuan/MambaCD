@@ -6,65 +6,65 @@
 
 [Hongruixuan Chen](https://scholar.google.ch/citations?user=XOk4Cf0AAAAJ&hl=zh-CN&oi=ao)<sup>1 #</sup>, [Jian Song](https://scholar.google.ch/citations?user=CgcMFJsAAAAJ&hl=zh-CN)<sup>1,2 #</sup>, [Chengxi Han](https://chengxihan.github.io/)<sup>3</sup>, [Junshi Xia](https://scholar.google.com/citations?user=n1aKdTkAAAAJ&hl=en)<sup>2</sup>, [Naoto Yokoya](https://scholar.google.co.jp/citations?user=DJ2KOn8AAAAJ&hl=en)<sup>1,2 *</sup>
 
-<sup>1</sup> The University of Tokyo, <sup>2</sup> RIKEN AIP,  <sup>3</sup> Wuhan University.
+<sup>1</sup> 东京大学, <sup>2</sup> 理化学研究所先进智能研究中心,  <sup>3</sup> 武汉大学.
 
 <sup>#</sup> Equal contribution, <sup>*</sup> Corresponding author
 
-**Paper: ([arXiv 2404.03425](https://arxiv.org/pdf/2404.03425.pdf))** 
+**论文: ([arXiv 2404.03425](https://arxiv.org/pdf/2404.03425.pdf))** 
 
-[**Overview**](#overview) | [**Get Started**](#%EF%B8%8Flets-get-started) | [**Main Results**](#%EF%B8%8Fmain-results) | [**Reference**](#reference) | [**Q & A**](#q--a) | [**简体中文版**](./README_zh-CN.md)
+[**简介**](#🔭简介) | [**开始使用**](#🗝️开始使用) | [**结果下载**](#⚗️结果下载) | [**引用**](📜引用) | [**联系我们**](#🙋联系我们) | [**English Version**](./README.md)
 
 </div>
 
-## 🛎️Updates
-* **` Notice🐍🐍`**: The code of this repo has been updated! Some of the retrained model weights have been uploaded for usage! We'd appreciate it if you could give this repo a ⭐️**star**⭐️ and stay tuned!
-* **` June 08th, 2024`**: Chinese version of the README file is avaiable!!
-* **` April 18th, 2024`**: The retrained weight of MambaBCD-Base on the [WHU-CD](https://drive.google.com/file/d/1K7aSuT3os7LR9rUvoyVNP-x0hWKZocrn/view?usp=drive_link) (F1 score ***94.19%***) is now avaiable. You are welcome to use it!!
-* **` April 15th, 2024`**: The retrained weights of MambaBCD-Small on the [SYSU](https://drive.google.com/file/d/1ZEPF6CvvFynL-yu_wpEYdpHMHl7tahpH/view?usp=drive_link) (F1 score ***83.36%***), Mamba-BCD-Tiny on the [LEVIR-CD+](https://drive.google.com/file/d/1AtiXBBCoofi1e5g4STYUzBgJ1fYN4VhN/view?usp=drive_link) (F1 score of ***88.03%***) and [WHU-CD](https://drive.google.com/file/d/1ZLKXhGKgnWoyS0X8g3HS45a3X1MP_QE6/view?usp=drive_link) with (F1 score ***94.09%***) are now avaiable. You are welcome to use them!!
-* **` April 12th, 2024`**: The new [[arXiv](https://arxiv.org/pdf/2404.03425.pdf)] version containing new accuracy and more experiments is now online! The weights for different models will be released soon!
-* **` April 05th, 2024`**: The [[arXiv](https://arxiv.org/pdf/2404.03425.pdf)] version is online!
-* **` April 05th, 2024`**: The models and training code for MambaBCD, MambaSCD, and MambaBDA have been organized and uploaded. You are welcome to use them!!
+## 🛎️更新日志
+* **` 通知🐍🐍`**: 此软件仓库的代码已更新！部分重新训练的模型权重已上传以供使用！感谢您能给该仓库一个⭐️**star**⭐️并且保持关注！
+* **` 2024年06月08日`**: 中文版文档已上线！
+* **` 2024年04月18日`**: MambaBCD-Base在[WHU-CD](https://drive.google.com/file/d/1K7aSuT3os7LR9rUvoyVNP-x0hWKZocrn/view?usp=drive_link) (F1分数为 ***94.19%***)上的训练权重已经可以下载使用！
+* **` 2024年04月15日`**: MambaBCD-Small在 [SYSU](https://drive.google.com/file/d/1ZEPF6CvvFynL-yu_wpEYdpHMHl7tahpH/view?usp=drive_link)的训练权重(F1分数为 ***83.36%***), MambaBCD-Tiny在 [LEVIR-CD+](https://drive.google.com/file/d/1AtiXBBCoofi1e5g4STYUzBgJ1fYN4VhN/view?usp=drive_link) (F1分数为 ***88.03%***) 以及 [WHU-CD](https://drive.google.com/file/d/1ZLKXhGKgnWoyS0X8g3HS45a3X1MP_QE6/view?usp=drive_link) (F1分数为 ***94.09%***) 上的训练权重已经可以下载使用!!
+* **` 2024年04月05日`**: 该工作的[[ArXiv论文](https://arxiv.org/pdf/2404.03425.pdf)]已经上线!
+* **` 2024年04年05日`**: MambaBCD、MambaSCD 和 MambaBDA 的模型和训练代码已经整理并上传。欢迎使用！
 
-## 🔭Overview
+## 🔭简介
 
-* [**ChangeMamba**](https://arxiv.org/pdf/2404.03425.pdf) serves as a strong benchmark for change detection tasks, including binary change detection (MambaBCD), semantic change detection (MambaSCD), and building damage assessment (MambaBDA). 
+* [**ChangeMamba**](https://arxiv.org/pdf/2404.03425.pdf)系列模型包括三种有效的变化检测任务的基准模型，分别为二元变化检测模型MambaBCD、语义变化检测模型MambaSCD和建筑物损坏评估模型MambaBDA。
 
 <p align="center">
   <img src="figures/network_architecture.png" alt="accuracy" width="90%">
 </p>
 
-* **Spatio-temporal relationship learning methods of ChangeMamba**
+* **ChangeMamba的三种时空关系学习机制**
 
 <p align="center">
   <img src="figures/STLM.png" alt="arch" width="60%">
 </p>
 
 
-## 🗝️Let's Get Started!
-### `A. Installation`
-The repo is based on the [VMama repo](https://github.com/MzeroMiko/VMamba), thus you need to install it first. The following installation sequence is taken from the VMamba repo. Also, note that the code in this repo runs under Linux system. We have not tested whether it works under other OS.
+## 🗝️开始使用
+### `A. 安装`
+该 repo 基于 [VMama repo](https://github.com/MzeroMiko/VMamba)，因此需要先安装它。以下安装顺序取自 VMamba repo。此外，该 repo 中的代码是在 Linux 系统下运行的。我们尚未测试它是否能在其他操作系统下运行。
 
-**Step 1: Clone the repository:**
 
-Clone this repository and navigate to the project directory:
+**步骤 1 —— 克隆仓库:**
+
+克隆该版本库并导航至项目目录：
 ```bash
 git clone https://github.com/ChenHongruixuan/MambaCD.git
 cd MambaCD
 ```
 
 
-**Step 2: Environment Setup:**
+**步骤 2 —— 环境设置:**
 
-It is recommended to set up a conda environment and installing dependencies via pip. Use the following commands to set up your environment:
+建议设置 conda 环境并通过 pip 安装依赖项。使用以下命令设置环境：
 
-***Create and activate a new conda environment***
+***创建并激活新的 conda 环境***
 
 ```bash
 conda create -n changemamba
 conda activate changemamba
 ```
 
-***Install dependencies***
+***安装依赖项***
 
 ```bash
 pip install -r requirements.txt
@@ -72,24 +72,24 @@ cd kernels/selective_scan && pip install .
 ```
 
 
-***Dependencies for "Detection" and "Segmentation" (optional in VMamba)***
+***检测和分割任务的依赖库（在 VMamba 中为可选项）***
 
 ```bash
 pip install mmengine==0.10.1 mmcv==2.1.0 opencv-python-headless ftfy regex
 pip install mmdet==3.3.0 mmsegmentation==1.2.2 mmpretrain==1.2.0
 ```
-### `B. Download Pretrained Weight`
-Also, please download the pretrained weights of [VMamba-Tiny](https://github.com/MzeroMiko/VMamba/releases/download/%2320240316/vssm_tiny_0230_ckpt_epoch_262.pth), [VMamba-Small](https://github.com/MzeroMiko/VMamba/releases/download/%2320240316/vssm_small_0229_ckpt_epoch_222.pth), and [VMamba-Base](https://github.com/MzeroMiko/VMamba/releases/download/%2320240316/vssm_base_0229_ckpt_epoch_237.pth) and put them under 
+### `B. 下载预训练权重`
+另外，请下载[VMamba-Tiny](https://github.com/MzeroMiko/VMamba/releases/download/%2320240316/vssm_tiny_0230_ckpt_epoch_262.pth), [VMamba-Small](https://github.com/MzeroMiko/VMamba/releases/download/%2320240316/vssm_small_0229_ckpt_epoch_222.pth), and [VMamba-Base](https://github.com/MzeroMiko/VMamba/releases/download/%2320240316/vssm_base_0229_ckpt_epoch_237.pth)在ImageNet上的预训练权重并把它们放在下述文件夹中 
 ```bash
 project_path/MambaCD/pretrained_weight/
 ```
 
-### `C. Data Preparation`
-***Binary change detection***
+### `C. 数据准备`
+***二元变化检测***
 
-The three datasets [SYSU](https://github.com/liumency/SYSU-CD), [LEVIR-CD+](https://chenhao.in/LEVIR/) and [WHU-CD](https://study.rsgis.whu.edu.cn/pages/download/building_dataset.html) are used for binary change detection experiments. Please download them and make them have the following folder/file structure:
+论文使用了三个基准数据集 [SYSU](https://github.com/liumency/SYSU-CD)、[LEVIR-CD+](https://chenhao.in/LEVIR/) 和 [WHU-CD](https://study.rsgis.whu.edu.cn/pages/download/building_dataset.html) 用于评估模型的二元变化检测的性能。请下载这些数据集，并将其组织成下述文件夹/文件结构：
 ```
-${DATASET_ROOT}   # Dataset root directory, for example: /home/username/data/SYSU
+${DATASET_ROOT}   # 数据集根目录，例如: /home/username/data/SYSU
 ├── train
 │   ├── T1
 │   │   ├──00001.png
@@ -105,20 +105,24 @@ ${DATASET_ROOT}   # Dataset root directory, for example: /home/username/data/SYS
 │       ├──00001.png 
 │       ...   
 │   
+├── val
+│   ├── ...
+│   ...
+│
 ├── test
 │   ├── ...
 │   ...
-│  
-├── train.txt   # Data name list, recording all the names of training data
-└── test.txt    # Data name list, recording all the names of testing data
+│ 
+├── train.txt   # 数据名称列表，记录所有训练数据的名称
+├── val.txt     # 数据名称列表，记录所有验证数据的名称
+└── test.txt    # 数据名称列表，记录所有测试数据的名称
 ```
 
-***Semantic change detection***
+***语义变化检测***
 
-The [SECOND dataset](https://captain-whu.github.io/SCD/) is used for semantic change detection experiments. Please download it and make it have the following folder/file structure. Note that **the land-cover maps are RGB images in the original SECOND dataset for visualization, you need to transform them into single-channel**. Also, **the binary change maps should be generated by yourself** and put them into folder [`GT_CD`]. 
-
+语义变化检测任务的数据集为[SECOND数据集](https://captain-whu.github.io/SCD/)。 请下载该数据集，并使其具有以下文件夹/文件结构。请注意，**原始 SECOND 数据集中的土地覆盖图为 RGB 图像。您需要将其转换为单通道图像**。另外，**二元变化图需要您自行生成**，并将其放入文件夹 [`GT_CD`]。
 ```
-${DATASET_ROOT}   # Dataset root directory, for example: /home/username/data/SECOND
+${DATASET_ROOT}   # 数据集根目录，例如 /home/username/data/SECOND
 ├── train
 │   ├── T1
 │   │   ├──00001.png
@@ -130,15 +134,15 @@ ${DATASET_ROOT}   # Dataset root directory, for example: /home/username/data/SEC
 │   │   ├──00001.png
 │   │   ... 
 │   │
-│   ├── GT_CD   # Binary change map
+│   ├── GT_CD   # 二元变化图
 │   │   ├──00001.png 
 │   │   ... 
 │   │
-│   ├── GT_T1   # Land-cover map of T1
+│   ├── GT_T1   # T1时相的土地覆盖图
 │   │   ├──00001.png 
 │   │   ...  
 │   │
-│   └── GT_T2   # Land-cover map of T2
+│   └── GT_T2   # T2时相的土地覆盖图
 │       ├──00001.png 
 │       ...  
 │   
@@ -150,11 +154,11 @@ ${DATASET_ROOT}   # Dataset root directory, for example: /home/username/data/SEC
 └── test.txt
 ```
 
-***Building damage assessment***
+***建筑物损坏评估***
 
-The xBD dataset can be downloaded from [xView 2 Challenge website](https://xview2.org/dataset). After downloading it, please organize it into the following structure: 
+xBD 数据集可从 [xView 2 挑战赛网站](https://xview2.org/dataset) 下载。下载后，请按以下结构进行组织： 
 ```
-${DATASET_ROOT}   # Dataset root directory, for example: /home/username/data/xBD
+${DATASET_ROOT}   # 数据集根目录，例如：/home/username/data/xBD
 ├── train
 │   ├── images
 │   │   ├──guatemala-volcano_00000000_pre_disaster.png
@@ -174,22 +178,22 @@ ${DATASET_ROOT}   # Dataset root directory, for example: /home/username/data/xBD
 │   ├── ...
 │   ...
 │
-├── train.txt # Data name list, recording all the names of training data
-├── test.txt  # Data name list, recording all the names of testing data
-└── holdout.txt  # Data name list, recording all the names of holdout data
+├── train.txt # 数据名称列表，记录所有训练数据的名称
+├── test.txt  # 数据名称列表，记录所有测试数据的名称
+└── holdout.txt  # 数据名称列表，记录所有留出集数据的名称
 ```
 
 
-### `D. Model Training`
-Before training models, please enter into [`changedetection`] folder, which contains all the code for network definitions, training and testing. 
+### `D. 训练模型`
+在训练模型之前，请进入 [`changedetection`]文件夹，其中包含网络定义、训练和测试的所有代码。
 
 ```bash
 cd <project_path>/MambaCD/changedetection
 ```
 
-***Binary change detection***
+***二元变化检测***
 
-The following commands show how to train and evaluate MambaBCD-Small on the SYSU dataset:
+运行以下命令在 SYSU 数据集上训练和评估 MambaBCD-Small模型：
 ```bash
 python script/train_MambaBCD.py  --dataset 'SYSU' \
                                  --batch_size 16 \
@@ -205,9 +209,9 @@ python script/train_MambaBCD.py  --dataset 'SYSU' \
                                  --pretrained_weight_path '<project_path>/MambaCD/pretrained_weight/vssm_small_0229_ckpt_epoch_222.pth'
 ```
 
-***Semantic change detection***
+***语义变化检测***
 
-The following commands show how to train and evaluate MambaSCD-Small on the SECOND dataset:
+运行以下命令在 SECOND 数据集上训练和评估 MambaSCD-Small模型：
 ```bash
 python script/train_MambaSCD.py  --dataset 'SECOND' \
                                  --batch_size 16 \
@@ -225,7 +229,7 @@ python script/train_MambaSCD.py  --dataset 'SECOND' \
 
 ***Building Damge Assessment***
 
-The following commands show how to train and evaluate MambaBDA-Small on the xBD dataset:
+运行以下命令在 xBD 数据集上训练和评估 MambaBDA-Small：
 ```bash
 python script/train_MambaSCD.py  --dataset 'xBD' \
                                  --batch_size 16 \
@@ -240,19 +244,19 @@ python script/train_MambaSCD.py  --dataset 'xBD' \
                                  --cfg '<project_path>/MambaCD/changedetection/configs/vssm1/vssm_small_224.yaml' \
                                  --pretrained_weight_path '<project_path>/MambaCD/pretrained_weight/vssm_small_0229_ckpt_epoch_222.pth'
 ```
-### `E. Inference Using Our Weights`
+### `E. 使用我们的权重进行推理`
 
-Before inference, please enter into [`changedetection`] folder. 
+推理前，请先通过命令行进入 [`changedetection`]文件夹。
 ```bash
 cd <project_path>/MambaCD/changedetection
 ```
 
 
-***Binary change detection***
+***二元变化检测***
 
-The following commands show how to infer binary change maps using trained MambaBCD-Tiny on the LEVIR-CD+ dataset:
+以下命令展示了如何在 LEVIR-CD+ 数据集上使用训练完成的 MambaBCD-Tiny 推断二元变化图：
 
-* **` Kind reminder`**: Please use [--resume] to load our trained model, instead of using [--pretrained_weight_path]. 
+* **`提示`**: 请使用 [--resume] 来加载我们训练过的模型，而不要使用 [--pretrained_weight_path]。 
 
 ```bash
 python script/infer_MambaBCD.py  --dataset 'LEVIR-CD+' \
@@ -264,8 +268,9 @@ python script/infer_MambaBCD.py  --dataset 'LEVIR-CD+' \
                                  --resume '<saved_model_path>/MambaBCD_Tiny_LEVIRCD+_F1_0.8803.pth'
 ```
 
-***Semantic change detection***
-The following commands show how to infer semantic change maps using trained MambaSCD-Tiny on the SECOND dataset:
+***语义变化检测***
+
+以下命令展示了如何在 SECOND 数据集上使用训练完成的 MambaSCD-Tiny 推断语义变化图：
 ```bash
 python script/infer_MambaBCD.py  --dataset 'SECOND'  \
                                  --model_type 'MambaSCD_Tiny' \
@@ -277,43 +282,42 @@ python script/infer_MambaBCD.py  --dataset 'SECOND'  \
 ```
 
 
-## ⚗️Results Taken Away
+## ⚗️结果下载
 
 
-* *The encoders for all the above ChangeMamba models are the the VMamba architecture initialized with ImageNet pre-trained weight.*
+* *所有 ChangeMamba 系列模型的编码器都是使用 ImageNet 预训练权重初始化的 VMamba 架构。*
 
-* *The remaining results will be released after the paper is accepted. We'd appreciate it if you could give this repo a ⭐️**star**⭐️ and stay tuned.*
+* *其余结果将在论文被接受后发布。非常感谢您如果能给此 repo 一个⭐️**star**⭐️并且保持关注。*
 
 
-### `A. Binary Change Detection`
+### `A. 二元变化检测`
 
-| Method | SYSU (ckpt) | LEVIR-CD+ (ckpt) | WHU-CD (ckpt) | 
+| 方法 | SYSU (ckpt) | LEVIR-CD+ (ckpt) | WHU-CD (ckpt) | 
 | :---: | :---: | :---: | :---: |
 | MambaBCD-Tiny | [[GDrive](https://drive.google.com/file/d/1qoivh0zrZjpPzUOiIxLWZn7kdBQ-MqnY/view?usp=sharing)][[BaiduYun](https://pan.baidu.com/s/160RiqDQKB6rBwn7Fke6xFQ?pwd=wqf9)] |  [[GDrive](https://drive.google.com/file/d/1AtiXBBCoofi1e5g4STYUzBgJ1fYN4VhN/view?usp=drive_link)][[BaiduYun](https://pan.baidu.com/s/13dGC_J-wyIfoPwoPJ5Uc6Q?pwd=8ali)]	 | [[GDrive](https://drive.google.com/file/d/1ZLKXhGKgnWoyS0X8g3HS45a3X1MP_QE6/view?usp=drive_link)][[BaiduYun](https://pan.baidu.com/s/1DhTedGZdIC80y06tog1xbg?pwd=raf0)] | 
 | MambaBCD-Small | [[GDrive](https://drive.google.com/file/d/1ZEPF6CvvFynL-yu_wpEYdpHMHl7tahpH/view?usp=drive_link)][[BaiduYun](https://pan.baidu.com/s/1f8iwuKCkElU9rc24_ZzXBw?pwd=46p5)]   | -- | -- | 
 | MambaBCD-Base |  [[GDrive](https://drive.google.com/file/d/14WbK9KjOIOWuea3JAgvIfyDvqACExZ0s/view?usp=drive_link)][[BaiduYun](https://pan.baidu.com/s/1xiWWjlhuJWA40cMggevdlA?pwd=4jft)] | -- | [[GDrive]](https://drive.google.com/file/d/1K7aSuT3os7LR9rUvoyVNP-x0hWKZocrn/view?usp=drive_link)[[BaiduYun](https://pan.baidu.com/s/1o6Z6ecIJ59K9eB2KqNMD9w?pwd=4mqd)] |
 
-
-### `B. Semantic Change Detection on SECOND`
-| Method |  SECOND (ckpt) |
-| :---: | :---: |
-| MambaSCD-Tiny |  --  |
-| MambaSCD-Small | --  | 
-| MambaSCD-Base | --  | 
-
+### `B. 语义变化检测`
+| 方法 |  SECOND (ckpt) | SECOND (results) |
+| :---: | :---: | :---: | 
+| MambaSCD-Tiny |  --  |  --  | 
+| MambaSCD-Small | --  | -- | 
+| MambaSCD-Base | --  |  --  | 
 
 
-### `C. Building Damage Assessment on xBD`
-| Method |  xBD (ckpt) | 
-| :---: | :---: |
-| MambaBDA-Tiny |  -- | 
-| MambaBDA-Small | -- |
-| MambaBDA-Base | -- |
+
+### `C. 建筑物损害评估`
+| 方法 |  xBD (ckpt) | xBD (results) |
+| :---: | :---: | :---: | 
+| MambaBDA-Tiny |  -- | --  | 
+| MambaBDA-Small | -- | -- |
+| MambaBDA-Base | -- | -- | 
 
 
-## 📜Reference
+## 📜引用
 
-If this code or dataset contributes to your research, please kindly consider citing our paper and give this repo ⭐️ :)
+如果我们的仓库有助于您的研究，请考虑引用我们的论文，并给我们一个⭐️star⭐️ :)
 ```
 @article{chen2024changemamba,
       title={ChangeMamba: Remote Sensing Change Detection with Spatio-Temporal State Space Model}, 
@@ -327,8 +331,8 @@ If this code or dataset contributes to your research, please kindly consider cit
 
 
 
-## 🤝Acknowledgments
-This project is based on VMamba ([paper](https://arxiv.org/abs/2401.10166), [code](https://github.com/MzeroMiko/VMamba)), ScanNet ([paper](https://arxiv.org/abs/2212.05245), [code](https://github.com/ggsDing/SCanNet)), xView2 Challenge ([paper](https://openaccess.thecvf.com/content_CVPRW_2019/papers/cv4gc/Gupta_Creating_xBD_A_Dataset_for_Assessing_Building_Damage_from_Satellite_CVPRW_2019_paper.pdf), [code](https://github.com/DIUx-xView/xView2_baseline)). Thanks for their excellent works!!
+## 🤝致谢
+本项目采用和借鉴了VMamba ([paper](https://arxiv.org/abs/2401.10166), [code](https://github.com/MzeroMiko/VMamba)), ScanNet ([paper](https://arxiv.org/abs/2212.05245), [code](https://github.com/ggsDing/SCanNet)), xView2 Challenge ([paper](https://openaccess.thecvf.com/content_CVPRW_2019/papers/cv4gc/Gupta_Creating_xBD_A_Dataset_for_Assessing_Building_Damage_from_Satellite_CVPRW_2019_paper.pdf), [code](https://github.com/DIUx-xView/xView2_baseline))等仓库。感谢他们的优秀工作！
 
-## 🙋Q & A
-***For any questions, please feel free to [contact us.](mailto:Qschrx@gmail.com)***
+## 🙋联系我们
+***如有任何问题，请随时[联系我们。](mailto:Qschrx@gmail.com)***
