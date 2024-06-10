@@ -12,7 +12,7 @@
 
 **Paper: ([arXiv 2404.03425](https://arxiv.org/pdf/2404.03425.pdf))** 
 
-[**Overview**](#overview) | [**Get Started**](#%EF%B8%8Flets-get-started) | [**Main Results**](#%EF%B8%8Fresults-taken-away) | [**Reference**](#reference) | [**Q & A**](#q--a) | [**简体中文版**](./README_zh-CN.md)
+[**Overview**](#overview) | [**Get Started**](#%EF%B8%8Flets-get-started) | [**Taken Away**](#%EF%B8%8Fresults-taken-away) | [**Reference**](#reference) | [**Q & A**](#q--a) | [**简体中文版**](./README_zh-CN.md)
 
 </div>
 
@@ -280,21 +280,20 @@ python script/infer_MambaBCD.py  --dataset 'SECOND'  \
 ## ⚗️Results Taken Away
 
 
-* *The encoders for all the above ChangeMamba models are the the VMamba architecture initialized with ImageNet pre-trained weight.*
-
 * *The remaining results will be released after the paper is accepted. We'd appreciate it if you could give this repo a ⭐️**star**⭐️ and stay tuned.*
 
+* *Please note that the code we uploaded was reorganised and collated. The models below were also trained using the reorganised code and therefore may not match the original paper (in most cases the accuracy is higher than that in the paper).*
 
 ### `A. Binary Change Detection`
 
 | Method | SYSU (ckpt) | LEVIR-CD+ (ckpt) | WHU-CD (ckpt) | 
 | :---: | :---: | :---: | :---: |
 | MambaBCD-Tiny | [[GDrive](https://drive.google.com/file/d/1qoivh0zrZjpPzUOiIxLWZn7kdBQ-MqnY/view?usp=sharing)][[BaiduYun](https://pan.baidu.com/s/160RiqDQKB6rBwn7Fke6xFQ?pwd=wqf9)] |  [[GDrive](https://drive.google.com/file/d/1AtiXBBCoofi1e5g4STYUzBgJ1fYN4VhN/view?usp=drive_link)][[BaiduYun](https://pan.baidu.com/s/13dGC_J-wyIfoPwoPJ5Uc6Q?pwd=8ali)]	 | [[GDrive](https://drive.google.com/file/d/1ZLKXhGKgnWoyS0X8g3HS45a3X1MP_QE6/view?usp=drive_link)][[BaiduYun](https://pan.baidu.com/s/1DhTedGZdIC80y06tog1xbg?pwd=raf0)] | 
-| MambaBCD-Small | [[GDrive](https://drive.google.com/file/d/1ZEPF6CvvFynL-yu_wpEYdpHMHl7tahpH/view?usp=drive_link)][[BaiduYun](https://pan.baidu.com/s/1f8iwuKCkElU9rc24_ZzXBw?pwd=46p5)]   | -- | -- | 
+| MambaBCD-Small | [[GDrive](https://drive.google.com/file/d/1ZEPF6CvvFynL-yu_wpEYdpHMHl7tahpH/view?usp=drive_link)][[BaiduYun](https://pan.baidu.com/s/1f8iwuKCkElU9rc24_ZzXBw?pwd=46p5)]   | [[GDrive](https://drive.google.com/file/d/19jEBLheCwEnQqF23EqNrn1r79D-nZ95y/view?usp=sharing)][[BaiduYun](https://pan.baidu.com/s/1EKWp-tF0EEGgZ-nVlW8S1g?pwd=n3qz)]  | [[GDrive]](https://drive.google.com/file/d/1ejiBIhSAJF0P65Xn6DpzRpARiIGPLiWw/view?usp=drive_link)[[BaiduYun]](https://pan.baidu.com/s/1tIWyfJa2o9EMwrKg-gKTnw?pwd=vizm) | 
 | MambaBCD-Base |  [[GDrive](https://drive.google.com/file/d/14WbK9KjOIOWuea3JAgvIfyDvqACExZ0s/view?usp=drive_link)][[BaiduYun](https://pan.baidu.com/s/1xiWWjlhuJWA40cMggevdlA?pwd=4jft)] | -- | [[GDrive]](https://drive.google.com/file/d/1K7aSuT3os7LR9rUvoyVNP-x0hWKZocrn/view?usp=drive_link)[[BaiduYun](https://pan.baidu.com/s/1o6Z6ecIJ59K9eB2KqNMD9w?pwd=4mqd)] |
 
 
-### `B. Semantic Change Detection on SECOND`
+### `B. Semantic Change Detection`
 | Method |  SECOND (ckpt) |
 | :---: | :---: |
 | MambaSCD-Tiny |  --  |
@@ -303,7 +302,7 @@ python script/infer_MambaBCD.py  --dataset 'SECOND'  \
 
 
 
-### `C. Building Damage Assessment on xBD`
+### `C. Building Damage Assessment`
 | Method |  xBD (ckpt) | 
 | :---: | :---: |
 | MambaBDA-Tiny |  -- | 
