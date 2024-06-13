@@ -12,7 +12,7 @@
 
 **Paper: ([arXiv 2404.03425](https://arxiv.org/pdf/2404.03425.pdf))** 
 
-[**Overview**](#overview) | [**Get Started**](#%EF%B8%8Flets-get-started) | [**Taken Away**](#%EF%B8%8Fresults-taken-away) | [**Reference**](#reference) | [**Q & A**](#q--a) | [**简体中文版**](./README_zh-CN.md)
+[**Overview**](#overview) | [**Get Started**](#%EF%B8%8Flets-get-started) | [**Taken Away**](#%EF%B8%8Fresults-taken-away) | [**Common Issues**](#common-issues) | [**Others**](#q--a) | [**简体中文版**](./README_zh-CN.md)
 
 </div>
 
@@ -309,6 +309,14 @@ python script/infer_MambaBCD.py  --dataset 'SECOND'  \
 | MambaBDA-Small | -- |
 | MambaBDA-Base | -- |
 
+## 🤔Common Issues
+Based on peers' questions from issue, here's a quick and easy to navigate list of solutions to some common issues.
+
+| Issue | Solution | 
+| :---: | :---: | 
+NameError: name 'selective_scan_cuda_oflex' is not defined | Please refer to Issue [#9](https://github.com/ChenHongruixuan/MambaCD/issues/9)
+| Issues about SECOND dataset | Please refer to Issue [#13](https://github.com/ChenHongruixuan/MambaCD/issues/13) / [#22](https://github.com/ChenHongruixuan/MambaCD/issues/22) |
+| CUDA out of memory issue | Please lower the batch size of trainign and evalution  |
 
 ## 📜Reference
 

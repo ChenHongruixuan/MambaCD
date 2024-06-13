@@ -12,7 +12,7 @@
 
 **论文: ([arXiv 2404.03425](https://arxiv.org/pdf/2404.03425.pdf))** 
 
-[**简介**](#简介) | [**开始使用**](#%EF%B8%8F开始使用) | [**结果下载**](#%EF%B8%8F结果下载) | [**引用**](#引用) | [**联系我们**](#联系我们) | [**English Version**](https://github.com/ChenHongruixuan/MambaCD)
+[**简介**](#简介) | [**开始使用**](#%EF%B8%8F开始使用) | [**结果下载**](#%EF%B8%8F结果下载) | [**常见问题**](#引用) | [**其他**](#联系我们) | [**English Version**](https://github.com/ChenHongruixuan/MambaCD)
 
 </div>
 
@@ -313,6 +313,15 @@ python script/infer_MambaBCD.py  --dataset 'SECOND'  \
 | MambaBDA-Tiny |  -- | --  | 
 | MambaBDA-Small | -- | -- |
 | MambaBDA-Base | -- | -- | 
+
+## 🤔常见问题
+下面列出了一些常见问题的快速、简便的解决方案。
+
+| 问题 | 解决方案 | 
+| :---: | :---: | 
+NameError: name 'selective_scan_cuda_oflex' is not defined | 请参考 Issue [#9](https://github.com/ChenHongruixuan/MambaCD/issues/9)
+| Issues about SECOND dataset | 请参考 Issue [#13](https://github.com/ChenHongruixuan/MambaCD/issues/13) / [#22](https://github.com/ChenHongruixuan/MambaCD/issues/22) |
+| CUDA out of memory issue | 请降低训练和评估的batch size  |
 
 
 ## 📜引用
