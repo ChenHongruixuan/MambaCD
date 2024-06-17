@@ -18,6 +18,7 @@
 
 ## 🛎️更新日志
 * **` 通知🐍🐍`**: 此软件仓库的代码已更新！部分重新训练的模型权重已上传以供使用！感谢您能给该仓库一个⭐️**star**⭐️并且保持关注！
+* **` 2024年06月17日`**: ChangeMamba已经被IEEE TGRS接收！
 * **` 2024年06月08日`**: 中文版文档已上线！
 * **` 2024年04月18日`**: MambaBCD-Base在[WHU-CD](https://drive.google.com/file/d/1K7aSuT3os7LR9rUvoyVNP-x0hWKZocrn/view?usp=drive_link) (F1分数为 ***94.19%***)上的训练权重已经可以下载使用！
 * **` 2024年04月15日`**: MambaBCD-Small在 [SYSU](https://drive.google.com/file/d/1ZEPF6CvvFynL-yu_wpEYdpHMHl7tahpH/view?usp=drive_link)的训练权重(F1分数为 ***83.36%***), MambaBCD-Tiny在 [LEVIR-CD+](https://drive.google.com/file/d/1AtiXBBCoofi1e5g4STYUzBgJ1fYN4VhN/view?usp=drive_link) (F1分数为 ***88.03%***) 以及 [WHU-CD](https://drive.google.com/file/d/1ZLKXhGKgnWoyS0X8g3HS45a3X1MP_QE6/view?usp=drive_link) (F1分数为 ***94.09%***) 上的训练权重已经可以下载使用!!
