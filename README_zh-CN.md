@@ -17,7 +17,7 @@
 </div>
 
 ## 🛎️更新日志
-* **` 通知🐍🐍`**: 此软件仓库的代码已更新！部分重新训练的模型权重已上传以供使用！感谢您能给该仓库一个⭐️**star**⭐️并且保持关注！
+* **` 通知🐍🐍`**: ChangeMamba已经被IEEE TGRS接收！此软件仓库的代码已更新完毕！如果该仓库对您的研究有所帮助，请考虑给该仓库一个⭐️**star**⭐️！
 * **` 2024年06月17日`**: ChangeMamba已经被IEEE TGRS接收！
 * **` 2024年06月08日`**: 中文版文档已上线！
 * **` 2024年04月18日`**: MambaBCD-Base在[WHU-CD](https://drive.google.com/file/d/1K7aSuT3os7LR9rUvoyVNP-x0hWKZocrn/view?usp=drive_link) (F1分数为 ***94.19%***)上的训练权重已经可以下载使用！
@@ -282,13 +282,25 @@ python script/infer_MambaBCD.py  --dataset 'SECOND'  \
                                  --resume '<saved_model_path>/[your_trained_model].pth'
 ```
 
+***建筑物损害评估***
+
+以下命令展示了如何在 xBD 数据集上使用训练完成的 MambaBDA-Tiny 推断语义变化图：
+```bash
+python script/infer_MambaBDA.py  --dataset 'SECOND'  \
+                                 --model_type 'MambaSCD_Tiny' \
+                                 --test_dataset_path '<dataset_path>/xBD/test' \
+                                 --test_data_list_path '<dataset_path>/xBD/test_list.txt' \
+                                 --cfg '<project_path>/MambaCD/changedetection/configs/vssm1/vssm_tiny_224_0229flex.yaml' \
+                                 --pretrained_weight_path '<project_path>/MambaCD/pretrained_weight/vssm_tiny_0230_ckpt_epoch_262.pth'
+                                 --resume '<saved_model_path>/[your_trained_model].pth'
+```
 
 ## ⚗️结果下载
 
 
-* *其余结果将在论文被接受后发布。非常感谢您如果能给此 repo 一个⭐️**star**⭐️并且保持关注。*
+* *非常感谢您如果能给此 repo 一个⭐️**star**⭐️并且保持关注。*
 
-* *请注意，由于我们上传到Github的代码是经过重新组织整理的。下述模型也是采用重新组织整理后的代码训练得到的，因此可能会和原始论文不一致（大多数情况都高于论文中的精度）。*
+* *请注意，由于我们上传到Github的代码是经过重新组织整理的。下述模型也是采用重新组织整理后的代码训练得到的，因此可能会和原始论文不一致（大多数情况都高于论文中报告的精度）。*
 
 ### `A. 二元变化检测`
 

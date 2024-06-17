@@ -92,26 +92,27 @@ class Inference(object):
         self.evaluator.reset()
 
         # vbar = tqdm(val_data_loader, ncols=50)
-        for itera, data in enumerate(val_data_loader):
-            pre_change_imgs, post_change_imgs, labels, names = data
-            pre_change_imgs = pre_change_imgs.cuda().float()
-            post_change_imgs = post_change_imgs.cuda()
-            labels = labels.cuda().long()
+        with torch.no_grad():
+            for itera, data in enumerate(val_data_loader):
+                pre_change_imgs, post_change_imgs, labels, names = data
+                pre_change_imgs = pre_change_imgs.cuda().float()
+                post_change_imgs = post_change_imgs.cuda()
+                labels = labels.cuda().long()
 
-            output_1 = self.deep_model(pre_change_imgs, post_change_imgs)
+                output_1 = self.deep_model(pre_change_imgs, post_change_imgs)
 
-            output_1 = output_1.data.cpu().numpy()
-            output_1 = np.argmax(output_1, axis=1)
-            labels = labels.cpu().numpy()
-           
-            self.evaluator.add_batch(labels, output_1)
-           
-           
-            image_name = names[0][0:-4] + f'.png'
+                output_1 = output_1.data.cpu().numpy()
+                output_1 = np.argmax(output_1, axis=1)
+                labels = labels.cpu().numpy()
+            
+                self.evaluator.add_batch(labels, output_1)
+            
+            
+                image_name = names[0][0:-4] + f'.png'
 
-            binary_change_map = np.squeeze(output_1)
-            binary_change_map[binary_change_map==1] = 255
-            imageio.imwrite(os.path.join(self.change_map_saved_path, image_name), binary_change_map.astype(np.uint8))
+                binary_change_map = np.squeeze(output_1)
+                binary_change_map[binary_change_map==1] = 255
+                imageio.imwrite(os.path.join(self.change_map_saved_path, image_name), binary_change_map.astype(np.uint8))
 
         f1_score = self.evaluator.Pixel_F1_score()
         oa = self.evaluator.Pixel_Accuracy()
@@ -121,8 +122,6 @@ class Inference(object):
         kc = self.evaluator.Kappa_coefficient()
         print(f'Racall rate is {rec}, Precision rate is {pre}, OA is {oa}, '
               f'F1 score is {f1_score}, IoU is {iou}, Kappa coefficient is {kc}')         
-        print(f'Racall rate is {rec}, Precision rate is {pre}, OA is {oa}, '
-                f'F1 score is {f1_score}, IoU is {iou}, Kappa coefficient is {kc}')     
         print('Inference stage is done!')
             
 

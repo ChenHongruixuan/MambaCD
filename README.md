@@ -17,7 +17,7 @@
 </div>
 
 ## 🛎️Updates
-* **` Notice🐍🐍`**: The code of this repo has been updated! Some of the retrained model weights have been uploaded for usage! We'd appreciate it if you could give this repo a ⭐️**star**⭐️ and stay tuned!
+* **` Notice🐍🐍`**: ChangeMamba has been accepted by IEEE TGRS! We'd appreciate it if you could give this repo a ⭐️**star**⭐️ and stay tuned!!
 * **` June 17th, 2024`**: ChangeMamba has been accepted by IEEE TGRS!!
 * **` June 08th, 2024`**: Chinese version of the README file is avaiable!!
 * **` April 18th, 2024`**: The retrained weight of MambaBCD-Base on the [WHU-CD](https://drive.google.com/file/d/1K7aSuT3os7LR9rUvoyVNP-x0hWKZocrn/view?usp=drive_link) (F1 score ***94.19%***) is now avaiable. You are welcome to use it!!
@@ -241,7 +241,7 @@ python script/train_MambaSCD.py  --dataset 'xBD' \
                                  --cfg '<project_path>/MambaCD/changedetection/configs/vssm1/vssm_small_224.yaml' \
                                  --pretrained_weight_path '<project_path>/MambaCD/pretrained_weight/vssm_small_0229_ckpt_epoch_222.pth'
 ```
-### `E. Inference Using Our Weights`
+### `E. Inference Using Our/Your Weights`
 
 Before inference, please enter into [`changedetection`] folder. 
 ```bash
@@ -266,12 +266,26 @@ python script/infer_MambaBCD.py  --dataset 'LEVIR-CD+' \
 ```
 
 ***Semantic change detection***
+
 The following commands show how to infer semantic change maps using trained MambaSCD-Tiny on the SECOND dataset:
 ```bash
 python script/infer_MambaBCD.py  --dataset 'SECOND'  \
                                  --model_type 'MambaSCD_Tiny' \
                                  --test_dataset_path '<dataset_path>/SECOND/test' \
                                  --test_data_list_path '<dataset_path>/SECOND/test_list.txt' \
+                                 --cfg '<project_path>/MambaCD/changedetection/configs/vssm1/vssm_tiny_224_0229flex.yaml' \
+                                 --pretrained_weight_path '<project_path>/MambaCD/pretrained_weight/vssm_tiny_0230_ckpt_epoch_262.pth'
+                                 --resume '<saved_model_path>/[your_trained_model].pth'
+```
+
+***Building damage assessment***
+
+The following commands show how to infer building damage assessment results using trained MambaSCD-Tiny on the xBD dataset:
+```bash
+python script/infer_MambaBDA.py  --dataset 'SECOND'  \
+                                 --model_type 'MambaSCD_Tiny' \
+                                 --test_dataset_path '<dataset_path>/xBD/test' \
+                                 --test_data_list_path '<dataset_path>/xBD/test_list.txt' \
                                  --cfg '<project_path>/MambaCD/changedetection/configs/vssm1/vssm_tiny_224_0229flex.yaml' \
                                  --pretrained_weight_path '<project_path>/MambaCD/pretrained_weight/vssm_tiny_0230_ckpt_epoch_262.pth'
                                  --resume '<saved_model_path>/[your_trained_model].pth'

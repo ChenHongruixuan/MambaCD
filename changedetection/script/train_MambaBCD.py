@@ -130,20 +130,22 @@ class Trainer(object):
         dataset = ChangeDetectionDatset(self.args.test_dataset_path, self.args.test_data_name_list, 256, None, 'test')
         val_data_loader = DataLoader(dataset, batch_size=1, num_workers=4, drop_last=False)
         torch.cuda.empty_cache()
+        
+        with torch.no_grad():
+            for itera, data in enumerate(val_data_loader):
+                pre_change_imgs, post_change_imgs, labels, _ = data
+                pre_change_imgs = pre_change_imgs.cuda().float()
+                post_change_imgs = post_change_imgs.cuda()
+                labels = labels.cuda().long()
 
-        for itera, data in enumerate(val_data_loader):
-            pre_change_imgs, post_change_imgs, labels, _ = data
-            pre_change_imgs = pre_change_imgs.cuda().float()
-            post_change_imgs = post_change_imgs.cuda()
-            labels = labels.cuda().long()
+                output_1 = self.deep_model(pre_change_imgs, post_change_imgs)
 
-            output_1 = self.deep_model(pre_change_imgs, post_change_imgs)
+                output_1 = output_1.data.cpu().numpy()
+                output_1 = np.argmax(output_1, axis=1)
+                labels = labels.cpu().numpy()
 
-            output_1 = output_1.data.cpu().numpy()
-            output_1 = np.argmax(output_1, axis=1)
-            labels = labels.cpu().numpy()
-
-            self.evaluator.add_batch(labels, output_1)
+                self.evaluator.add_batch(labels, output_1)
+                
         f1_score = self.evaluator.Pixel_F1_score()
         oa = self.evaluator.Pixel_Accuracy()
         rec = self.evaluator.Pixel_Recall_Rate()

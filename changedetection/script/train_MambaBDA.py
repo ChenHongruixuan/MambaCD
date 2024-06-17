@@ -146,31 +146,32 @@ class Trainer(object):
         torch.cuda.empty_cache()
 
         # vbar = tqdm(val_data_loader, ncols=50)
-        for itera, data in enumerate(val_data_loader):
-            pre_change_imgs, post_change_imgs, labels_loc, labels_clf, _ = data
+        with torch.no_grad():
+            for itera, data in enumerate(val_data_loader):
+                pre_change_imgs, post_change_imgs, labels_loc, labels_clf, _ = data
 
-            pre_change_imgs = pre_change_imgs.cuda()
-            post_change_imgs = post_change_imgs.cuda()
-            labels_loc = labels_loc.cuda().long()
-            labels_clf = labels_clf.cuda().long()
+                pre_change_imgs = pre_change_imgs.cuda()
+                post_change_imgs = post_change_imgs.cuda()
+                labels_loc = labels_loc.cuda().long()
+                labels_clf = labels_clf.cuda().long()
 
 
-            # input_data = torch.cat([pre_change_imgs, post_change_imgs], dim=1)
-            output_loc, output_clf = self.deep_model(pre_change_imgs, post_change_imgs)
+                # input_data = torch.cat([pre_change_imgs, post_change_imgs], dim=1)
+                output_loc, output_clf = self.deep_model(pre_change_imgs, post_change_imgs)
 
-            output_loc = output_loc.data.cpu().numpy()
-            output_loc = np.argmax(output_loc, axis=1)
-            labels_loc = labels_loc.cpu().numpy()
+                output_loc = output_loc.data.cpu().numpy()
+                output_loc = np.argmax(output_loc, axis=1)
+                labels_loc = labels_loc.cpu().numpy()
 
-            output_clf = output_clf.data.cpu().numpy()
-            output_clf = np.argmax(output_clf, axis=1)
-            labels_clf = labels_clf.cpu().numpy()
+                output_clf = output_clf.data.cpu().numpy()
+                output_clf = np.argmax(output_clf, axis=1)
+                labels_clf = labels_clf.cpu().numpy()
 
-            self.evaluator_loc.add_batch(labels_loc, output_loc)
-            
-            output_clf = output_clf[labels_loc > 0]
-            labels_clf = labels_clf[labels_loc > 0]
-            self.evaluator_clf.add_batch(labels_clf, output_clf)
+                self.evaluator_loc.add_batch(labels_loc, output_loc)
+                
+                output_clf = output_clf[labels_loc > 0]
+                labels_clf = labels_clf[labels_loc > 0]
+                self.evaluator_clf.add_batch(labels_clf, output_clf)
 
         loc_f1_score = self.evaluator_loc.Pixel_F1_score()
         damage_f1_score = self.evaluator_clf.Damage_F1_socore()

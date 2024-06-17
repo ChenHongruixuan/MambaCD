@@ -5,6 +5,7 @@ import numpy as np
 from scipy import stats
 from MambaCD.changedetection.utils_func import eval_segm as seg_acc
 
+
 def read_idtxt(path):
   id_list = []
   #print('start reading')
@@ -205,7 +206,7 @@ def SCDD_eval_all(preds, labels, num_class):
     for pred, label in zip(preds, labels):
         infer_array = np.array(pred)
         unique_set = set(np.unique(infer_array))
-        assert unique_set.issubset(set([0, 1, 2, 3, 4, 5, 6])), "unrecognized label number"
+        assert unique_set.issubset(set([x for x in range(num_class)])), "unrecognized label number"
         label_array = np.array(label)
         assert infer_array.shape == label_array.shape, "The size of prediction and target must be the same"
         hist += get_hist(infer_array, label_array, num_class)

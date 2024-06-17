@@ -141,53 +141,38 @@ class Inference(object):
         labels_all = []
 
         # vbar = tqdm(val_data_loader, ncols=50)
-        for itera, data in enumerate(val_data_loader):
-            acc_meter = AverageMeter()
-            
-            pre_change_imgs, post_change_imgs, label_cd, label_clf_t1, label_clf_t2, names = data
+        with torch.no_grad():
+            for itera, data in enumerate(val_data_loader):
+                
+                pre_change_imgs, post_change_imgs, label_cd, label_clf_t1, label_clf_t2, names = data
 
-            pre_change_imgs = pre_change_imgs.cuda()
-            post_change_imgs = post_change_imgs.cuda()
-            label_cd = label_cd.cuda().long()
-            label_clf_t1 = label_clf_t1.cuda().long()
-            label_clf_t2 = label_clf_t2.cuda().long()
+                pre_change_imgs = pre_change_imgs.cuda()
+                post_change_imgs = post_change_imgs.cuda()
+                label_cd = label_cd.cuda().long()
+                label_clf_t1 = label_clf_t1.cuda().long()
+                label_clf_t2 = label_clf_t2.cuda().long()
 
+                output_1, output_semantic_t1, output_semantic_t2 = self.deep_model(pre_change_imgs, post_change_imgs)
 
-            # input_data = torch.cat([pre_change_imgs, post_change_imgs], dim=1)
-            output_1, output_semantic_t1, output_semantic_t2 = self.deep_model(pre_change_imgs, post_change_imgs)
+                label_cd = label_cd.cpu().numpy()
+                labels_A = label_clf_t1.cpu().numpy()
+                labels_B = label_clf_t2.cpu().numpy()
 
-            label_cd = label_cd.cpu().numpy()
-            labels_A = label_clf_t1.cpu().numpy()
-            labels_B = label_clf_t2.cpu().numpy()
+                change_mask = torch.argmax(output_1, axis=1)
 
-            change_mask = torch.argmax(output_1, axis=1)
+                preds_A = torch.argmax(output_semantic_t1, dim=1)
+                preds_B = torch.argmax(output_semantic_t2, dim=1)
+                preds_A = (preds_A*change_mask.squeeze().long()).cpu().numpy()
+                preds_B = (preds_B*change_mask.squeeze().long()).cpu().numpy()
 
-            preds_A = torch.argmax(output_semantic_t1, dim=1)
-            preds_B = torch.argmax(output_semantic_t2, dim=1)
-            preds_A = (preds_A*change_mask.squeeze().long()).cpu().numpy()
-            preds_B = (preds_B*change_mask.squeeze().long()).cpu().numpy()
+                change_map_T1 = map_labels_to_colors(np.squeeze(preds_A), ori_label_value_dict=ori_label_value_dict, target_label_value_dict=target_label_value_dict)
+                change_map_T2 = map_labels_to_colors(np.squeeze(preds_B), ori_label_value_dict=ori_label_value_dict, target_label_value_dict=target_label_value_dict)
+                image_name = names[0][0:-4] + f'.png'
 
-
-            for (pred_A, pred_B, label_A, label_B) in zip(preds_A, preds_B, labels_A, labels_B):
-                acc_A, valid_sum_A = accuracy(pred_A, label_A)
-                acc_B, valid_sum_B = accuracy(pred_B, label_B)
-                preds_all.append(pred_A)
-                preds_all.append(pred_B)
-                labels_all.append(label_A)
-                labels_all.append(label_B)
-                acc = (acc_A + acc_B)*0.5
-                acc_meter.update(acc)
-
-            change_map_T1 = map_labels_to_colors(np.squeeze(preds_A), ori_label_value_dict=ori_label_value_dict, target_label_value_dict=target_label_value_dict)
-            change_map_T2 = map_labels_to_colors(np.squeeze(preds_B), ori_label_value_dict=ori_label_value_dict, target_label_value_dict=target_label_value_dict)
-            image_name = names[0][0:-4] + f'.png'
-
-            imageio.imwrite(os.path.join(self.change_map_T1_saved_path, image_name), change_map_T1.astype(np.uint8))
-            imageio.imwrite(os.path.join(self.change_map_T2_saved_path, image_name), change_map_T2.astype(np.uint8))
-
-        kappa_n0, Fscd, IoU_mean, Sek = SCDD_eval_all(preds_all, labels_all, 7)
-  
-        print(f'Inference stage is done, SeK is {Sek}!')
+                imageio.imwrite(os.path.join(self.change_map_T1_saved_path, image_name), change_map_T1.astype(np.uint8))
+                imageio.imwrite(os.path.join(self.change_map_T2_saved_path, image_name), change_map_T2.astype(np.uint8))
+    
+        print(f'Inference stage is done!')
             
 
 
