@@ -104,14 +104,12 @@ class Trainer(object):
 
         self.building_map_T1_saved_path = os.path.join(args.result_saved_path, args.dataset, args.model_type, 'building_localization_map')
         self.change_map_T2_saved_path = os.path.join(args.result_saved_path, args.dataset, args.model_type, 'damage_classification_map')
-        #self.feature_map_saved_path = os.path.join(args.result_saved_path, args.dataset, args.model_type, 'feature_map')
 
         if not os.path.exists(self.building_map_T1_saved_path):
             os.makedirs(self.building_map_T1_saved_path)
         if not os.path.exists(self.change_map_T2_saved_path):
             os.makedirs(self.change_map_T2_saved_path)
-        # if not os.path.exists(self.feature_map_saved_path):
-        #     os.makedirs(self.feature_map_saved_path)
+
 
         if args.resume is not None:
             if not os.path.isfile(args.resume):
