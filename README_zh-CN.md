@@ -14,6 +14,12 @@
 
 [**简介**](#简介) | [**开始使用**](#%EF%B8%8F开始使用) | [**结果下载**](#%EF%B8%8F结果下载) | [**常见问题**](#引用) | [**其他**](#联系我们) | [**English Version**](https://github.com/ChenHongruixuan/MambaCD)
 
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/changemamba-remote-sensing-change-detection/change-detection-on-sysu-cd)](https://paperswithcode.com/sota/change-detection-on-sysu-cd?p=changemamba-remote-sensing-change-detection)
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/changemamba-remote-sensing-change-detection/change-detection-on-levir)](https://paperswithcode.com/sota/change-detection-on-levir?p=changemamba-remote-sensing-change-detection)
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/changemamba-remote-sensing-change-detection/change-detection-on-whu-cd)](https://paperswithcode.com/sota/change-detection-on-whu-cd?p=changemamba-remote-sensing-change-detection)
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/changemamba-remote-sensing-change-detection/change-detection-on-second)](https://paperswithcode.com/sota/change-detection-on-second?p=changemamba-remote-sensing-change-detection)
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/changemamba-remote-sensing-change-detection/2d-semantic-segmentation-on-xbd)](https://paperswithcode.com/sota/2d-semantic-segmentation-on-xbd?p=changemamba-remote-sensing-change-detection)
+
 </div>
 
 ## 🛎️更新日志

@@ -10,9 +10,17 @@
 
 <sup>#</sup> Equal contribution, <sup>*</sup> Corresponding author
 
+
+
 **Paper: ([arXiv 2404.03425](https://arxiv.org/pdf/2404.03425.pdf))** 
 
 [**Overview**](#overview) | [**Get Started**](#%EF%B8%8Flets-get-started) | [**Taken Away**](#%EF%B8%8Fresults-taken-away) | [**Common Issues**](#common-issues) | [**Others**](#q--a) | [**简体中文版**](./README_zh-CN.md)
+
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/changemamba-remote-sensing-change-detection/change-detection-on-sysu-cd)](https://paperswithcode.com/sota/change-detection-on-sysu-cd?p=changemamba-remote-sensing-change-detection)
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/changemamba-remote-sensing-change-detection/change-detection-on-levir)](https://paperswithcode.com/sota/change-detection-on-levir?p=changemamba-remote-sensing-change-detection)
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/changemamba-remote-sensing-change-detection/change-detection-on-whu-cd)](https://paperswithcode.com/sota/change-detection-on-whu-cd?p=changemamba-remote-sensing-change-detection)
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/changemamba-remote-sensing-change-detection/change-detection-on-second)](https://paperswithcode.com/sota/change-detection-on-second?p=changemamba-remote-sensing-change-detection)
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/changemamba-remote-sensing-change-detection/2d-semantic-segmentation-on-xbd)](https://paperswithcode.com/sota/2d-semantic-segmentation-on-xbd?p=changemamba-remote-sensing-change-detection)
 
 </div>
 
@@ -298,6 +306,7 @@ python script/infer_MambaBDA.py  --dataset 'SECOND'  \
 * *The remaining results will be released after the paper is accepted. We'd appreciate it if you could give this repo a ⭐️**star**⭐️ and stay tuned.*
 
 * *Please note that the code we uploaded was reorganised and collated. The models below were also trained using the reorganised code and therefore may not match the original paper (in most cases the accuracy is higher than that in the paper).*
+
 
 ### `A. Binary Change Detection`
 
