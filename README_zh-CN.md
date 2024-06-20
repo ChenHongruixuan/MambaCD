@@ -1,14 +1,14 @@
 <div align="center">
 <h1 align="center">ChangeMamba</h1>
 
-<h3>ChangeMamba: Remote Sensing Change Detection with Spatio-Temporal State Space Model</h3>
+<h3>ChangeMamba: 利用时空状态空间模型进行遥感影像变化检测</h3>
 
 
 [Hongruixuan Chen](https://scholar.google.ch/citations?user=XOk4Cf0AAAAJ&hl=zh-CN&oi=ao)<sup>1 #</sup>, [Jian Song](https://scholar.google.ch/citations?user=CgcMFJsAAAAJ&hl=zh-CN)<sup>1,2 #</sup>, [Chengxi Han](https://chengxihan.github.io/)<sup>3</sup>, [Junshi Xia](https://scholar.google.com/citations?user=n1aKdTkAAAAJ&hl=en)<sup>2</sup>, [Naoto Yokoya](https://scholar.google.co.jp/citations?user=DJ2KOn8AAAAJ&hl=en)<sup>1,2 *</sup>
 
 <sup>1</sup> 东京大学, <sup>2</sup> 理化学研究所先进智能研究中心,  <sup>3</sup> 武汉大学.
 
-<sup>#</sup> Equal contribution, <sup>*</sup> Corresponding author
+<sup>#</sup> 共同第一作者, <sup>*</sup> 通讯作者
 
 **论文: ([arXiv 2404.03425](https://arxiv.org/pdf/2404.03425.pdf))** 
 
@@ -24,7 +24,7 @@
 
 ## 🛎️更新日志
 * **` 通知🐍🐍`**: ChangeMamba已经被IEEE TGRS接收！此软件仓库的代码已更新完毕！如果该仓库对您的研究有所帮助，请考虑给该仓库一个⭐️**star**⭐️！
-* **` 2024年06月17日`**: ChangeMamba已经被IEEE TGRS接收！
+* **` 2024年06月17日`**: ChangeMamba被IEEE TGRS接收！
 * **` 2024年06月08日`**: 中文版文档已上线！
 * **` 2024年04月18日`**: MambaBCD-Base在[WHU-CD](https://drive.google.com/file/d/1K7aSuT3os7LR9rUvoyVNP-x0hWKZocrn/view?usp=drive_link) (F1分数为 ***94.19%***)上的训练权重已经可以下载使用！
 * **` 2024年04月15日`**: MambaBCD-Small在 [SYSU](https://drive.google.com/file/d/1ZEPF6CvvFynL-yu_wpEYdpHMHl7tahpH/view?usp=drive_link)的训练权重(F1分数为 ***83.36%***), MambaBCD-Tiny在 [LEVIR-CD+](https://drive.google.com/file/d/1AtiXBBCoofi1e5g4STYUzBgJ1fYN4VhN/view?usp=drive_link) (F1分数为 ***88.03%***) 以及 [WHU-CD](https://drive.google.com/file/d/1ZLKXhGKgnWoyS0X8g3HS45a3X1MP_QE6/view?usp=drive_link) (F1分数为 ***94.09%***) 上的训练权重已经可以下载使用!!
@@ -306,7 +306,7 @@ python script/infer_MambaBDA.py  --dataset 'SECOND'  \
 
 * *非常感谢您如果能给此 repo 一个⭐️**star**⭐️并且保持关注。*
 
-* *请注意，由于我们上传到Github的代码是经过重新组织整理的。下述模型也是采用重新组织整理后的代码训练得到的，因此可能会和原始论文不一致（大多数情况都高于论文中报告的精度）。*
+* *请注意，由于我们上传到Github的代码是经过重新组织整理的。下述模型也是采用重新组织整理后的代码训练得到的，因此精度可能会和原始论文不完全一致（大多数情况都高于论文中报告的精度）。*
 
 ### `A. 二元变化检测`
 
@@ -348,19 +348,20 @@ NameError: name 'selective_scan_cuda_oflex' is not defined | 请参考 Issue [#9
 如果我们的仓库有助于您的研究，请考虑引用我们的论文，并给我们一个⭐️star⭐️ :)
 ```
 @article{chen2024changemamba,
-      title={ChangeMamba: Remote Sensing Change Detection with Spatio-Temporal State Space Model}, 
-      author={Hongruixuan Chen and Jian Song and Chengxi Han and Junshi Xia and Naoto Yokoya},
-      year={2024},
-      eprint={2404.03425},
-      archivePrefix={arXiv},
-      primaryClass={eess.IV}
+  author={Hongruixuan Chen and Jian Song and Chengxi Han and Junshi Xia and Naoto Yokoya},
+  journal={IEEE Transactions on Geoscience and Remote Sensing}, 
+  title={ChangeMamba: Remote Sensing Change Detection with Spatio-Temporal State Space Model}, 
+  year={2024},
+  volume={62},
+  number={},
+  pages={1-20},
+  doi={10.1109/TGRS.2024.3417253}
 }
 ```
 
 
-
 ## 🤝致谢
-本项目采用和借鉴了VMamba ([paper](https://arxiv.org/abs/2401.10166), [code](https://github.com/MzeroMiko/VMamba)), ScanNet ([paper](https://arxiv.org/abs/2212.05245), [code](https://github.com/ggsDing/SCanNet)), xView2 Challenge ([paper](https://openaccess.thecvf.com/content_CVPRW_2019/papers/cv4gc/Gupta_Creating_xBD_A_Dataset_for_Assessing_Building_Damage_from_Satellite_CVPRW_2019_paper.pdf), [code](https://github.com/DIUx-xView/xView2_baseline))等仓库。感谢他们的优秀工作！
+本项目采用和借鉴了([paper](https://arxiv.org/abs/2401.10166), [code](https://github.com/MzeroMiko/VMamba)), ScanNet ([paper](https://arxiv.org/abs/2212.05245), [code](https://github.com/ggsDing/SCanNet)), BDANet ([paper](https://ieeexplore.ieee.org/document/9442902), [code](https://github.com/ShaneShen/BDANet-Building-Damage-Assessment))等仓库。感谢他们的优秀工作！
 
 ## 🙋联系我们
 ***如有任何问题，请随时[联系我们。](mailto:Qschrx@gmail.com)***

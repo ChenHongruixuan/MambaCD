@@ -3,7 +3,6 @@
 
 <h3>ChangeMamba: Remote Sensing Change Detection with Spatio-Temporal State Space Model</h3>
 
-
 [Hongruixuan Chen](https://scholar.google.ch/citations?user=XOk4Cf0AAAAJ&hl=zh-CN&oi=ao)<sup>1 #</sup>, [Jian Song](https://scholar.google.ch/citations?user=CgcMFJsAAAAJ&hl=zh-CN)<sup>1,2 #</sup>, [Chengxi Han](https://chengxihan.github.io/)<sup>3</sup>, [Junshi Xia](https://scholar.google.com/citations?user=n1aKdTkAAAAJ&hl=en)<sup>2</sup>, [Naoto Yokoya](https://scholar.google.co.jp/citations?user=DJ2KOn8AAAAJ&hl=en)<sup>1,2 *</sup>
 
 <sup>1</sup> The University of Tokyo, <sup>2</sup> RIKEN AIP,  <sup>3</sup> Wuhan University.
@@ -15,6 +14,7 @@
 **Paper: ([arXiv 2404.03425](https://arxiv.org/pdf/2404.03425.pdf))** 
 
 [**Overview**](#overview) | [**Get Started**](#%EF%B8%8Flets-get-started) | [**Taken Away**](#%EF%B8%8Fresults-taken-away) | [**Common Issues**](#common-issues) | [**Others**](#q--a) | [**简体中文版**](./README_zh-CN.md)
+
 
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/changemamba-remote-sensing-change-detection/change-detection-on-sysu-cd)](https://paperswithcode.com/sota/change-detection-on-sysu-cd?p=changemamba-remote-sensing-change-detection)
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/changemamba-remote-sensing-change-detection/change-detection-on-levir)](https://paperswithcode.com/sota/change-detection-on-levir?p=changemamba-remote-sensing-change-detection)
@@ -303,9 +303,9 @@ python script/infer_MambaBDA.py  --dataset 'SECOND'  \
 ## ⚗️Results Taken Away
 
 
-* *The remaining results will be released after the paper is accepted. We'd appreciate it if you could give this repo a ⭐️**star**⭐️ and stay tuned.*
+* *We'd appreciate it if you could give this repo a ⭐️**star**⭐️ and stay tuned.*
 
-* *Please note that the code we uploaded was reorganised and collated. The models below were also trained using the reorganised code and therefore may not match the original paper (in most cases the accuracy is higher than that in the paper).*
+* *Please note that the code we uploaded was reorganised and collated. The models below were also trained using the reorganised code and therefore accuracy may not perfectly match the original paper (in most cases the accuracy is higher than that in the paper).*
 
 
 ### `A. Binary Change Detection`
@@ -347,19 +347,21 @@ NameError: name 'selective_scan_cuda_oflex' is not defined | Please refer to Iss
 If this code or dataset contributes to your research, please kindly consider citing our paper and give this repo ⭐️ :)
 ```
 @article{chen2024changemamba,
-      title={ChangeMamba: Remote Sensing Change Detection with Spatio-Temporal State Space Model}, 
-      author={Hongruixuan Chen and Jian Song and Chengxi Han and Junshi Xia and Naoto Yokoya},
-      year={2024},
-      eprint={2404.03425},
-      archivePrefix={arXiv},
-      primaryClass={eess.IV}
+  author={Hongruixuan Chen and Jian Song and Chengxi Han and Junshi Xia and Naoto Yokoya},
+  journal={IEEE Transactions on Geoscience and Remote Sensing}, 
+  title={ChangeMamba: Remote Sensing Change Detection with Spatio-Temporal State Space Model}, 
+  year={2024},
+  volume={62},
+  number={},
+  pages={1-20},
+  doi={10.1109/TGRS.2024.3417253}
 }
 ```
 
 
 
 ## 🤝Acknowledgments
-This project is based on VMamba ([paper](https://arxiv.org/abs/2401.10166), [code](https://github.com/MzeroMiko/VMamba)), ScanNet ([paper](https://arxiv.org/abs/2212.05245), [code](https://github.com/ggsDing/SCanNet)), xView2 Challenge ([paper](https://openaccess.thecvf.com/content_CVPRW_2019/papers/cv4gc/Gupta_Creating_xBD_A_Dataset_for_Assessing_Building_Damage_from_Satellite_CVPRW_2019_paper.pdf), [code](https://github.com/DIUx-xView/xView2_baseline)). Thanks for their excellent works!!
+This project is based on VMamba ([paper](https://arxiv.org/abs/2401.10166), [code](https://github.com/MzeroMiko/VMamba)), ScanNet ([paper](https://arxiv.org/abs/2212.05245), [code](https://github.com/ggsDing/SCanNet)), BDANet ([paper](https://ieeexplore.ieee.org/document/9442902), [code](https://github.com/ShaneShen/BDANet-Building-Damage-Assessment)). Thanks for their excellent works!!
 
 ## 🙋Q & A
 ***For any questions, please feel free to [contact us.](mailto:Qschrx@gmail.com)***
