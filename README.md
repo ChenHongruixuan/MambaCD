@@ -10,8 +10,7 @@
 <sup>#</sup> Equal contribution, <sup>*</sup> Corresponding author
 
 
-
-**Paper: ([arXiv 2404.03425](https://arxiv.org/pdf/2404.03425.pdf))** 
+[![TGRS paper](https://img.shields.io/badge/TGRS-paper-00629B.svg)](https://ieeexplore.ieee.org/document/10565926)  [![arXiv paper](https://img.shields.io/badge/arXiv-paper-b31b1b.svg)](https://arxiv.org/pdf/2404.03425.pdf)
 
 [**Overview**](#overview) | [**Get Started**](#%EF%B8%8Flets-get-started) | [**Taken Away**](#%EF%B8%8Fresults-taken-away) | [**Common Issues**](#common-issues) | [**Others**](#q--a) | [**简体中文版**](./README_zh-CN.md)
 
@@ -25,8 +24,8 @@
 </div>
 
 ## 🛎️Updates
-* **` Notice🐍🐍`**: ChangeMamba has been accepted by IEEE TGRS! We'd appreciate it if you could give this repo a ⭐️**star**⭐️ and stay tuned!!
-* **` June 17th, 2024`**: ChangeMamba has been accepted by IEEE TGRS!!
+* **` Notice🐍🐍`**: ChangeMamba has been accepted by [IEEE TGRS](https://ieeexplore.ieee.org/document/10565926)! We'd appreciate it if you could give this repo a ⭐️**star**⭐️ and stay tuned!!
+* **` June 17th, 2024`**: ChangeMamba has been accepted by [IEEE TGRS](https://ieeexplore.ieee.org/document/10565926)!!
 * **` June 08th, 2024`**: Chinese version of the README file is avaiable!!
 * **` April 18th, 2024`**: The retrained weight of MambaBCD-Base on the [WHU-CD](https://drive.google.com/file/d/1K7aSuT3os7LR9rUvoyVNP-x0hWKZocrn/view?usp=drive_link) (F1 score ***94.19%***) is now avaiable. You are welcome to use it!!
 * **` April 15th, 2024`**: The retrained weights of MambaBCD-Small on the [SYSU](https://drive.google.com/file/d/1ZEPF6CvvFynL-yu_wpEYdpHMHl7tahpH/view?usp=drive_link) (F1 score ***83.36%***), Mamba-BCD-Tiny on the [LEVIR-CD+](https://drive.google.com/file/d/1AtiXBBCoofi1e5g4STYUzBgJ1fYN4VhN/view?usp=drive_link) (F1 score of ***88.03%***) and [WHU-CD](https://drive.google.com/file/d/1ZLKXhGKgnWoyS0X8g3HS45a3X1MP_QE6/view?usp=drive_link) with (F1 score ***94.09%***) are now avaiable. You are welcome to use them!!
@@ -36,7 +35,7 @@
 
 ## 🔭Overview
 
-* [**ChangeMamba**](https://arxiv.org/pdf/2404.03425.pdf) serves as a strong benchmark for change detection tasks, including binary change detection (MambaBCD), semantic change detection (MambaSCD), and building damage assessment (MambaBDA). 
+* [**ChangeMamba**](https://ieeexplore.ieee.org/document/10565926) serves as a strong benchmark for change detection tasks, including binary change detection (MambaBCD), semantic change detection (MambaSCD), and building damage assessment (MambaBDA). 
 
 <p align="center">
   <img src="figures/network_architecture.png" alt="accuracy" width="90%">

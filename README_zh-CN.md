@@ -10,7 +10,7 @@
 
 <sup>#</sup> 共同第一作者, <sup>*</sup> 通讯作者
 
-**论文: ([arXiv 2404.03425](https://arxiv.org/pdf/2404.03425.pdf))** 
+[![TGRS paper](https://img.shields.io/badge/TGRS-paper-00629B.svg)](https://ieeexplore.ieee.org/document/10565926)  [![arXiv paper](https://img.shields.io/badge/arXiv-paper-b31b1b.svg)](https://arxiv.org/pdf/2404.03425.pdf)
 
 [**简介**](#简介) | [**开始使用**](#%EF%B8%8F开始使用) | [**结果下载**](#%EF%B8%8F结果下载) | [**常见问题**](#引用) | [**其他**](#联系我们) | [**English Version**](https://github.com/ChenHongruixuan/MambaCD)
 
@@ -23,8 +23,8 @@
 </div>
 
 ## 🛎️更新日志
-* **` 通知🐍🐍`**: ChangeMamba已经被IEEE TGRS接收！此软件仓库的代码已更新完毕！如果该仓库对您的研究有所帮助，请考虑给该仓库一个⭐️**star**⭐️！
-* **` 2024年06月17日`**: ChangeMamba被IEEE TGRS接收！
+* **` 通知🐍🐍`**: ChangeMamba已经被[IEEE TGRS](https://ieeexplore.ieee.org/document/10565926)接收！此软件仓库的代码已更新完毕！如果该仓库对您的研究有所帮助，请考虑给该仓库一个⭐️**star**⭐️！
+* **` 2024年06月17日`**: ChangeMamba被[IEEE TGRS](https://ieeexplore.ieee.org/document/10565926)接收！
 * **` 2024年06月08日`**: 中文版文档已上线！
 * **` 2024年04月18日`**: MambaBCD-Base在[WHU-CD](https://drive.google.com/file/d/1K7aSuT3os7LR9rUvoyVNP-x0hWKZocrn/view?usp=drive_link) (F1分数为 ***94.19%***)上的训练权重已经可以下载使用！
 * **` 2024年04月15日`**: MambaBCD-Small在 [SYSU](https://drive.google.com/file/d/1ZEPF6CvvFynL-yu_wpEYdpHMHl7tahpH/view?usp=drive_link)的训练权重(F1分数为 ***83.36%***), MambaBCD-Tiny在 [LEVIR-CD+](https://drive.google.com/file/d/1AtiXBBCoofi1e5g4STYUzBgJ1fYN4VhN/view?usp=drive_link) (F1分数为 ***88.03%***) 以及 [WHU-CD](https://drive.google.com/file/d/1ZLKXhGKgnWoyS0X8g3HS45a3X1MP_QE6/view?usp=drive_link) (F1分数为 ***94.09%***) 上的训练权重已经可以下载使用!!
@@ -33,7 +33,7 @@
 
 ## 🔭简介
 
-* [**ChangeMamba**](https://arxiv.org/pdf/2404.03425.pdf)系列模型包括三种有效的变化检测任务的基准模型，分别为二元变化检测模型MambaBCD、语义变化检测模型MambaSCD和建筑物损坏评估模型MambaBDA。
+* [**ChangeMamba**](https://ieeexplore.ieee.org/document/10565926)系列模型包括三种有效的变化检测任务的基准模型，分别为二元变化检测模型MambaBCD、语义变化检测模型MambaSCD和建筑物损坏评估模型MambaBDA。
 
 <p align="center">
   <img src="figures/network_architecture.png" alt="accuracy" width="90%">
