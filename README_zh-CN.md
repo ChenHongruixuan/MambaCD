@@ -24,6 +24,7 @@
 
 ## 🛎️更新日志
 * **` 通知🐍🐍`**: ChangeMamba已经被[IEEE TGRS](https://ieeexplore.ieee.org/document/10565926)接收！此软件仓库的代码已更新完毕！如果该仓库对您的研究有所帮助，请考虑给该仓库一个⭐️**star**⭐️！
+* **` 2024年07月01日`**: 我们上传了经过我们预处理后的[SECOND数据集](https://drive.google.com/file/d/1oApvN8RhJUjxO9pv6GikFbM0S4j8xXwE/view?usp=sharing)！
 * **` 2024年06月17日`**: ChangeMamba被[IEEE TGRS](https://ieeexplore.ieee.org/document/10565926)接收！
 * **` 2024年06月08日`**: 中文版文档已上线！
 * **` 2024年04月18日`**: 我们已经发布了 ChangeMamba 模型在 BCD 任务中的所有权重。欢迎[使用](#%EF%B8%8F结果下载)！！
@@ -127,6 +128,9 @@ ${DATASET_ROOT}   # 数据集根目录，例如: /home/username/data/SYSU
 ***语义变化检测***
 
 语义变化检测任务的数据集为[SECOND数据集](https://captain-whu.github.io/SCD/)。 请下载该数据集，并使其具有以下文件夹/文件结构。请注意，**原始 SECOND 数据集中的土地覆盖图为 RGB 图像。您需要将其转换为单通道图像**。另外，**二元变化图需要您自行生成**，并将其放入文件夹 [`GT_CD`]。
+
+或者，欢迎您直接下载并使用经过我们[预处理后的SECOND 数据集](https://drive.google.com/file/d/1oApvN8RhJUjxO9pv6GikFbM0S4j8xXwE/view?usp=sharing)。
+
 ```
 ${DATASET_ROOT}   # 数据集根目录，例如 /home/username/data/SECOND
 ├── train
