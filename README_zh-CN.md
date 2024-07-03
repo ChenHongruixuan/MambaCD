@@ -48,7 +48,9 @@
 
 ## 🗝️开始使用
 ### `A. 安装`
-该 repo 基于 [VMama repo](https://github.com/MzeroMiko/VMamba)，因此需要先安装它。以下安装顺序取自 VMamba repo。此外，该 repo 中的代码是在 Linux 系统下运行的。我们尚未测试它是否能在其他操作系统下运行。
+此仓库的代码是在 Linux 系统下运行的。我们尚未测试是否能在其他操作系统下运行。
+
+首先需要安装[VMama仓库](https://github.com/MzeroMiko/VMamba)。以下安装顺序取自VMama仓库。
 
 
 **步骤 1 —— 克隆仓库:**
@@ -87,6 +89,7 @@ pip install mmdet==3.3.0 mmsegmentation==1.2.2 mmpretrain==1.2.0
 ```
 ### `B. 下载预训练权重`
 另外，请下载[VMamba-Tiny](https://drive.google.com/file/d/160PXughGMNZ1GyByspLFS68sfUdrQE2N/view?usp=drive_link), [VMamba-Small](https://drive.google.com/file/d/1dxHtFEgeJ9KL5WiLlvQOZK5jSEEd2Nmz/view?usp=drive_link), and [VMamba-Base](https://drive.google.com/file/d/1kUHSBDoFvFG58EmwWurdSVZd8gyKWYfr/view?usp=drive_link)在ImageNet上的预训练权重并把它们放在下述文件夹中 
+
 ```bash
 project_path/MambaCD/pretrained_weight/
 ```
@@ -95,6 +98,7 @@ project_path/MambaCD/pretrained_weight/
 ***二元变化检测***
 
 论文使用了三个基准数据集 [SYSU](https://github.com/liumency/SYSU-CD)、[LEVIR-CD+](https://chenhao.in/LEVIR/) 和 [WHU-CD](https://study.rsgis.whu.edu.cn/pages/download/building_dataset.html) 用于评估模型的二元变化检测的性能。请下载这些数据集，并将其组织成下述文件夹/文件结构：
+
 ```
 ${DATASET_ROOT}   # 数据集根目录，例如: /home/username/data/SYSU
 ├── train
@@ -309,7 +313,7 @@ python script/infer_MambaBDA.py  --dataset 'SECOND'  \
 
 * *非常感谢您如果能给此 repo 一个⭐️**star**⭐️并且保持关注。*
 
-* *请注意，由于我们上传到Github的代码是经过重新组织整理的。下述模型也是采用重新组织整理后的代码训练得到的，因此精度可能会和原始论文不完全一致（大多数情况都高于论文中报告的精度）。*
+* *请注意，由于我们上传到Github的代码是经过重新组织整理的。下面提供的模型权重也是采用重新组织整理后的代码训练得到的，因此精度可能会和原始论文不完全一致（大多数情况都高于论文中报告的精度）。*
 
 ### `A. 二元变化检测`
 
@@ -352,7 +356,7 @@ NameError: name 'selective_scan_cuda_oflex' is not defined | 请参考 Issue [#9
 @article{chen2024changemamba,
   author={Hongruixuan Chen and Jian Song and Chengxi Han and Junshi Xia and Naoto Yokoya},
   journal={IEEE Transactions on Geoscience and Remote Sensing}, 
-  title={ChangeMamba: Remote Sensing Change Detection with Spatio-Temporal State Space Model}, 
+  title={ChangeMamba: Remote Sensing Change Detection with Spatiotemporal State Space Model}, 
   year={2024},
   volume={62},
   number={},

@@ -50,7 +50,10 @@
 
 ## 🗝️Let's Get Started!
 ### `A. Installation`
-The repo is based on the [VMama repo](https://github.com/MzeroMiko/VMamba), thus you need to install it first. The following installation sequence is taken from the VMamba repo. Also, note that the code in this repo runs under Linux system. We have not tested whether it works under other OS.
+
+Note that the code in this repo runs under **Linux** system. We have not tested whether it works under other OS.
+
+The repo is based on the [VMama repo](https://github.com/MzeroMiko/VMamba), thus you need to install it first. The following installation sequence is taken from the VMamba repo. 
 
 **Step 1: Clone the repository:**
 
@@ -350,7 +353,7 @@ If this code or dataset contributes to your research, please kindly consider cit
 @article{chen2024changemamba,
   author={Hongruixuan Chen and Jian Song and Chengxi Han and Junshi Xia and Naoto Yokoya},
   journal={IEEE Transactions on Geoscience and Remote Sensing}, 
-  title={ChangeMamba: Remote Sensing Change Detection with Spatio-Temporal State Space Model}, 
+  title={ChangeMamba: Remote Sensing Change Detection with Spatiotemporal State Space Model}, 
   year={2024},
   volume={62},
   number={},
