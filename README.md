@@ -26,7 +26,7 @@
 ## 🛎️Updates
 * **` Notice🐍🐍`**: ChangeMamba has been accepted by [IEEE TGRS](https://ieeexplore.ieee.org/document/10565926)! We'd appreciate it if you could give this repo a ⭐️**star**⭐️ and stay tuned!!
 * **` July 01st, 2024`**: We have uploaded the preprocessed [SECOND dataset](https://drive.google.com/file/d/1oApvN8RhJUjxO9pv6GikFbM0S4j8xXwE/view?usp=sharing
-)!!
+). You are welcome to use it!!
 * **` June 17th, 2024`**: ChangeMamba has been accepted by [IEEE TGRS](https://ieeexplore.ieee.org/document/10565926)!!
 * **` June 08th, 2024`**: [Simplified Chinese version](./README_zh-CN.md) of the README file is avaiable!!
 * **` April 18th, 2024`**: We have released all weights of ChangeMamba models on BCD tasks. You are welcome [use them](#%EF%B8%8Fresults-taken-away)!!
@@ -338,13 +338,16 @@ python script/infer_MambaBDA.py  --dataset 'SECOND'  \
 | MambaBDA-Base | -- |
 
 ## 🤔Common Issues
-Based on peers' questions from issue, here's a quick and easy to navigate list of solutions to some common issues.
+Based on peers' questions from issue, here's a quick and easy navigate list of solutions to some common issues.
 
 | Issue | Solution | 
 | :---: | :---: | 
-NameError: name 'selective_scan_cuda_oflex' is not defined | Please refer to Issue [#9](https://github.com/ChenHongruixuan/MambaCD/issues/9)
-| Issues about SECOND dataset | Please refer to Issue [#13](https://github.com/ChenHongruixuan/MambaCD/issues/13) / [#22](https://github.com/ChenHongruixuan/MambaCD/issues/22) |
+| Issues about SECOND dataset | Please refer to Issue [#13](https://github.com/ChenHongruixuan/MambaCD/issues/13) / [#22](https://github.com/ChenHongruixuan/MambaCD/issues/22) / [#45](https://github.com/ChenHongruixuan/MambaCD/issues/45) |
 | CUDA out of memory issue | Please lower the batch size of trainign and evalution  |
+| Modify the model structure| Please refere to Issue [#44](https://github.com/ChenHongruixuan/MambaCD/issues/44)  |
+NameError: name 'selective_scan_cuda_oflex' is not defined | Please refer to Issue [#9](https://github.com/ChenHongruixuan/MambaCD/issues/9)
+| Question about the relationship between iteration, epoch & batch size | Please refere to Issue [#32](https://github.com/ChenHongruixuan/MambaCD/issues/32) / [#48](https://github.com/ChenHongruixuan/MambaCD/issues/48)  |
+
 
 ## 📜Reference
 
