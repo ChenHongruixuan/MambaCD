@@ -24,14 +24,15 @@
 </div>
 
 ## 🛎️Updates
-* **` Notice🐍🐍`**: ChangeMamba has been accepted by [IEEE TGRS](https://ieeexplore.ieee.org/document/10565926)! We'd appreciate it if you could give this repo a ⭐️**star**⭐️ and stay tuned!!
+* **` Notice🐍🐍`**: ChangeMamba has been accepted by [IEEE TGRS](https://ieeexplore.ieee.org/document/10565926)! We'd appreciate it if you could give this repo a ⭐️**star**⭐️ and stay tuned !!
+* **` July 19th, 2024`**: ChangeMamab has been selected as [IEEE GRSS Weekly Paper](https://www.linkedin.com/feed/update/urn:li:activity:7219970529498214400/) !!
 * **` July 01st, 2024`**: We have uploaded the preprocessed [SECOND dataset](https://drive.google.com/file/d/1oApvN8RhJUjxO9pv6GikFbM0S4j8xXwE/view?usp=sharing
-). You are welcome to use it!!
-* **` June 17th, 2024`**: ChangeMamba has been accepted by [IEEE TGRS](https://ieeexplore.ieee.org/document/10565926)!!
-* **` June 08th, 2024`**: [Simplified Chinese version](./README_zh-CN.md) of the README file is avaiable!!
-* **` April 18th, 2024`**: We have released all weights of ChangeMamba models on BCD tasks. You are welcome [use them](#%EF%B8%8Fresults-taken-away)!!
-* **` April 12th, 2024`**: The new [[arXiv](https://arxiv.org/pdf/2404.03425.pdf)] version containing new accuracy and more experiments is now online!!
-* **` April 05th, 2024`**: The models and training code for MambaBCD, MambaSCD, and MambaBDA have been organized and uploaded. You are welcome to use them!!
+). You are welcome to use it !!
+* **` June 17th, 2024`**: ChangeMamba has been accepted by [IEEE TGRS](https://ieeexplore.ieee.org/document/10565926) !!
+* **` June 08th, 2024`**: [Simplified Chinese version](./README_zh-CN.md) of the README file is avaiable !!
+* **` April 18th, 2024`**: We have released all weights of ChangeMamba models on BCD tasks. You are welcome [use them](#%EF%B8%8Fresults-taken-away) !!
+* **` April 12th, 2024`**: The new [[arXiv](https://arxiv.org/pdf/2404.03425.pdf)] version containing new accuracy and more experiments is now online !!
+* **` April 05th, 2024`**: The models and training code for MambaBCD, MambaSCD, and MambaBDA have been organized and uploaded. You are welcome to use them !!
 
 ## 🔭Overview
 

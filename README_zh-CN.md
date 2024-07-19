@@ -24,6 +24,7 @@
 
 ## 🛎️更新日志
 * **` 通知🐍🐍`**: ChangeMamba已经被[IEEE TGRS](https://ieeexplore.ieee.org/document/10565926)接收！仓库的代码已更新完毕！如果对您的研究有所帮助，请考虑给该仓库一个⭐️**star**⭐️！
+* **` 2024年07月19日`**: ChangeMamba入选为[IEEE GRSS本周代表论文](https://www.linkedin.com/feed/update/urn:li:activity:7219970529498214400/)！！
 * **` 2024年07月01日`**: 我们上传了经过预处理的[SECOND数据集](https://drive.google.com/file/d/1oApvN8RhJUjxO9pv6GikFbM0S4j8xXwE/view?usp=sharing)！！
 * **` 2024年06月17日`**: ChangeMamba被[IEEE TGRS](https://ieeexplore.ieee.org/document/10565926)接收！
 * **` 2024年06月08日`**: 中文版文档已上线！！
