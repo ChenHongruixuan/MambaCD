@@ -316,7 +316,15 @@ python script/infer_MambaBDA.py  --dataset 'SECOND'  \
 
 * *请注意，由于我们上传到Github的代码是经过重新组织整理的。下面提供的模型权重也是采用重新组织整理后的代码训练得到的，因此精度可能会和原始论文不完全一致（大多数情况都高于论文中报告的精度）。*
 
-### `一、二元变化检测`
+### `一、VMamba（编码器）的预训练权重`
+
+| 方法 | ImageNet (ckpt) | 
+| :---: | :---: |
+| VMamba-Tiny | [[GDrive](https://drive.google.com/file/d/160PXughGMNZ1GyByspLFS68sfUdrQE2N/view?usp=drive_link)][[BaiduYun](https://pan.baidu.com/s/1P9KRVy4lW8LaKJ898eQ_0w?pwd=7qxh)] |   
+| VMamba-Small | [[GDrive](https://drive.google.com/file/d/1dxHtFEgeJ9KL5WiLlvQOZK5jSEEd2Nmz/view?usp=drive_link)][[BaiduYun](https://pan.baidu.com/s/1RRjTA9ONhO43sBLp_a2TSw?pwd=6qk1)]   | 
+| VMamba-Base |  [[GDrive](https://drive.google.com/file/d/1kUHSBDoFvFG58EmwWurdSVZd8gyKWYfr/view?usp=drive_link)][[BaiduYun](https://pan.baidu.com/s/14_syzqwNnVB8rD3tejEZ4w?pwd=q825)] | 
+
+### `二、二元变化检测`
 
 | 方法 | SYSU (ckpt) | LEVIR-CD+ (ckpt) | WHU-CD (ckpt) | 
 | :---: | :---: | :---: | :---: |
@@ -324,7 +332,7 @@ python script/infer_MambaBDA.py  --dataset 'SECOND'  \
 | MambaBCD-Small | [[GDrive](https://drive.google.com/file/d/1ZEPF6CvvFynL-yu_wpEYdpHMHl7tahpH/view?usp=drive_link)][[BaiduYun](https://pan.baidu.com/s/1f8iwuKCkElU9rc24_ZzXBw?pwd=46p5)]   | [[GDrive](https://drive.google.com/file/d/19jEBLheCwEnQqF23EqNrn1r79D-nZ95y/view?usp=sharing)][[BaiduYun](https://pan.baidu.com/s/1EKWp-tF0EEGgZ-nVlW8S1g?pwd=n3qz)]  | [[GDrive](https://drive.google.com/file/d/1ejiBIhSAJF0P65Xn6DpzRpARiIGPLiWw/view?usp=drive_link)][[BaiduYun]](https://pan.baidu.com/s/1tIWyfJa2o9EMwrKg-gKTnw?pwd=vizm) | 
 | MambaBCD-Base |  [[GDrive](https://drive.google.com/file/d/14WbK9KjOIOWuea3JAgvIfyDvqACExZ0s/view?usp=drive_link)][[BaiduYun](https://pan.baidu.com/s/1xiWWjlhuJWA40cMggevdlA?pwd=4jft)] | [[GDrive](https://drive.google.com/file/d/1uQy5tGXW20xFZvF7hIvZvsi7-JU7tg7G/view?usp=drive_link)] [[BaiduYun](https://pan.baidu.com/s/1M_u7HdIEFIEA2d3L1kfu3Q?pwd=rkgp)] | [[GDrive](https://drive.google.com/file/d/1K7aSuT3os7LR9rUvoyVNP-x0hWKZocrn/view?usp=drive_link)][[BaiduYun](https://pan.baidu.com/s/1o6Z6ecIJ59K9eB2KqNMD9w?pwd=4mqd)] |
 
-### `二、语义变化检测`
+### `三、语义变化检测`
 | 方法 |  SECOND (ckpt) | SECOND (results) |
 | :---: | :---: | :---: | 
 | MambaSCD-Tiny |  --  |  --  | 
@@ -333,7 +341,7 @@ python script/infer_MambaBDA.py  --dataset 'SECOND'  \
 
 
 
-### `三、建筑物损害评估`
+### `四、建筑物损害评估`
 | 方法 |  xBD (ckpt) | xBD (results) |
 | :---: | :---: | :---: | 
 | MambaBDA-Tiny |  -- | --  | 
