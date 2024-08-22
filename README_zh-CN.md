@@ -23,14 +23,14 @@
 </div>
 
 ## 🛎️更新日志
-* **` 通知🐍🐍`**: ChangeMamba已经被[IEEE TGRS](https://ieeexplore.ieee.org/document/10565926)接收！仓库的代码已更新完毕！如果对您的研究有所帮助，请考虑给该仓库一个⭐️**star**⭐️！
-* **` 2024年07月19日`**: ChangeMamba入选为[IEEE TGRS热门论文](https://ieeexplore.ieee.org/xpl/topAccessedArticles.jsp?punumber=36)！！
-* **` 2024年07月19日`**: ChangeMamba入选为[IEEE GRSS周推荐论文](https://www.linkedin.com/feed/update/urn:li:activity:7219970529498214400/)！！
-* **` 2024年07月01日`**: 我们上传了经过预处理的[SECOND数据集](https://drive.google.com/file/d/1oApvN8RhJUjxO9pv6GikFbM0S4j8xXwE/view?usp=sharing)！！
-* **` 2024年06月17日`**: ChangeMamba被[IEEE TGRS](https://ieeexplore.ieee.org/document/10565926)接收！
+* **` 通知🐍🐍`**: ChangeMamba已经被 [IEEE TGRS](https://ieeexplore.ieee.org/document/10565926) 接收！仓库的代码已更新完毕！如果对您的研究有所帮助，请考虑给该仓库一个⭐️**star**⭐️！
+* **` 2024年07月19日`**: ChangeMamba入选为[ IEEE TGRS 热点论文](https://ieeexplore.ieee.org/xpl/topAccessedArticles.jsp?punumber=36)！！
+* **` 2024年07月19日`**: ChangeMamba入选为[ IEEE GRSS 周推荐论文](https://www.linkedin.com/feed/update/urn:li:activity:7219970529498214400/)！！
+* **` 2024年07月01日`**: 我们上传了经过预处理的 [SECOND数据集](https://drive.google.com/file/d/1oApvN8RhJUjxO9pv6GikFbM0S4j8xXwE/view?usp=sharing)！！
+* **` 2024年06月17日`**: ChangeMamba被 [IEEE TGRS](https://ieeexplore.ieee.org/document/10565926) 接收！
 * **` 2024年06月08日`**: 中文版文档已上线！！
 * **` 2024年04月18日`**: 我们已经发布了 ChangeMamba 模型在 BCD 任务中的所有权重。欢迎[使用](#%EF%B8%8F结果下载)！！
-* **` 2024年04月05日`**: 该工作的[[ArXiv论文](https://arxiv.org/pdf/2404.03425.pdf)]已经上线！！
+* **` 2024年04月05日`**: ChangeMamba 的[ArXiv论文](https://arxiv.org/pdf/2404.03425.pdf)已经上线！！
 * **` 2024年04年05日`**: MambaBCD、MambaSCD 和 MambaBDA 的模型和训练代码已经整理并上传。欢迎使用！！
 
 ## 🔭简介
@@ -312,10 +312,9 @@ python script/infer_MambaBDA.py  --dataset 'SECOND'  \
 
 ## ⚗️结果下载
 
+* *我们上传到Github的代码是经过重新组织整理的。下面提供的模型权重也是采用重新组织整理后的代码训练得到的。因此精度可能会和原始论文不完全一致（大多数情况都高于论文中报告的精度）。*
 
-* *非常感谢您如果能给此 repo 一个⭐️**star**⭐️并且保持关注。*
-
-* *请注意，由于我们上传到Github的代码是经过重新组织整理的。下面提供的模型权重也是采用重新组织整理后的代码训练得到的，因此精度可能会和原始论文不完全一致（大多数情况都高于论文中报告的精度）。*
+* *我们还上传了 ChangeMamba的预测结果。您可以下载并直接在论文中使用它们 [[GDrive](https://drive.google.com/drive/folders/1kVKgbElM23c-hSNZ_TTqfxXNXrPgNJ6L?usp=sharing)][[BaiduYun](https://pan.baidu.com/s/1RYXRL0emsKDL_9_v82nIjQ?pwd=df2t)].*
 
 ### `一、VMamba（编码器）的预训练权重`
 
@@ -336,9 +335,9 @@ python script/infer_MambaBDA.py  --dataset 'SECOND'  \
 ### `三、语义变化检测`
 | 方法 |  SECOND (ckpt) | SECOND (results) |
 | :---: | :---: | :---: | 
-| MambaSCD-Tiny |  --  |  --  | 
+| MambaSCD-Tiny |  [[GDrive](https://drive.google.com/file/d/1Q2hMC320vCpp5MQA8SK54iFY7L5JF9qN/view?usp=sharing)][[BaiduYun](https://pan.baidu.com/s/1eHUjKm8Ty0w92BvOoj53Fw?pwd=6hnj)]   |  --  | 
 | MambaSCD-Small | --  | -- | 
-| MambaSCD-Base | --  |  --  | 
+| MambaSCD-Base | [[GDrive](https://drive.google.com/file/d/12aJ4sL0r02-rB5K6dixtr6FGJ3kNwlFy/view?usp=sharing)][[BaiduYun](https://pan.baidu.com/s/1GxNDC2JAEvPmOiNArLrYmw?pwd=sr3i)]   |  --  | 
 
 
 

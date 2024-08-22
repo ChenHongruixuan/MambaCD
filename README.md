@@ -311,7 +311,10 @@ python script/infer_MambaBDA.py  --dataset 'SECOND'  \
 
 * *We'd appreciate it if you could give this repo a ⭐️**star**⭐️ and stay tuned.*
 
-* *Please note that the code we uploaded was reorganised and collated. The models below were also trained using the reorganised code and therefore accuracy may not perfectly match the original paper (in most cases the accuracy is higher than that in the paper).*
+* *Please note that the code we uploaded was reorganised and collated. The models below were also trained using the reorganised code and therefore accuracy may not perfectly match the original paper. In most cases, the accuracy is higher than that in the paper.*
+
+* *We also uploaded prediction results. You can download them and use them directly in your paper [[GDrive](https://drive.google.com/drive/folders/1kVKgbElM23c-hSNZ_TTqfxXNXrPgNJ6L?usp=sharing)][[BaiduYun](https://pan.baidu.com/s/1RYXRL0emsKDL_9_v82nIjQ?pwd=df2t)].*
+
 
 ### `A. Pretrained Weight of VMamba (Encoder)`
 
@@ -335,9 +338,9 @@ python script/infer_MambaBDA.py  --dataset 'SECOND'  \
 ### `C. Semantic Change Detection`
 | Method |  SECOND (ckpt) |
 | :---: | :---: |
-| MambaSCD-Tiny |  --  |
+| MambaSCD-Tiny |  [[GDrive](https://drive.google.com/file/d/1Q2hMC320vCpp5MQA8SK54iFY7L5JF9qN/view?usp=sharing)][[BaiduYun](https://pan.baidu.com/s/1eHUjKm8Ty0w92BvOoj53Fw?pwd=6hnj)]  |
 | MambaSCD-Small | --  | 
-| MambaSCD-Base | --  | 
+| MambaSCD-Base | [[GDrive](https://drive.google.com/file/d/12aJ4sL0r02-rB5K6dixtr6FGJ3kNwlFy/view?usp=sharing)][[BaiduYun](https://pan.baidu.com/s/1GxNDC2JAEvPmOiNArLrYmw?pwd=sr3i)]  | 
 
 
 
@@ -354,7 +357,7 @@ Based on peers' questions from issue, here's a quick and easy navigate list of s
 | Issue | Solution | 
 | :---: | :---: | 
 | Issues about SECOND dataset | Please refer to Issue [#13](https://github.com/ChenHongruixuan/MambaCD/issues/13) / [#22](https://github.com/ChenHongruixuan/MambaCD/issues/22) / [#45](https://github.com/ChenHongruixuan/MambaCD/issues/45) |
-| CUDA out of memory issue | Please lower the batch size of trainign and evalution  |
+| CUDA out of memory issue | Please lower the batch size of training and evalution  |
 | Modify the model structure| Please refere to Issue [#44](https://github.com/ChenHongruixuan/MambaCD/issues/44)  |
 NameError: name 'selective_scan_cuda_oflex' is not defined | Please refer to Issue [#9](https://github.com/ChenHongruixuan/MambaCD/issues/9)
 | Question about the relationship between iteration, epoch & batch size | Please refere to Issue [#32](https://github.com/ChenHongruixuan/MambaCD/issues/32) / [#48](https://github.com/ChenHongruixuan/MambaCD/issues/48)  |
