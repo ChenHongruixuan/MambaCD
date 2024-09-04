@@ -280,7 +280,6 @@ python script/infer_MambaBCD.py  --dataset 'LEVIR-CD+' \
                                  --test_dataset_path '<dataset_path>/LEVIR-CD+/test' \
                                  --test_data_list_path '<dataset_path>/LEVIR-CD+/test_list.txt' \
                                  --cfg '<project_path>/MambaCD/changedetection/configs/vssm1/vssm_tiny_224_0229flex.yaml' \
-                                 --pretrained_weight_path '<project_path>/MambaCD/pretrained_weight/vssm_tiny_0230_ckpt_epoch_262.pth'
                                  --resume '<saved_model_path>/MambaBCD_Tiny_LEVIRCD+_F1_0.8803.pth'
 ```
 
@@ -293,7 +292,6 @@ python script/infer_MambaBCD.py  --dataset 'SECOND'  \
                                  --test_dataset_path '<dataset_path>/SECOND/test' \
                                  --test_data_list_path '<dataset_path>/SECOND/test_list.txt' \
                                  --cfg '<project_path>/MambaCD/changedetection/configs/vssm1/vssm_tiny_224_0229flex.yaml' \
-                                 --pretrained_weight_path '<project_path>/MambaCD/pretrained_weight/vssm_tiny_0230_ckpt_epoch_262.pth'
                                  --resume '<saved_model_path>/[your_trained_model].pth'
 ```
 
@@ -306,7 +304,6 @@ python script/infer_MambaBDA.py  --dataset 'SECOND'  \
                                  --test_dataset_path '<dataset_path>/xBD/test' \
                                  --test_data_list_path '<dataset_path>/xBD/test_list.txt' \
                                  --cfg '<project_path>/MambaCD/changedetection/configs/vssm1/vssm_tiny_224_0229flex.yaml' \
-                                 --pretrained_weight_path '<project_path>/MambaCD/pretrained_weight/vssm_tiny_0230_ckpt_epoch_262.pth'
                                  --resume '<saved_model_path>/[your_trained_model].pth'
 ```
 
@@ -357,7 +354,8 @@ python script/infer_MambaBDA.py  --dataset 'SECOND'  \
 | CUDA out of memory issue | 请降低训练和评估的batch size  |
 | 修改模型结构 | 请参考 Issue [#44](https://github.com/ChenHongruixuan/MambaCD/issues/44)  |
 | 关于iteration、epoch和batch size之间的关系 | 请参考 Issue [#32](https://github.com/ChenHongruixuan/MambaCD/issues/32) / [#48](https://github.com/ChenHongruixuan/MambaCD/issues/48)  |
-NameError: name 'selective_scan_cuda_oflex' is not defined | 请参考 Issue [#9](https://github.com/ChenHongruixuan/MambaCD/issues/9)
+NameError: name 'selective_scan_cuda_oflex' is not defined | 请参考 Issue [#9](https://github.com/ChenHongruixuan/MambaCD/issues/9) | 
+推理阶段精度很低 | 请用 --resume 加载模型，而不是用 --pretrained_weight_path 加载模型 | 
 
 
 ## 📜引用

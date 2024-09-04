@@ -275,7 +275,6 @@ python script/infer_MambaBCD.py  --dataset 'LEVIR-CD+' \
                                  --test_dataset_path '<dataset_path>/LEVIR-CD+/test' \
                                  --test_data_list_path '<dataset_path>/LEVIR-CD+/test_list.txt' \
                                  --cfg '<project_path>/MambaCD/changedetection/configs/vssm1/vssm_tiny_224_0229flex.yaml' \
-                                 --pretrained_weight_path '<project_path>/MambaCD/pretrained_weight/vssm_tiny_0230_ckpt_epoch_262.pth'
                                  --resume '<saved_model_path>/MambaBCD_Tiny_LEVIRCD+_F1_0.8803.pth'
 ```
 
@@ -288,7 +287,6 @@ python script/infer_MambaBCD.py  --dataset 'SECOND'  \
                                  --test_dataset_path '<dataset_path>/SECOND/test' \
                                  --test_data_list_path '<dataset_path>/SECOND/test_list.txt' \
                                  --cfg '<project_path>/MambaCD/changedetection/configs/vssm1/vssm_tiny_224_0229flex.yaml' \
-                                 --pretrained_weight_path '<project_path>/MambaCD/pretrained_weight/vssm_tiny_0230_ckpt_epoch_262.pth'
                                  --resume '<saved_model_path>/[your_trained_model].pth'
 ```
 
@@ -301,7 +299,6 @@ python script/infer_MambaBDA.py  --dataset 'SECOND'  \
                                  --test_dataset_path '<dataset_path>/xBD/test' \
                                  --test_data_list_path '<dataset_path>/xBD/test_list.txt' \
                                  --cfg '<project_path>/MambaCD/changedetection/configs/vssm1/vssm_tiny_224_0229flex.yaml' \
-                                 --pretrained_weight_path '<project_path>/MambaCD/pretrained_weight/vssm_tiny_0230_ckpt_epoch_262.pth'
                                  --resume '<saved_model_path>/[your_trained_model].pth'
 ```
 
@@ -352,7 +349,7 @@ python script/infer_MambaBDA.py  --dataset 'SECOND'  \
 | MambaBDA-Base | -- |
 
 ## 🤔Common Issues
-Based on peers' questions from issue, here's a quick and easy navigate list of solutions to some common issues.
+Based on peers' questions from issue, here's a quick navigate list of solutions to some common issues.
 
 | Issue | Solution | 
 | :---: | :---: | 
@@ -361,6 +358,7 @@ Based on peers' questions from issue, here's a quick and easy navigate list of s
 | Modify the model structure| Please refere to Issue [#44](https://github.com/ChenHongruixuan/MambaCD/issues/44)  |
 NameError: name 'selective_scan_cuda_oflex' is not defined | Please refer to Issue [#9](https://github.com/ChenHongruixuan/MambaCD/issues/9)
 | Question about the relationship between iteration, epoch & batch size | Please refere to Issue [#32](https://github.com/ChenHongruixuan/MambaCD/issues/32) / [#48](https://github.com/ChenHongruixuan/MambaCD/issues/48)  |
+| Inference using trained models has low accuracy | Please use --resume instead of --pretrained_weight_path to load the trained model's weight  |
 
 
 ## 📜Reference
