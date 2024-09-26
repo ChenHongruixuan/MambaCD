@@ -385,3 +385,5 @@ This project is based on VMamba ([paper](https://arxiv.org/abs/2401.10166), [cod
 
 ## 🙋Q & A
 ***For any questions, please feel free to [contact us.](mailto:Qschrx@gmail.com)***
+
+[![Star History Chart](https://api.star-history.com/svg?repos=ChenHongruixuan/MambaCD&type=Date)](https://star-history.com/#ChenHongruixuan/MambaCD&Date)

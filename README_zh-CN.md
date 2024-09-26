@@ -381,3 +381,5 @@ NameError: name 'selective_scan_cuda_oflex' is not defined | 请参考 Issue [#9
 
 ## 🙋联系我们
 ***如有任何问题，请随时[联系我们。](mailto:Qschrx@gmail.com)***
+
+[![Star History Chart](https://api.star-history.com/svg?repos=ChenHongruixuan/MambaCD&type=Date)](https://star-history.com/#ChenHongruixuan/MambaCD&Date)
