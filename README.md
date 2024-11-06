@@ -10,7 +10,7 @@
 <sup>#</sup> Equal contribution, <sup>*</sup> Corresponding author
 
 
-[![TGRS paper](https://img.shields.io/badge/TGRS-paper-00629B.svg)](https://ieeexplore.ieee.org/document/10565926)  [![arXiv paper](https://img.shields.io/badge/arXiv-paper-b31b1b.svg)](https://arxiv.org/pdf/2404.03425.pdf)
+[![TGRS paper](https://img.shields.io/badge/TGRS-paper-00629B.svg)](https://ieeexplore.ieee.org/document/10565926)  [![arXiv paper](https://img.shields.io/badge/arXiv-paper-b31b1b.svg)](https://arxiv.org/pdf/2404.03425.pdf) [![Zenodo Models](https://img.shields.io/badge/Zenodo-Models-green)](https://zenodo.org/records/14028095) 
 
 [**Overview**](#overview) | [**Get Started**](#%EF%B8%8Flets-get-started) | [**Taken Away**](#%EF%B8%8Fresults-taken-away) | [**Common Issues**](#common-issues) | [**Others**](#q--a) | [**简体中文版**](./README_zh-CN.md)
 
@@ -311,16 +311,16 @@ python script/infer_MambaBDA.py  --dataset 'SECOND'  \
 
 * *Please note that the code we uploaded was reorganised and collated. The models below were also trained using the reorganised code and therefore accuracy may not perfectly match the original paper. In most cases, the accuracy is higher than that in the paper.*
 
-* *We also uploaded prediction results. You can download them and use them directly in your paper [[GDrive](https://drive.google.com/drive/folders/1kVKgbElM23c-hSNZ_TTqfxXNXrPgNJ6L?usp=sharing)][[BaiduYun](https://pan.baidu.com/s/1RYXRL0emsKDL_9_v82nIjQ?pwd=df2t)].*
+* *We also uploaded prediction results. You can download them and use them directly in your paper [[Zenodo](https://zenodo.org/uploads/14037770)] [[GDrive](https://drive.google.com/drive/folders/1kVKgbElM23c-hSNZ_TTqfxXNXrPgNJ6L?usp=sharing)][[BaiduYun](https://pan.baidu.com/s/1RYXRL0emsKDL_9_v82nIjQ?pwd=df2t)].*
 
 
 ### `A. Pretrained Weight of VMamba (Encoder)`
 
 | Method | ImageNet (ckpt) | 
 | :---: | :---: |
-| VMamba-Tiny | [[GDrive](https://drive.google.com/file/d/160PXughGMNZ1GyByspLFS68sfUdrQE2N/view?usp=drive_link)][[BaiduYun](https://pan.baidu.com/s/1P9KRVy4lW8LaKJ898eQ_0w?pwd=7qxh)] |   
-| VMamba-Small | [[GDrive](https://drive.google.com/file/d/1dxHtFEgeJ9KL5WiLlvQOZK5jSEEd2Nmz/view?usp=drive_link)][[BaiduYun](https://pan.baidu.com/s/1RRjTA9ONhO43sBLp_a2TSw?pwd=6qk1)]   | 
-| VMamba-Base |  [[GDrive](https://drive.google.com/file/d/1kUHSBDoFvFG58EmwWurdSVZd8gyKWYfr/view?usp=drive_link)][[BaiduYun](https://pan.baidu.com/s/14_syzqwNnVB8rD3tejEZ4w?pwd=q825)] | 
+| VMamba-Tiny | [[Zenodo](https://zenodo.org/uploads/14037770)][[GDrive](https://drive.google.com/file/d/160PXughGMNZ1GyByspLFS68sfUdrQE2N/view?usp=drive_link)][[BaiduYun](https://pan.baidu.com/s/1P9KRVy4lW8LaKJ898eQ_0w?pwd=7qxh)] |   
+| VMamba-Small | [[Zenodo](https://zenodo.org/uploads/14037770)][[GDrive](https://drive.google.com/file/d/1dxHtFEgeJ9KL5WiLlvQOZK5jSEEd2Nmz/view?usp=drive_link)][[BaiduYun](https://pan.baidu.com/s/1RRjTA9ONhO43sBLp_a2TSw?pwd=6qk1)]   | 
+| VMamba-Base |  [[Zenodo](https://zenodo.org/uploads/14037770)][[GDrive](https://drive.google.com/file/d/1kUHSBDoFvFG58EmwWurdSVZd8gyKWYfr/view?usp=drive_link)][[BaiduYun](https://pan.baidu.com/s/14_syzqwNnVB8rD3tejEZ4w?pwd=q825)] | 
 
 
 
@@ -328,17 +328,17 @@ python script/infer_MambaBDA.py  --dataset 'SECOND'  \
 
 | Method | SYSU (ckpt) | LEVIR-CD+ (ckpt) | WHU-CD (ckpt) | 
 | :---: | :---: | :---: | :---: |
-| MambaBCD-Tiny | [[GDrive](https://drive.google.com/file/d/1qoivh0zrZjpPzUOiIxLWZn7kdBQ-MqnY/view?usp=sharing)][[BaiduYun](https://pan.baidu.com/s/160RiqDQKB6rBwn7Fke6xFQ?pwd=wqf9)] |  [[GDrive](https://drive.google.com/file/d/1AtiXBBCoofi1e5g4STYUzBgJ1fYN4VhN/view?usp=drive_link)][[BaiduYun](https://pan.baidu.com/s/13dGC_J-wyIfoPwoPJ5Uc6Q?pwd=8ali)]	 | [[GDrive](https://drive.google.com/file/d/1ZLKXhGKgnWoyS0X8g3HS45a3X1MP_QE6/view?usp=drive_link)][[BaiduYun](https://pan.baidu.com/s/1DhTedGZdIC80y06tog1xbg?pwd=raf0)] | 
-| MambaBCD-Small | [[GDrive](https://drive.google.com/file/d/1ZEPF6CvvFynL-yu_wpEYdpHMHl7tahpH/view?usp=drive_link)][[BaiduYun](https://pan.baidu.com/s/1f8iwuKCkElU9rc24_ZzXBw?pwd=46p5)]   | [[GDrive](https://drive.google.com/file/d/19jEBLheCwEnQqF23EqNrn1r79D-nZ95y/view?usp=sharing)][[BaiduYun](https://pan.baidu.com/s/1EKWp-tF0EEGgZ-nVlW8S1g?pwd=n3qz)]  | [[GDrive](https://drive.google.com/file/d/1ejiBIhSAJF0P65Xn6DpzRpARiIGPLiWw/view?usp=drive_link)][[BaiduYun]](https://pan.baidu.com/s/1tIWyfJa2o9EMwrKg-gKTnw?pwd=vizm) | 
-| MambaBCD-Base |  [[GDrive](https://drive.google.com/file/d/14WbK9KjOIOWuea3JAgvIfyDvqACExZ0s/view?usp=drive_link)][[BaiduYun](https://pan.baidu.com/s/1xiWWjlhuJWA40cMggevdlA?pwd=4jft)] | [[GDrive](https://drive.google.com/file/d/1uQy5tGXW20xFZvF7hIvZvsi7-JU7tg7G/view?usp=drive_link)] [[BaiduYun](https://pan.baidu.com/s/1M_u7HdIEFIEA2d3L1kfu3Q?pwd=rkgp)] | [[GDrive](https://drive.google.com/file/d/1K7aSuT3os7LR9rUvoyVNP-x0hWKZocrn/view?usp=drive_link)][[BaiduYun](https://pan.baidu.com/s/1o6Z6ecIJ59K9eB2KqNMD9w?pwd=4mqd)] |
+| MambaBCD-Tiny | [[Zenodo](https://zenodo.org/uploads/14037770)][[GDrive](https://drive.google.com/file/d/1qoivh0zrZjpPzUOiIxLWZn7kdBQ-MqnY/view?usp=sharing)][[BaiduYun](https://pan.baidu.com/s/160RiqDQKB6rBwn7Fke6xFQ?pwd=wqf9)] |  [[Zenodo](https://zenodo.org/uploads/14037770)][[GDrive](https://drive.google.com/file/d/1AtiXBBCoofi1e5g4STYUzBgJ1fYN4VhN/view?usp=drive_link)][[BaiduYun](https://pan.baidu.com/s/13dGC_J-wyIfoPwoPJ5Uc6Q?pwd=8ali)]	 | [[Zenodo](https://zenodo.org/uploads/14037770)][[GDrive](https://drive.google.com/file/d/1ZLKXhGKgnWoyS0X8g3HS45a3X1MP_QE6/view?usp=drive_link)][[BaiduYun](https://pan.baidu.com/s/1DhTedGZdIC80y06tog1xbg?pwd=raf0)] | 
+| MambaBCD-Small | [[Zenodo](https://zenodo.org/uploads/14037770)][[GDrive](https://drive.google.com/file/d/1ZEPF6CvvFynL-yu_wpEYdpHMHl7tahpH/view?usp=drive_link)][[BaiduYun](https://pan.baidu.com/s/1f8iwuKCkElU9rc24_ZzXBw?pwd=46p5)]   | [[Zenodo](https://zenodo.org/uploads/14037770)][[GDrive](https://drive.google.com/file/d/19jEBLheCwEnQqF23EqNrn1r79D-nZ95y/view?usp=sharing)][[BaiduYun](https://pan.baidu.com/s/1EKWp-tF0EEGgZ-nVlW8S1g?pwd=n3qz)]  | [[Zenodo](https://zenodo.org/uploads/14037770)][[GDrive](https://drive.google.com/file/d/1ejiBIhSAJF0P65Xn6DpzRpARiIGPLiWw/view?usp=drive_link)][[BaiduYun]](https://pan.baidu.com/s/1tIWyfJa2o9EMwrKg-gKTnw?pwd=vizm) | 
+| MambaBCD-Base |  [[Zenodo](https://zenodo.org/uploads/14037770)][[GDrive](https://drive.google.com/file/d/14WbK9KjOIOWuea3JAgvIfyDvqACExZ0s/view?usp=drive_link)][[BaiduYun](https://pan.baidu.com/s/1xiWWjlhuJWA40cMggevdlA?pwd=4jft)] |[[Zenodo](https://zenodo.org/uploads/14037770)][[GDrive](https://drive.google.com/file/d/1uQy5tGXW20xFZvF7hIvZvsi7-JU7tg7G/view?usp=drive_link)] [[BaiduYun](https://pan.baidu.com/s/1M_u7HdIEFIEA2d3L1kfu3Q?pwd=rkgp)] | [[Zenodo](https://zenodo.org/uploads/14037770)][[GDrive](https://drive.google.com/file/d/1K7aSuT3os7LR9rUvoyVNP-x0hWKZocrn/view?usp=drive_link)][[BaiduYun](https://pan.baidu.com/s/1o6Z6ecIJ59K9eB2KqNMD9w?pwd=4mqd)] |
 
 
 ### `C. Semantic Change Detection`
 | Method |  SECOND (ckpt) |
 | :---: | :---: |
-| MambaSCD-Tiny |  [[GDrive](https://drive.google.com/file/d/1Q2hMC320vCpp5MQA8SK54iFY7L5JF9qN/view?usp=sharing)][[BaiduYun](https://pan.baidu.com/s/1eHUjKm8Ty0w92BvOoj53Fw?pwd=6hnj)]  |
+| MambaSCD-Tiny |  [[Zenodo](https://zenodo.org/uploads/14037770)][[GDrive](https://drive.google.com/file/d/1Q2hMC320vCpp5MQA8SK54iFY7L5JF9qN/view?usp=sharing)][[BaiduYun](https://pan.baidu.com/s/1eHUjKm8Ty0w92BvOoj53Fw?pwd=6hnj)]  |
 | MambaSCD-Small | --  | 
-| MambaSCD-Base | [[GDrive](https://drive.google.com/file/d/12aJ4sL0r02-rB5K6dixtr6FGJ3kNwlFy/view?usp=sharing)][[BaiduYun](https://pan.baidu.com/s/1GxNDC2JAEvPmOiNArLrYmw?pwd=sr3i)]  | 
+| MambaSCD-Base |[[Zenodo](https://zenodo.org/uploads/14037770)][[GDrive](https://drive.google.com/file/d/12aJ4sL0r02-rB5K6dixtr6FGJ3kNwlFy/view?usp=sharing)][[BaiduYun](https://pan.baidu.com/s/1GxNDC2JAEvPmOiNArLrYmw?pwd=sr3i)]  | 
 
 
 
