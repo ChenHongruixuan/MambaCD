@@ -10,7 +10,7 @@
 
 <sup>#</sup> 共同第一作者, <sup>*</sup> 通讯作者
 
-[![TGRS paper](https://img.shields.io/badge/TGRS-paper-00629B.svg)](https://ieeexplore.ieee.org/document/10565926)  [![arXiv paper](https://img.shields.io/badge/arXiv-paper-b31b1b.svg)](https://arxiv.org/pdf/2404.03425.pdf) [![Zenodo Models](https://img.shields.io/badge/Zenodo-Models-green)](https://zenodo.org/records/14028095) 
+[![TGRS paper](https://img.shields.io/badge/TGRS-paper-00629B.svg)](https://ieeexplore.ieee.org/document/10565926)  [![arXiv paper](https://img.shields.io/badge/arXiv-paper-b31b1b.svg)](https://arxiv.org/pdf/2404.03425.pdf) [![Zenodo Models](https://img.shields.io/badge/Zenodo-Models-green)](https://zenodo.org/records/14037770) 
 
 [**简介**](#简介) | [**开始使用**](#%EF%B8%8F开始使用) | [**结果下载**](#%EF%B8%8F结果下载) | [**常见问题**](#引用) | [**其他**](#联系我们) | [**English Version**](https://github.com/ChenHongruixuan/MambaCD)
 
@@ -91,7 +91,7 @@ pip install mmengine==0.10.1 mmcv==2.1.0 opencv-python-headless ftfy regex
 pip install mmdet==3.3.0 mmsegmentation==1.2.2 mmpretrain==1.2.0
 ```
 ### `二、下载预训练权重`
-另外，请下载[VMamba-Tiny](https://drive.google.com/file/d/160PXughGMNZ1GyByspLFS68sfUdrQE2N/view?usp=drive_link), [VMamba-Small](https://drive.google.com/file/d/1dxHtFEgeJ9KL5WiLlvQOZK5jSEEd2Nmz/view?usp=drive_link), and [VMamba-Base](https://drive.google.com/file/d/1kUHSBDoFvFG58EmwWurdSVZd8gyKWYfr/view?usp=drive_link)在ImageNet上的预训练权重并把它们放在下述文件夹中 
+另外，请下载[VMamba-Tiny](https://zenodo.org/records/14037770), [VMamba-Small](https://zenodo.org/records/14037770), and [VMamba-Base](https://zenodo.org/records/14037770)在ImageNet上的预训练权重并把它们放在下述文件夹中 
 
 ```bash
 project_path/MambaCD/pretrained_weight/
@@ -136,7 +136,7 @@ ${DATASET_ROOT}   # 数据集根目录，例如: /home/username/data/SYSU
 
 语义变化检测任务的数据集为[SECOND数据集](https://captain-whu.github.io/SCD/)。 请下载该数据集，并使其具有以下文件夹/文件结构。请注意，**原始 SECOND 数据集中的土地覆盖图为 RGB 图像。您需要将其转换为单通道图像**。另外，**二元变化图需要您自行生成**，并将其放入文件夹 [`GT_CD`]。
 
-或者，欢迎您直接下载并使用经过我们[预处理后的SECOND 数据集](https://drive.google.com/file/d/1oApvN8RhJUjxO9pv6GikFbM0S4j8xXwE/view?usp=sharing)。
+或者，欢迎您直接下载并使用经过我们[预处理后的SECOND 数据集](https://zenodo.org/records/14037770)。
 
 ```
 ${DATASET_ROOT}   # 数据集根目录，例如 /home/username/data/SECOND
@@ -312,7 +312,7 @@ python script/infer_MambaBDA.py  --dataset 'SECOND'  \
 
 * *我们上传到Github的代码是经过重新组织整理的。下面提供的模型权重也是采用重新组织整理后的代码训练得到的。因此精度可能会和原始论文不完全一致（大多数情况都高于论文中报告的精度）。*
 
-* *我们还上传了 ChangeMamba的预测结果。您可以下载并直接在论文中使用它们 [[Zenodo](https://zenodo.org/uploads/14037770)][[GDrive](https://drive.google.com/drive/folders/1kVKgbElM23c-hSNZ_TTqfxXNXrPgNJ6L?usp=sharing)][[BaiduYun](https://pan.baidu.com/s/1RYXRL0emsKDL_9_v82nIjQ?pwd=df2t)].*
+* *我们还上传了 ChangeMamba的预测结果。您可以下载并直接在论文中使用它们 [[Zenodo](https://zenodo.org/records/14037770)][[GDrive](https://drive.google.com/drive/folders/1kVKgbElM23c-hSNZ_TTqfxXNXrPgNJ6L?usp=sharing)][[BaiduYun](https://pan.baidu.com/s/1RYXRL0emsKDL_9_v82nIjQ?pwd=df2t)].*
 
 ### `一、VMamba（编码器）的预训练权重`
 
