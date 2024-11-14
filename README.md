@@ -10,7 +10,7 @@
 <sup>#</sup> Equal contribution, <sup>*</sup> Corresponding author
 
 
-[![TGRS paper](https://img.shields.io/badge/TGRS-paper-00629B.svg)](https://ieeexplore.ieee.org/document/10565926)  [![arXiv paper](https://img.shields.io/badge/arXiv-paper-b31b1b.svg)](https://arxiv.org/pdf/2404.03425.pdf) [![Zenodo Models](https://img.shields.io/badge/Zenodo-Models-green)](https://zenodo.org/records/14037770) 
+[![TGRS paper](https://img.shields.io/badge/TGRS-paper-00629B.svg)](https://ieeexplore.ieee.org/document/10565926)  [![arXiv paper](https://img.shields.io/badge/arXiv-paper-b31b1b.svg)](https://arxiv.org/pdf/2404.03425.pdf) [![Zenodo Models](https://img.shields.io/badge/Zenodo-Models-green)](https://zenodo.org/records/14037770) ![visitors](https://visitor-badge.laobi.icu/badge?page_id=ChenHongruixuan.MambaCD&left_color=%2363C7E6&right_color=%23CEE75F)
 
 [**Overview**](#overview) | [**Get Started**](#%EF%B8%8Flets-get-started) | [**Taken Away**](#%EF%B8%8Fresults-taken-away) | [**Common Issues**](#common-issues) | [**Others**](#q--a) | [**简体中文版**](./README_zh-CN.md)
 
@@ -25,6 +25,7 @@
 
 ## 🛎️Updates
 * **` Notice🐍🐍`**: ChangeMamba has been accepted by [IEEE TGRS](https://ieeexplore.ieee.org/document/10565926)! We'd appreciate it if you could give this repo a ⭐️**star**⭐️ and stay tuned!!
+* **` Nov. 14th, 2024`**: ChangeMamba has been selected as 🔥ESI Hot Paper🔥!!
 * **` Sept. 14th, 2024`**: ChangeMamba has been selected as 🏆ESI Highly Cited Paper🏆!!
 * **` Aug. 05th, 2024`**: ChangeMamab has been selected as [IEEE TGRS Popular Paper](https://ieeexplore.ieee.org/xpl/topAccessedArticles.jsp?punumber=36)!!
 * **` July 19th, 2024`**: ChangeMamab has been selected as [IEEE GRSS Weekly Paper](https://www.linkedin.com/feed/update/urn:li:activity:7219970529498214400/)!!
