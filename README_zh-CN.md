@@ -28,11 +28,9 @@
 * **` 2024年09月14日`**: ChangeMamba入选为🏆ESI 高被引论文🏆！！
 * **` 2024年07月19日`**: ChangeMamba入选为[ IEEE TGRS 热点论文](https://ieeexplore.ieee.org/xpl/topAccessedArticles.jsp?punumber=36)！！
 * **` 2024年07月19日`**: ChangeMamba入选为[ IEEE GRSS 周推荐论文](https://www.linkedin.com/feed/update/urn:li:activity:7219970529498214400/)！！
-* **` 2024年07月01日`**: 我们上传了经过预处理的 [SECOND数据集](https://drive.google.com/file/d/1oApvN8RhJUjxO9pv6GikFbM0S4j8xXwE/view?usp=sharing)！！
 * **` 2024年06月17日`**: ChangeMamba被 [IEEE TGRS](https://ieeexplore.ieee.org/document/10565926) 接收！
 * **` 2024年06月08日`**: 中文版文档已上线！！
 * **` 2024年04月18日`**: 我们已经发布了 ChangeMamba 模型在 BCD 任务中的所有权重。欢迎[使用](#%EF%B8%8F结果下载)！！
-* **` 2024年04月05日`**: ChangeMamba 的[ArXiv论文](https://arxiv.org/pdf/2404.03425.pdf)已经上线！！
 * **` 2024年04年05日`**: MambaBCD、MambaSCD 和 MambaBDA 的模型和训练代码已经整理并上传。欢迎使用！！
 
 ## 🔭简介
@@ -101,7 +99,7 @@ project_path/MambaCD/pretrained_weight/
 ### `三、数据准备`
 ***二元变化检测***
 
-论文使用了三个基准数据集 [SYSU](https://github.com/liumency/SYSU-CD)、[LEVIR-CD+](https://chenhao.in/LEVIR/) 和 [WHU-CD](https://study.rsgis.whu.edu.cn/pages/download/building_dataset.html) 用于评估模型的二元变化检测的性能。请下载这些数据集，并将其组织成下述文件夹/文件结构：
+论文使用了三个基准数据集 [SYSU](https://github.com/liumency/SYSU-CD)、[LEVIR-CD+](https://chenhao.in/LEVIR/) 和 [WHU-CD](http://gpcv.whu.edu.cn/data/building_dataset.html) 用于评估模型的二元变化检测的性能。请下载这些数据集，并将其组织成下述文件夹/文件结构：
 
 ```
 ${DATASET_ROOT}   # 数据集根目录，例如: /home/username/data/SYSU
