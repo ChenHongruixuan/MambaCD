@@ -244,7 +244,7 @@ python script/train_MambaSCD.py  --dataset 'SECOND' \
 
 The following commands show how to train and evaluate MambaBDA-Small on the xBD dataset:
 ```bash
-python script/train_MambaSCD.py  --dataset 'xBD' \
+python script/train_MambaBDA.py  --dataset 'xBD' \
                                  --batch_size 16 \
                                  --crop_size 256 \
                                  --max_iters 800000 \
@@ -294,10 +294,10 @@ python script/infer_MambaBCD.py  --dataset 'SECOND'  \
 
 ***Building damage assessment***
 
-The following commands show how to infer building damage assessment results using trained MambaSCD-Tiny on the xBD dataset:
+The following commands show how to infer building damage assessment results using trained MambaBDA-Tiny on the xBD dataset:
 ```bash
 python script/infer_MambaBDA.py  --dataset 'SECOND'  \
-                                 --model_type 'MambaSCD_Tiny' \
+                                 --model_type 'MambaBDA_Tiny' \
                                  --test_dataset_path '<dataset_path>/xBD/test' \
                                  --test_data_list_path '<dataset_path>/xBD/test_list.txt' \
                                  --cfg '<project_path>/MambaCD/changedetection/configs/vssm1/vssm_tiny_224_0229flex.yaml' \

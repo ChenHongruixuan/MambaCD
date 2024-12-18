@@ -249,7 +249,7 @@ python script/train_MambaSCD.py  --dataset 'SECOND' \
 
 运行以下命令在 xBD 数据集上训练和评估 MambaBDA-Small：
 ```bash
-python script/train_MambaSCD.py  --dataset 'xBD' \
+python script/train_MambaBDA.py  --dataset 'xBD' \
                                  --batch_size 16 \
                                  --crop_size 256 \
                                  --max_iters 800000 \
@@ -302,7 +302,7 @@ python script/infer_MambaBCD.py  --dataset 'SECOND'  \
 以下命令展示了如何在 xBD 数据集上使用训练完成的 MambaBDA-Tiny 推断语义变化图：
 ```bash
 python script/infer_MambaBDA.py  --dataset 'SECOND'  \
-                                 --model_type 'MambaSCD_Tiny' \
+                                 --model_type 'MambaBDA_Tiny' \
                                  --test_dataset_path '<dataset_path>/xBD/test' \
                                  --test_data_list_path '<dataset_path>/xBD/test_list.txt' \
                                  --cfg '<project_path>/MambaCD/changedetection/configs/vssm1/vssm_tiny_224_0229flex.yaml' \
