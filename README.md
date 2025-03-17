@@ -25,6 +25,7 @@
 
 ## 🛎️Updates
 * **` Notice🐍🐍`**: ChangeMamba has been accepted by [IEEE TGRS](https://ieeexplore.ieee.org/document/10565926)! We'd appreciate it if you could give this repo a ⭐️**star**⭐️ and stay tuned!!
+* **` Mar. 17th, 2025`**: ChangeMamba selected as 🔥ESI Hot Paper and Highly Cited Paper🏆 for 6 consecutive months!!
 * **` Jan. 09th, 2025`**: ChangeMamba continues to be selected as 🔥ESI Hot and Highly Cited Paper🏆!!
 * **` Nov. 14th, 2024`**: ChangeMamba has been selected as 🔥ESI Hot Paper🔥!!
 * **` Sept. 14th, 2024`**: ChangeMamba has been selected as 🏆ESI Highly Cited Paper🏆!!
